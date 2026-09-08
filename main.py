@@ -16,21 +16,28 @@ GATE_URL = "https://api.gateio.ws/api/v4"
 
 TIMEFRAME = "1d"
 
-# STRICT OBV BREAKOUT:
-# Latest completed Daily OBV must be greater than
-# the highest OBV of the previous 20 completed Daily candles.
-OBV_LOOKBACK = 20
+# Number of candles on each side used to confirm
+# an OBV swing high.
+#
+# Example:
+# PIVOT_LEFT = 2
+# PIVOT_RIGHT = 2
+#
+# A candle must have a higher OBV than the
+# 2 candles before it AND the 2 candles after it.
+PIVOT_LEFT = 2
+PIVOT_RIGHT = 2
 
-# 20 previous candles + latest candle + extra history.
+# Number of Daily candles requested.
 CANDLE_LIMIT = 100
 
-# Keep low to avoid Gate API 429 errors.
+# Keep workers low to avoid Gate API 429 errors.
 MAX_WORKERS = 4
 
 # Minimum delay between Gate API requests.
 REQUEST_DELAY = 0.08
 
-# Maximum retries for rate limits/network errors.
+# Maximum retries for HTTP 429/network errors.
 MAX_RETRIES = 5
 
 
@@ -38,8 +45,13 @@ MAX_RETRIES = 5
 # TELEGRAM
 # ============================================================
 
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+TELEGRAM_BOT_TOKEN = os.getenv(
+    "TELEGRAM_BOT_TOKEN"
+)
+
+TELEGRAM_CHAT_ID = os.getenv(
+    "TELEGRAM_CHAT_ID"
+)
 
 
 # ============================================================
@@ -54,7 +66,7 @@ HISTORY_FILE = "signals.json"
 # ============================================================
 
 HEADERS = {
-    "User-Agent": "Daily-OBV-Breakout-Bot/4.0"
+    "User-Agent": "Daily-OBV-Higher-High-Bot/1.0"
 }
 
 session = requests.Session()
@@ -69,19 +81,18 @@ last_request_time = 0.0
 # ============================================================
 
 def gate_get(url, params=None, timeout=20):
+
     global last_request_time
 
     for attempt in range(MAX_RETRIES):
-
-        # ----------------------------------------------------
-        # Control request speed
-        # ----------------------------------------------------
 
         with request_lock:
 
             now = time.monotonic()
 
-            elapsed = now - last_request_time
+            elapsed = (
+                now - last_request_time
+            )
 
             if elapsed < REQUEST_DELAY:
 
@@ -89,11 +100,9 @@ def gate_get(url, params=None, timeout=20):
                     REQUEST_DELAY - elapsed
                 )
 
-            last_request_time = time.monotonic()
-
-        # ----------------------------------------------------
-        # Send request
-        # ----------------------------------------------------
+            last_request_time = (
+                time.monotonic()
+            )
 
         try:
 
@@ -117,28 +126,24 @@ def gate_get(url, params=None, timeout=20):
                     f"Retrying in {wait_time}s..."
                 )
 
-                time.sleep(wait_time)
+                time.sleep(
+                    wait_time
+                )
 
                 continue
 
             raise
 
-        # ----------------------------------------------------
-        # Successful response
-        # ----------------------------------------------------
-
         if response.ok:
 
             return response
 
-        # ----------------------------------------------------
-        # Gate API rate limit
-        # ----------------------------------------------------
-
         if response.status_code == 429:
 
-            retry_after = response.headers.get(
-                "Retry-After"
+            retry_after = (
+                response.headers.get(
+                    "Retry-After"
+                )
             )
 
             if retry_after:
@@ -155,25 +160,22 @@ def gate_get(url, params=None, timeout=20):
 
             else:
 
-                # Progressive backoff:
-                # 2s, 4s, 8s, 16s, 32s
                 wait_time = 2 ** attempt
 
             wait_time += 0.5
 
             print(
                 f"Gate rate limit (429). "
-                f"Retry {attempt + 1}/{MAX_RETRIES} "
+                f"Retry {attempt + 1}/"
+                f"{MAX_RETRIES} "
                 f"after {wait_time:.1f}s"
             )
 
-            time.sleep(wait_time)
+            time.sleep(
+                wait_time
+            )
 
             continue
-
-        # ----------------------------------------------------
-        # Other HTTP errors
-        # ----------------------------------------------------
 
         response.raise_for_status()
 
@@ -183,7 +185,7 @@ def gate_get(url, params=None, timeout=20):
 
 
 # ============================================================
-# LOAD SIGNAL HISTORY
+# HISTORY
 # ============================================================
 
 def load_history():
@@ -219,10 +221,6 @@ def load_history():
 
     return {}
 
-
-# ============================================================
-# SAVE SIGNAL HISTORY
-# ============================================================
 
 def save_history(history):
 
@@ -287,14 +285,12 @@ def get_contracts():
             ""
         )
 
-        # Only USDT contracts.
         if not name.endswith(
             "_USDT"
         ):
 
             continue
 
-        # Only active trading contracts.
         if status != "trading":
 
             continue
@@ -381,7 +377,7 @@ def get_daily_candles(
 
 
 # ============================================================
-# REMOVE CURRENTLY FORMING DAILY CANDLE
+# REMOVE CURRENT FORMING DAILY CANDLE
 # ============================================================
 
 def get_completed_daily_candles(
@@ -422,7 +418,6 @@ def calculate_obv(
 
         return []
 
-    # Starting OBV value.
     obv_values = [
         0.0
     ]
@@ -476,7 +471,78 @@ def calculate_obv(
 
 
 # ============================================================
-# CHECK ONE CONTRACT
+# FIND CONFIRMED OBV SWING HIGHS
+# ============================================================
+
+def find_obv_swing_highs(
+    obv
+):
+
+    swing_highs = []
+
+    start = PIVOT_LEFT
+
+    end = (
+        len(obv)
+        - PIVOT_RIGHT
+    )
+
+    for i in range(
+        start,
+        end
+    ):
+
+        current_obv = obv[i]
+
+        is_swing_high = True
+
+        # ----------------------------------------------------
+        # Check candles to the LEFT
+        # ----------------------------------------------------
+
+        for j in range(
+            i - PIVOT_LEFT,
+            i
+        ):
+
+            if current_obv <= obv[j]:
+
+                is_swing_high = False
+
+                break
+
+        if not is_swing_high:
+
+            continue
+
+        # ----------------------------------------------------
+        # Check candles to the RIGHT
+        # ----------------------------------------------------
+
+        for j in range(
+            i + 1,
+            i + PIVOT_RIGHT + 1
+        ):
+
+            if current_obv <= obv[j]:
+
+                is_swing_high = False
+
+                break
+
+        if not is_swing_high:
+
+            continue
+
+        swing_highs.append(
+            i
+        )
+
+    return swing_highs
+
+
+# ============================================================
+# CHECK STRICT OBV HIGHER-HIGH
 # ============================================================
 
 def check_signal(
@@ -500,12 +566,10 @@ def check_signal(
             )
         )
 
-        # Need:
-        # previous 20 completed candles
-        # +
-        # latest completed candle.
         minimum_required = (
-            OBV_LOOKBACK + 1
+            PIVOT_LEFT
+            + PIVOT_RIGHT
+            + 10
         )
 
         if len(candles) < minimum_required:
@@ -517,106 +581,123 @@ def check_signal(
             candles
         )
 
-        if len(obv) < minimum_required:
+        if not obv:
 
             return None
 
-        # ----------------------------------------------------
-        # LATEST COMPLETED DAILY CANDLE
-        # ----------------------------------------------------
-
-        current_index = (
-            len(obv) - 1
+        # Find confirmed OBV swing highs.
+        swing_highs = (
+            find_obv_swing_highs(
+                obv
+            )
         )
 
-        current_obv = (
-            obv[current_index]
-        )
-
-        # ----------------------------------------------------
-        # PREVIOUS 20 OBV VALUES
+        # Need at least two swing highs:
         #
-        # The latest candle is NOT included.
-        # ----------------------------------------------------
-
-        previous_obv_values = obv[
-            current_index - OBV_LOOKBACK:
-            current_index
-        ]
-
-        if len(
-            previous_obv_values
-        ) != OBV_LOOKBACK:
+        # Previous High
+        # +
+        # Latest High
+        #
+        if len(swing_highs) < 2:
 
             return None
 
-        previous_high = max(
-            previous_obv_values
+        # ----------------------------------------------------
+        # IMPORTANT:
+        #
+        # Because PIVOT_RIGHT = 2, the newest confirmed
+        # swing high can only be 2 completed candles old.
+        #
+        # This prevents using an unconfirmed/current high.
+        # ----------------------------------------------------
+
+        latest_index = (
+            swing_highs[-1]
+        )
+
+        previous_index = (
+            swing_highs[-2]
+        )
+
+        latest_high = (
+            obv[latest_index]
+        )
+
+        previous_high = (
+            obv[previous_index]
         )
 
         # ====================================================
-        # ONLY SIGNAL CONDITION
-        #
-        # Latest completed Daily OBV must be STRICTLY
-        # greater than the highest OBV of the previous
-        # 20 completed Daily candles.
-        #
-        # NO PRICE CONDITION.
-        # NO EMA.
-        # NO SMA.
-        # NO RSI.
-        # NO BOS.
-        # NO DIVERGENCE.
+        # STRICT HIGHER-HIGH CONDITION
         # ====================================================
 
-        if current_obv <= previous_high:
+        if latest_high <= previous_high:
 
             return None
 
         # ----------------------------------------------------
-        # SIGNAL CANDLE
+        # Confirm OBV was actually rising into the
+        # latest swing high.
+        #
+        # The candle immediately before the swing high
+        # must have lower OBV.
         # ----------------------------------------------------
 
-        signal_candle = (
-            candles[current_index]
-        )
+        if latest_index <= 0:
+
+            return None
+
+        if obv[latest_index] <= obv[
+            latest_index - 1
+        ]:
+
+            return None
+
+        # ----------------------------------------------------
+        # SIGNAL INFORMATION
+        # ----------------------------------------------------
 
         signal_timestamp = (
-            signal_candle["timestamp"]
+            candles[latest_index]["timestamp"]
         )
 
-        # Unique signal key.
         signal_key = (
             f"{contract}"
             f"|DAILY"
-            f"|OBV_BREAKOUT"
+            f"|OBV_HIGHER_HIGH"
             f"|{signal_timestamp}"
         )
 
-        breakout_amount = (
-            current_obv
+        higher_high_amount = (
+            latest_high
             - previous_high
         )
 
         if previous_high != 0:
 
-            breakout_percent = (
-                breakout_amount
+            higher_high_percent = (
+                higher_high_amount
                 / abs(previous_high)
             ) * 100
 
         else:
 
-            breakout_percent = 0.0
+            higher_high_percent = 0.0
 
         return {
             "contract": contract,
             "timestamp": signal_timestamp,
             "signal_key": signal_key,
-            "current_obv": current_obv,
+
+            "current_obv": latest_high,
+
             "previous_high": previous_high,
-            "breakout_amount": breakout_amount,
-            "breakout_percent": breakout_percent
+
+            "higher_high_amount":
+                higher_high_amount,
+
+            "higher_high_percent":
+                higher_high_percent
         }
 
     except Exception as e:
@@ -637,7 +718,7 @@ def check_signal(
 
 
 # ============================================================
-# SEND TELEGRAM MESSAGE
+# TELEGRAM
 # ============================================================
 
 def send_telegram(
@@ -707,7 +788,7 @@ def send_telegram(
 
 
 # ============================================================
-# FORMAT OBV SIGNAL
+# FORMAT SIGNAL
 # ============================================================
 
 def format_signal(
@@ -720,32 +801,32 @@ def format_signal(
     )
 
     return (
-        "📊 <b>DAILY OBV BREAKOUT</b>\n"
+        "📈 <b>DAILY OBV HIGHER HIGH</b>\n"
         "\n"
         f"🪙 <b>{signal['contract']}</b>\n"
-        "📈 Signal: <b>OBV BREAKOUT</b>\n"
+        "📊 Signal: <b>OBV HIGHER HIGH</b>\n"
         "⏱ Timeframe: <b>DAILY</b>\n"
         "\n"
-        f"Current OBV: "
+        f"Latest OBV High: "
         f"<b>{signal['current_obv']:,.2f}</b>\n"
-        f"Previous 20 OBV High: "
+        f"Previous OBV High: "
         f"<b>{signal['previous_high']:,.2f}</b>\n"
-        f"Breakout Amount: "
-        f"<b>{signal['breakout_amount']:,.2f}</b>\n"
-        f"Breakout vs High: "
-        f"<b>{signal['breakout_percent']:.2f}%</b>\n"
+        f"Higher High Amount: "
+        f"<b>{signal['higher_high_amount']:,.2f}</b>\n"
+        f"Higher High: "
+        f"<b>{signal['higher_high_percent']:.2f}%</b>\n"
         "\n"
-        f"📅 Breakout Candle: "
+        f"📅 Swing High Candle: "
         f"<b>{dt.strftime('%Y-%m-%d')}</b>\n"
         "\n"
-        "⚠️ <i>OBV-only signal.</i>\n"
+        "📈 <i>OBV uptrend / higher-high signal.</i>\n"
         "<i>No price, EMA, SMA, RSI, BOS "
         "or divergence condition.</i>"
     )
 
 
 # ============================================================
-# NO NEW SIGNAL REPORT
+# NO SIGNAL REPORT
 # ============================================================
 
 def format_no_signal_report(
@@ -755,18 +836,18 @@ def format_no_signal_report(
     return (
         "📊 <b>DAILY OBV SCAN</b>\n"
         "\n"
-        "No new OBV breakout found.\n"
+        "No new OBV higher-high signal found.\n"
         "\n"
         f"🪙 Contracts scanned: "
         f"<b>{contract_count}</b>\n"
-        f"📊 OBV lookback: "
-        f"<b>{OBV_LOOKBACK} Daily candles</b>\n"
         "⏱ Timeframe: <b>DAILY</b>\n"
+        "📈 Structure: "
+        "<b>OBV Higher High</b>\n"
         "\n"
         "<b>Signal condition:</b>\n"
-        "Latest completed Daily OBV must break "
-        "above the highest OBV of the previous "
-        f"{OBV_LOOKBACK} completed Daily candles.\n"
+        "The latest confirmed Daily OBV swing high "
+        "must be strictly higher than the previous "
+        "confirmed Daily OBV swing high.\n"
         "\n"
         "No price condition is used."
     )
@@ -779,7 +860,7 @@ def format_no_signal_report(
 def main():
 
     print("=" * 60)
-    print("DAILY OBV BREAKOUT BOT")
+    print("DAILY OBV HIGHER-HIGH BOT")
     print("=" * 60)
 
     print(
@@ -787,8 +868,18 @@ def main():
     )
 
     print(
-        f"OBV Lookback: "
-        f"{OBV_LOOKBACK} completed candles"
+        "Structure: "
+        "OBV HIGHER HIGH"
+    )
+
+    print(
+        f"Pivot left: "
+        f"{PIVOT_LEFT}"
+    )
+
+    print(
+        f"Pivot right: "
+        f"{PIVOT_RIGHT}"
     )
 
     print(
@@ -809,7 +900,7 @@ def main():
     print()
 
     # --------------------------------------------------------
-    # TELEGRAM CONFIGURATION
+    # TELEGRAM CONFIG
     # --------------------------------------------------------
 
     if not TELEGRAM_BOT_TOKEN:
@@ -835,7 +926,7 @@ def main():
     )
 
     # --------------------------------------------------------
-    # LOAD HISTORY
+    # HISTORY
     # --------------------------------------------------------
 
     history = load_history()
@@ -846,7 +937,7 @@ def main():
     )
 
     # --------------------------------------------------------
-    # GET CONTRACTS
+    # CONTRACTS
     # --------------------------------------------------------
 
     try:
@@ -881,7 +972,7 @@ def main():
     print()
 
     # --------------------------------------------------------
-    # SCAN CONTRACTS
+    # SCAN
     # --------------------------------------------------------
 
     signals = []
@@ -930,7 +1021,6 @@ def main():
                     f"worker error - {e}"
                 )
 
-            # Show progress every 100 contracts.
             if (
                 completed_count % 100 == 0
                 or completed_count ==
@@ -950,14 +1040,13 @@ def main():
     print()
 
     print(
-        f"OBV breakouts found: "
+        f"OBV higher highs found: "
         f"{len(signals)}"
     )
 
-    # Sort by largest absolute OBV breakout.
     signals.sort(
         key=lambda x:
-        x["breakout_amount"],
+        x["higher_high_amount"],
         reverse=True
     )
 
@@ -1006,8 +1095,8 @@ def main():
             print(
                 f"NEW SIGNAL: "
                 f"{signal['contract']} | "
-                f"OBV breakout: "
-                f"{signal['breakout_percent']:.2f}%"
+                f"Higher High: "
+                f"{signal['higher_high_percent']:.2f}%"
             )
 
             success = send_telegram(
@@ -1055,7 +1144,7 @@ def main():
 
         print()
         print(
-            "NO NEW OBV BREAKOUT"
+            "NO NEW OBV HIGHER HIGH"
         )
 
         report = (
