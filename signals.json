@@ -61,7 +61,7 @@
   },
   "ADI_USDT|DAILY|OBV_BEAUTIFUL_V2|1787788800": {
     "contract": "ADI_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787356800,
     "hh2_timestamp": 1787788800,
     "hl_timestamp": 1787529600,
@@ -476,7 +476,7 @@
   },
   "BIRB_USDT|DAILY|OBV_BEAUTIFUL_V2|1788566400": {
     "contract": "BIRB_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1788134400,
     "hh2_timestamp": 1788566400,
     "hl_timestamp": 1788307200,
@@ -506,7 +506,7 @@
   },
   "BLUAI_USDT|DAILY|OBV_BEAUTIFUL_V2|1788393600": {
     "contract": "BLUAI_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787961600,
     "hh2_timestamp": 1788393600,
     "hl_timestamp": 1788134400,
@@ -601,7 +601,7 @@
   },
   "BSB_USDT|DAILY|OBV_BEAUTIFUL_V2|1788134400": {
     "contract": "BSB_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787788800,
     "hh2_timestamp": 1788134400,
     "hl_timestamp": 1788048000,
@@ -666,7 +666,7 @@
   },
   "B_USDT|DAILY|OBV_BEAUTIFUL_V2|1788566400": {
     "contract": "B_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787961600,
     "hh2_timestamp": 1788566400,
     "hl_timestamp": 1788307200,
@@ -686,7 +686,7 @@
   },
   "CAKE_USDT|DAILY|OBV_BEAUTIFUL_V2|1788566400": {
     "contract": "CAKE_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1788134400,
     "hh2_timestamp": 1788566400,
     "hl_timestamp": 1788480000,
@@ -1041,7 +1041,7 @@
   },
   "DEEPTECH_USDT|DAILY|OBV_BEAUTIFUL_V2|1788134400": {
     "contract": "DEEPTECH_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787875200,
     "hh2_timestamp": 1788134400,
     "hl_timestamp": 1788048000,
@@ -1176,7 +1176,7 @@
   },
   "EDGEX_USDT|DAILY|OBV_BEAUTIFUL_V2|1788393600": {
     "contract": "EDGEX_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787875200,
     "hh2_timestamp": 1788393600,
     "hl_timestamp": 1788048000,
@@ -1216,7 +1216,7 @@
   },
   "EGLD_USDT|DAILY|OBV_BEAUTIFUL_V2|1788307200": {
     "contract": "EGLD_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787443200,
     "hh2_timestamp": 1788307200,
     "hl_timestamp": 1787616000,
@@ -1341,7 +1341,7 @@
   },
   "FIX_USDT|DAILY|OBV_BEAUTIFUL_V2|1788566400": {
     "contract": "FIX_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787702400,
     "hh2_timestamp": 1788566400,
     "hl_timestamp": 1788048000,
@@ -1561,7 +1561,7 @@
   },
   "HEMI_USDT|DAILY|OBV_BEAUTIFUL_V2|1788393600": {
     "contract": "HEMI_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787270400,
     "hh2_timestamp": 1788393600,
     "hl_timestamp": 1787616000,
@@ -1606,7 +1606,7 @@
   },
   "HK50_USDT|DAILY|OBV_BEAUTIFUL_V2|1788307200": {
     "contract": "HK50_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787875200,
     "hh2_timestamp": 1788307200,
     "hl_timestamp": 1788048000,
@@ -1876,7 +1876,7 @@
   },
   "IWM_USDT|DAILY|OBV_BEAUTIFUL_V2|1787788800": {
     "contract": "IWM_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787443200,
     "hh2_timestamp": 1787788800,
     "hl_timestamp": 1787529600,
@@ -1981,7 +1981,7 @@
   },
   "KAVA_USDT|DAILY|OBV_BEAUTIFUL_V2|1788393600": {
     "contract": "KAVA_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787875200,
     "hh2_timestamp": 1788393600,
     "hl_timestamp": 1788048000,
@@ -2056,7 +2056,7 @@
   },
   "KITE_USDT|DAILY|OBV_BEAUTIFUL_V2|1788307200": {
     "contract": "KITE_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787961600,
     "hh2_timestamp": 1788307200,
     "hl_timestamp": 1788134400,
@@ -2126,7 +2126,7 @@
   },
   "KSM_USDT|DAILY|OBV_BEAUTIFUL_V2|1788393600": {
     "contract": "KSM_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787443200,
     "hh2_timestamp": 1788393600,
     "hl_timestamp": 1787875200,
@@ -2156,7 +2156,7 @@
   },
   "KUAISHOU_USDT|DAILY|OBV_BEAUTIFUL_V2|1788134400": {
     "contract": "KUAISHOU_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787875200,
     "hh2_timestamp": 1788134400,
     "hl_timestamp": 1788048000,
@@ -2246,7 +2246,7 @@
   },
   "LRC_USDT|DAILY|OBV_BEAUTIFUL_V2|1788393600": {
     "contract": "LRC_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787788800,
     "hh2_timestamp": 1788393600,
     "hl_timestamp": 1788134400,
@@ -2336,7 +2336,7 @@
   },
   "METAX_USDT|DAILY|OBV_BEAUTIFUL_V2|1788566400": {
     "contract": "METAX_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787961600,
     "hh2_timestamp": 1788566400,
     "hl_timestamp": 1788134400,
@@ -2426,7 +2426,7 @@
   },
   "MOCA_USDT|DAILY|OBV_BEAUTIFUL_V2|1788393600": {
     "contract": "MOCA_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787961600,
     "hh2_timestamp": 1788393600,
     "hl_timestamp": 1788048000,
@@ -2661,7 +2661,7 @@
   },
   "NXPC_USDT|DAILY|OBV_BEAUTIFUL_V2|1788566400": {
     "contract": "NXPC_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1788134400,
     "hh2_timestamp": 1788566400,
     "hl_timestamp": 1788307200,
@@ -2956,7 +2956,7 @@
   },
   "PUNDIX_USDT|DAILY|OBV_BEAUTIFUL_V2|1787788800": {
     "contract": "PUNDIX_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787270400,
     "hh2_timestamp": 1787788800,
     "hl_timestamp": 1787529600,
@@ -3186,7 +3186,7 @@
   },
   "SKYAI_USDT|DAILY|OBV_BEAUTIFUL_V2|1788566400": {
     "contract": "SKYAI_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787788800,
     "hh2_timestamp": 1788566400,
     "hl_timestamp": 1788048000,
@@ -3296,7 +3296,7 @@
   },
   "SOMI_USDT|DAILY|OBV_BEAUTIFUL_V2|1788134400": {
     "contract": "SOMI_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787875200,
     "hh2_timestamp": 1788134400,
     "hl_timestamp": 1788048000,
@@ -3326,7 +3326,7 @@
   },
   "SONY_USDT|DAILY|OBV_BEAUTIFUL_V2|1787875200": {
     "contract": "SONY_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787529600,
     "hh2_timestamp": 1787875200,
     "hl_timestamp": 1787788800,
@@ -3406,7 +3406,7 @@
   },
   "SSV_USDT|DAILY|OBV_BEAUTIFUL_V2|1788393600": {
     "contract": "SSV_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787875200,
     "hh2_timestamp": 1788393600,
     "hl_timestamp": 1788048000,
@@ -3541,7 +3541,7 @@
   },
   "TENCENT_USDT|DAILY|OBV_BEAUTIFUL_V2|1788048000": {
     "contract": "TENCENT_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787270400,
     "hh2_timestamp": 1788048000,
     "hl_timestamp": 1787529600,
@@ -3741,7 +3741,7 @@
   },
   "TWT_USDT|DAILY|OBV_BEAUTIFUL_V2|1788480000": {
     "contract": "TWT_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787616000,
     "hh2_timestamp": 1788480000,
     "hl_timestamp": 1787875200,
@@ -3761,7 +3761,7 @@
   },
   "TZA_USDT|DAILY|OBV_BEAUTIFUL_V2|1788220800": {
     "contract": "TZA_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787529600,
     "hh2_timestamp": 1788220800,
     "hl_timestamp": 1787702400,
@@ -3876,7 +3876,7 @@
   },
   "VELO_USDT|DAILY|OBV_BEAUTIFUL_V2|1788048000": {
     "contract": "VELO_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787270400,
     "hh2_timestamp": 1788048000,
     "hl_timestamp": 1787529600,
@@ -4156,7 +4156,7 @@
   },
   "ZHIPU_USDT|DAILY|OBV_BEAUTIFUL_V2|1788134400": {
     "contract": "ZHIPU_USDT",
-    "created_at": 1788897441,
+    "created_at": 1788906659,
     "hh1_timestamp": 1787788800,
     "hh2_timestamp": 1788134400,
     "hl_timestamp": 1788048000,
