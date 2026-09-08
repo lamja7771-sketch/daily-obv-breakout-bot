@@ -178,5 +178,385 @@
     "contract": "BIWIN_USDT",
     "timestamp": 1788739200,
     "created_at": "2026-09-08T09:32:35.151721+00:00"
+  },
+  "ICP_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "ICP_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:47.640039+00:00"
+  },
+  "DOGS_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "DOGS_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:48.327400+00:00"
+  },
+  "IOST_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "IOST_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:49.088957+00:00"
+  },
+  "MUU_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "MUU_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:49.727172+00:00"
+  },
+  "CL_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "CL_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:50.352810+00:00"
+  },
+  "DOT_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "DOT_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:50.981892+00:00"
+  },
+  "MINA_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "MINA_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:51.605793+00:00"
+  },
+  "OP_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "OP_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:52.231864+00:00"
+  },
+  "ORCA_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "ORCA_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:52.869952+00:00"
+  },
+  "KOMA_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "KOMA_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:53.507636+00:00"
+  },
+  "LUNA_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "LUNA_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:54.133544+00:00"
+  },
+  "NIL_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "NIL_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:54.754222+00:00"
+  },
+  "MU_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "MU_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:55.382775+00:00"
+  },
+  "IOTX_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "IOTX_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:56.024589+00:00"
+  },
+  "KAVA_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "KAVA_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:56.668594+00:00"
+  },
+  "OPENAI_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "OPENAI_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:57.307515+00:00"
+  },
+  "MIRA_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "MIRA_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:57.931573+00:00"
+  },
+  "XAN_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "XAN_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:58.561858+00:00"
+  },
+  "YB_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "YB_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:59.211067+00:00"
+  },
+  "EWY_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "EWY_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:39:59.838035+00:00"
+  },
+  "IMX_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "IMX_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:00.456348+00:00"
+  },
+  "COMP_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "COMP_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:01.162785+00:00"
+  },
+  "ILV_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "ILV_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:01.874556+00:00"
+  },
+  "DRAM_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "DRAM_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:02.497185+00:00"
+  },
+  "KORU_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "KORU_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:03.120272+00:00"
+  },
+  "KNC_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "KNC_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:03.740255+00:00"
+  },
+  "PENDLE_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "PENDLE_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:04.363649+00:00"
+  },
+  "INTC_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "INTC_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:04.996115+00:00"
+  },
+  "NVDAX_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "NVDAX_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:05.628210+00:00"
+  },
+  "KSM_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "KSM_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:06.267782+00:00"
+  },
+  "PIEVERSE_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "PIEVERSE_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:06.907958+00:00"
+  },
+  "INTW_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "INTW_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:07.561461+00:00"
+  },
+  "MNT_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "MNT_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:08.250408+00:00"
+  },
+  "LPT_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "LPT_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:08.874738+00:00"
+  },
+  "QQQX_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "QQQX_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:09.533816+00:00"
+  },
+  "PROS_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "PROS_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:10.166375+00:00"
+  },
+  "QCOM_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "QCOM_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:10.818133+00:00"
+  },
+  "FLUX_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "FLUX_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:11.446509+00:00"
+  },
+  "ZHONGJI_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "ZHONGJI_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:12.093932+00:00"
+  },
+  "HYUNDAI_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "HYUNDAI_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:12.752279+00:00"
+  },
+  "KSTR_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "KSTR_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:13.503245+00:00"
+  },
+  "Q_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "Q_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:14.125869+00:00"
+  },
+  "ZRO_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "ZRO_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:14.754519+00:00"
+  },
+  "GT_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "GT_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:15.406959+00:00"
+  },
+  "PLAY_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "PLAY_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:16.040399+00:00"
+  },
+  "LGELECTRONICS_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "LGELECTRONICS_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:16.674905+00:00"
+  },
+  "OKB_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "OKB_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:17.300840+00:00"
+  },
+  "NOW_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "NOW_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:17.926892+00:00"
+  },
+  "KAS_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "KAS_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:18.554611+00:00"
+  },
+  "HYPER_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "HYPER_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:19.189888+00:00"
+  },
+  "HANMI_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "HANMI_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:19.861164+00:00"
+  },
+  "DEEP_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "DEEP_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:20.490519+00:00"
+  },
+  "YOFC_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "YOFC_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:21.146629+00:00"
+  },
+  "PROVE_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "PROVE_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:21.810501+00:00"
+  },
+  "IRYS_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "IRYS_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:22.510896+00:00"
+  },
+  "VST_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "VST_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:23.233075+00:00"
+  },
+  "YJTECH_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "YJTECH_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:23.866291+00:00"
+  },
+  "VOO_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "VOO_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:24.554669+00:00"
+  },
+  "M_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "M_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:25.188624+00:00"
+  },
+  "INIT_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "INIT_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:25.828707+00:00"
+  },
+  "CSOPSKHYNIX2L_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "CSOPSKHYNIX2L_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:26.451381+00:00"
+  },
+  "KBLAM_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "KBLAM_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:27.157493+00:00"
+  },
+  "EOPTOLINK_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "EOPTOLINK_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:27.805644+00:00"
+  },
+  "LONGSYS_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "LONGSYS_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:28.423631+00:00"
+  },
+  "COF_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "COF_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:29.060509+00:00"
+  },
+  "JPN225_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "JPN225_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:29.676654+00:00"
+  },
+  "GILD_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "GILD_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:30.301717+00:00"
+  },
+  "HPSP_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "HPSP_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:30.925208+00:00"
+  },
+  "QNTX_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "QNTX_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:31.545903+00:00"
+  },
+  "LQD_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "LQD_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:32.164443+00:00"
+  },
+  "METU_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "METU_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:32.791474+00:00"
+  },
+  "FII_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "FII_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:33.424788+00:00"
+  },
+  "XLU_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "XLU_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:34.075491+00:00"
+  },
+  "OUST_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "OUST_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:34.706911+00:00"
+  },
+  "JMKE_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "JMKE_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:35.407002+00:00"
+  },
+  "EEM_USDT|DAILY|OBV_BREAKOUT|1788739200": {
+    "contract": "EEM_USDT",
+    "timestamp": 1788739200,
+    "created_at": "2026-09-08T09:40:36.070455+00:00"
   }
 }
