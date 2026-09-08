@@ -1,6 +1,7 @@
 import os
 import json
 import time
+import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 
@@ -20,25 +21,154 @@ TIMEFRAME = "1d"
 # Daily candles.
 OBV_LOOKBACK = 20
 
-# Number of Daily candles requested from Gate.
-CANDLE_LIMIT = 250
+# We need 20 previous candles + current candle,
+# plus extra candles so OBV has enough history.
+CANDLE_LIMIT = 100
 
-# Parallel scanning.
-MAX_WORKERS = 12
+# IMPORTANT:
+# Keep this low enough to avoid Gate API rate limits.
+MAX_WORKERS = 4
 
-# Telegram secrets are supplied by GitHub Actions.
+# Minimum delay between Gate candle requests.
+# This deliberately slows the scanner to avoid 429 errors.
+REQUEST_DELAY = 0.08
+
+# Retry settings for HTTP 429.
+MAX_RETRIES = 5
+
+# Telegram
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-# Signal history.
+# Signal history
 HISTORY_FILE = "signals.json"
 
 HEADERS = {
-    "User-Agent": "Daily-OBV-Breakout-Bot/3.0"
+    "User-Agent": "Daily-OBV-Breakout-Bot/4.0"
 }
 
 session = requests.Session()
 session.headers.update(HEADERS)
+
+# Thread-safe request limiter.
+request_lock = threading.Lock()
+last_request_time = 0.0
+
+
+# ============================================================
+# RATE-LIMITED GATE REQUEST
+# ============================================================
+
+def gate_get(url, params=None, timeout=20):
+    """
+    Make a Gate API GET request while controlling request speed.
+
+    Automatically retries HTTP 429 responses.
+    """
+
+    global last_request_time
+
+    for attempt in range(MAX_RETRIES):
+
+        # ----------------------------------------------------
+        # Control request speed
+        # ----------------------------------------------------
+
+        with request_lock:
+
+            now = time.monotonic()
+
+            elapsed = now - last_request_time
+
+            if elapsed < REQUEST_DELAY:
+                time.sleep(
+                    REQUEST_DELAY - elapsed
+                )
+
+            last_request_time = time.monotonic()
+
+        # ----------------------------------------------------
+        # Request
+        # ----------------------------------------------------
+
+        try:
+
+            response = session.get(
+                url,
+                params=params,
+                timeout=timeout
+            )
+
+        except requests.RequestException as e:
+
+            if attempt < MAX_RETRIES - 1:
+
+                wait_time = 2 ** attempt
+
+                print(
+                    f"Network error. "
+                    f"Retrying in {wait_time}s..."
+                )
+
+                time.sleep(wait_time)
+
+                continue
+
+            raise
+
+        # ----------------------------------------------------
+        # Success
+        # ----------------------------------------------------
+
+        if response.ok:
+            return response
+
+        # ----------------------------------------------------
+        # Rate limit
+        # ----------------------------------------------------
+
+        if response.status_code == 429:
+
+            retry_after = response.headers.get(
+                "Retry-After"
+            )
+
+            if retry_after:
+
+                try:
+                    wait_time = float(
+                        retry_after
+                    )
+                except ValueError:
+                    wait_time = 3.0
+
+            else:
+                # Progressive backoff:
+                # 2s, 4s, 8s, 16s, 32s
+                wait_time = 2 ** attempt
+
+            # Add a small safety margin.
+            wait_time += 0.5
+
+            print(
+                f"Gate rate limit (429). "
+                f"Retry {attempt + 1}/{MAX_RETRIES} "
+                f"after {wait_time:.1f}s"
+            )
+
+            time.sleep(wait_time)
+
+            continue
+
+        # ----------------------------------------------------
+        # Other HTTP error
+        # ----------------------------------------------------
+
+        response.raise_for_status()
+
+    raise RuntimeError(
+        "Gate API rate limit retries exhausted."
+    )
 
 
 # ============================================================
@@ -46,29 +176,52 @@ session.headers.update(HEADERS)
 # ============================================================
 
 def load_history():
+
     if not os.path.exists(HISTORY_FILE):
         return {}
 
     try:
-        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+
+        with open(
+            HISTORY_FILE,
+            "r",
+            encoding="utf-8"
+        ) as f:
+
             data = json.load(f)
 
         if isinstance(data, dict):
             return data
 
     except Exception as e:
-        print(f"History load error: {e}")
+
+        print(
+            f"History load error: {e}"
+        )
 
     return {}
 
 
 def save_history(history):
+
     temp_file = HISTORY_FILE + ".tmp"
 
-    with open(temp_file, "w", encoding="utf-8") as f:
-        json.dump(history, f, indent=2)
+    with open(
+        temp_file,
+        "w",
+        encoding="utf-8"
+    ) as f:
 
-    os.replace(temp_file, HISTORY_FILE)
+        json.dump(
+            history,
+            f,
+            indent=2
+        )
+
+    os.replace(
+        temp_file,
+        HISTORY_FILE
+    )
 
 
 # ============================================================
@@ -76,25 +229,38 @@ def save_history(history):
 # ============================================================
 
 def get_contracts():
-    url = f"{GATE_URL}/futures/usdt/contracts"
 
-    response = session.get(
+    url = (
+        f"{GATE_URL}"
+        f"/futures/usdt/contracts"
+    )
+
+    response = gate_get(
         url,
         timeout=20
     )
 
-    response.raise_for_status()
-
     contracts = response.json()
 
-    if not isinstance(contracts, list):
+    if not isinstance(
+        contracts,
+        list
+    ):
         return []
 
     result = []
 
     for contract in contracts:
-        name = contract.get("name", "")
-        status = contract.get("status", "")
+
+        name = contract.get(
+            "name",
+            ""
+        )
+
+        status = contract.get(
+            "status",
+            ""
+        )
 
         # Only USDT contracts.
         if not name.endswith("_USDT"):
@@ -106,7 +272,9 @@ def get_contracts():
 
         result.append(name)
 
-    return sorted(set(result))
+    return sorted(
+        set(result)
+    )
 
 
 # ============================================================
@@ -114,9 +282,13 @@ def get_contracts():
 # ============================================================
 
 def get_daily_candles(contract):
-    url = f"{GATE_URL}/futures/usdt/candlesticks"
 
-    response = session.get(
+    url = (
+        f"{GATE_URL}"
+        f"/futures/usdt/candlesticks"
+    )
+
+    response = gate_get(
         url,
         params={
             "contract": contract,
@@ -126,17 +298,20 @@ def get_daily_candles(contract):
         timeout=20
     )
 
-    response.raise_for_status()
-
     candles = response.json()
 
-    if not isinstance(candles, list):
+    if not isinstance(
+        candles,
+        list
+    ):
         return []
 
     parsed = []
 
     for candle in candles:
+
         try:
+
             # Current Gate Futures candle format:
             #
             # {
@@ -149,9 +324,17 @@ def get_daily_candles(contract):
             #   "sum": ...
             # }
 
-            timestamp = int(candle["t"])
-            volume = float(candle["v"])
-            close = float(candle["c"])
+            timestamp = int(
+                candle["t"]
+            )
+
+            volume = float(
+                candle["v"]
+            )
+
+            close = float(
+                candle["c"]
+            )
 
             parsed.append({
                 "timestamp": timestamp,
@@ -159,10 +342,17 @@ def get_daily_candles(contract):
                 "close": close
             })
 
-        except (KeyError, TypeError, ValueError):
+        except (
+            KeyError,
+            TypeError,
+            ValueError
+        ):
+
             continue
 
-    parsed.sort(key=lambda x: x["timestamp"])
+    parsed.sort(
+        key=lambda x: x["timestamp"]
+    )
 
     return parsed
 
@@ -172,15 +362,25 @@ def get_daily_candles(contract):
 # ============================================================
 
 def get_completed_daily_candles(candles):
-    now = int(time.time())
+
+    now = int(
+        time.time()
+    )
 
     completed = []
 
     for candle in candles:
-        candle_end = candle["timestamp"] + 86400
+
+        candle_end = (
+            candle["timestamp"]
+            + 86400
+        )
 
         if candle_end <= now:
-            completed.append(candle)
+
+            completed.append(
+                candle
+            )
 
     return completed
 
@@ -190,29 +390,55 @@ def get_completed_daily_candles(candles):
 # ============================================================
 
 def calculate_obv(candles):
+
     if not candles:
         return []
 
-    # Starting OBV value.
+    # Starting OBV.
     obv_values = [0.0]
 
-    for i in range(1, len(candles)):
-        previous_close = candles[i - 1]["close"]
-        current_close = candles[i]["close"]
-        current_volume = candles[i]["volume"]
+    for i in range(
+        1,
+        len(candles)
+    ):
 
-        previous_obv = obv_values[-1]
+        previous_close = (
+            candles[i - 1]["close"]
+        )
+
+        current_close = (
+            candles[i]["close"]
+        )
+
+        current_volume = (
+            candles[i]["volume"]
+        )
+
+        previous_obv = (
+            obv_values[-1]
+        )
 
         if current_close > previous_close:
-            current_obv = previous_obv + current_volume
+
+            current_obv = (
+                previous_obv
+                + current_volume
+            )
 
         elif current_close < previous_close:
-            current_obv = previous_obv - current_volume
+
+            current_obv = (
+                previous_obv
+                - current_volume
+            )
 
         else:
+
             current_obv = previous_obv
 
-        obv_values.append(current_obv)
+        obv_values.append(
+            current_obv
+        )
 
     return obv_values
 
@@ -222,23 +448,40 @@ def calculate_obv(candles):
 # ============================================================
 
 def check_signal(contract):
+
     try:
-        candles = get_daily_candles(contract)
+
+        candles = get_daily_candles(
+            contract
+        )
 
         if not candles:
             return None
 
-        # Ignore the currently forming Daily candle.
-        candles = get_completed_daily_candles(candles)
+        # Ignore current forming Daily candle.
+        candles = (
+            get_completed_daily_candles(
+                candles
+            )
+        )
 
-        # We need:
-        # previous 20 candles + current candle
-        minimum_required = OBV_LOOKBACK + 1
+        # Need:
+        #
+        # previous 20 completed candles
+        # +
+        # latest completed candle
+        #
+        minimum_required = (
+            OBV_LOOKBACK + 1
+        )
 
         if len(candles) < minimum_required:
             return None
 
-        obv = calculate_obv(candles)
+        # Calculate OBV.
+        obv = calculate_obv(
+            candles
+        )
 
         if len(obv) < minimum_required:
             return None
@@ -247,15 +490,18 @@ def check_signal(contract):
         # Latest completed Daily candle
         # ----------------------------------------------------
 
-        current_index = len(obv) - 1
+        current_index = (
+            len(obv) - 1
+        )
 
-        current_obv = obv[current_index]
+        current_obv = (
+            obv[current_index]
+        )
 
         # ----------------------------------------------------
-        # Previous 20 completed Daily OBV values
+        # Previous 20 OBV values
         #
-        # IMPORTANT:
-        # The current candle is NOT included in this range.
+        # Current candle is NOT included.
         # ----------------------------------------------------
 
         previous_obv_values = obv[
@@ -263,39 +509,56 @@ def check_signal(contract):
             current_index
         ]
 
-        if len(previous_obv_values) != OBV_LOOKBACK:
+        if len(
+            previous_obv_values
+        ) != OBV_LOOKBACK:
+
             return None
 
-        previous_high = max(previous_obv_values)
+        previous_high = max(
+            previous_obv_values
+        )
 
         # ----------------------------------------------------
         # ONLY SIGNAL CONDITION
         #
-        # Latest completed Daily OBV must be greater than
-        # the highest OBV of the previous 20 Daily candles.
+        # Latest completed Daily OBV >
+        # highest OBV of previous 20 candles.
         # ----------------------------------------------------
 
         if current_obv <= previous_high:
             return None
 
-        signal_candle = candles[current_index]
-
-        signal_timestamp = signal_candle["timestamp"]
-
-        # Unique signal = contract + Daily + breakout candle.
-        signal_key = (
-            f"{contract}|DAILY|OBV_BREAKOUT|"
-            f"{signal_timestamp}"
+        signal_candle = (
+            candles[current_index]
         )
 
-        breakout_amount = current_obv - previous_high
+        signal_timestamp = (
+            signal_candle["timestamp"]
+        )
+
+        # Unique signal.
+        signal_key = (
+            f"{contract}"
+            f"|DAILY"
+            f"|OBV_BREAKOUT"
+            f"|{signal_timestamp}"
+        )
+
+        breakout_amount = (
+            current_obv
+            - previous_high
+        )
 
         if previous_high != 0:
+
             breakout_percent = (
-                breakout_amount /
-                abs(previous_high)
+                breakout_amount
+                / abs(previous_high)
             ) * 100
+
         else:
+
             breakout_percent = 0.0
 
         return {
@@ -309,7 +572,22 @@ def check_signal(contract):
         }
 
     except Exception as e:
-        print(f"{contract}: ERROR - {e}")
+
+        # Keep errors short so the GitHub log
+        # does not become thousands of lines.
+        if "429" in str(e):
+
+            print(
+                f"{contract}: "
+                f"RATE LIMITED"
+            )
+
+        else:
+
+            print(
+                f"{contract}: "
+                f"ERROR - {e}"
+            )
 
         return None
 
@@ -319,20 +597,32 @@ def check_signal(contract):
 # ============================================================
 
 def send_telegram(message):
+
     if not TELEGRAM_BOT_TOKEN:
-        print("ERROR: TELEGRAM_BOT_TOKEN is missing.")
+
+        print(
+            "ERROR: "
+            "TELEGRAM_BOT_TOKEN is missing."
+        )
+
         return False
 
     if not TELEGRAM_CHAT_ID:
-        print("ERROR: TELEGRAM_CHAT_ID is missing.")
+
+        print(
+            "ERROR: "
+            "TELEGRAM_CHAT_ID is missing."
+        )
+
         return False
 
     url = (
-        f"https://api.telegram.org/bot"
-        f"{TELEGRAM_BOT_TOKEN}/sendMessage"
+        f"https://api.telegram.org/"
+        f"bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     )
 
     try:
+
         response = session.post(
             url,
             data={
@@ -354,16 +644,20 @@ def send_telegram(message):
         )
 
     except Exception as e:
-        print(f"Telegram send error: {e}")
+
+        print(
+            f"Telegram send error: {e}"
+        )
 
     return False
 
 
 # ============================================================
-# FORMAT SIGNAL MESSAGE
+# FORMAT SIGNAL
 # ============================================================
 
 def format_signal(signal):
+
     dt = datetime.fromtimestamp(
         signal["timestamp"],
         tz=timezone.utc
@@ -395,10 +689,14 @@ def format_signal(signal):
 
 
 # ============================================================
-# SCAN REPORT
+# NO SIGNAL REPORT
 # ============================================================
 
-def format_no_signal_report(contract_count):
+def format_no_signal_report(
+    contract_count,
+    errors_count=0
+):
+
     return (
         "📊 <b>DAILY OBV SCAN</b>\n"
         "\n"
@@ -429,36 +727,60 @@ def main():
     print("DAILY OBV BREAKOUT BOT")
     print("=" * 60)
 
-    print("Timeframe: DAILY")
+    print(
+        "Timeframe: DAILY"
+    )
+
     print(
         f"OBV Lookback: "
         f"{OBV_LOOKBACK} completed candles"
     )
-    print(f"Max workers: {MAX_WORKERS}")
+
+    print(
+        f"Candle limit: "
+        f"{CANDLE_LIMIT}"
+    )
+
+    print(
+        f"Max workers: "
+        f"{MAX_WORKERS}"
+    )
+
+    print(
+        f"Request delay: "
+        f"{REQUEST_DELAY}s"
+    )
+
     print()
 
     # --------------------------------------------------------
-    # CHECK TELEGRAM CONFIGURATION
+    # TELEGRAM CONFIG
     # --------------------------------------------------------
 
     if not TELEGRAM_BOT_TOKEN:
+
         print(
             "ERROR: TELEGRAM_BOT_TOKEN "
             "is not configured."
         )
+
         return
 
     if not TELEGRAM_CHAT_ID:
+
         print(
             "ERROR: TELEGRAM_CHAT_ID "
             "is not configured."
         )
+
         return
 
-    print("Telegram configuration: OK")
+    print(
+        "Telegram configuration: OK"
+    )
 
     # --------------------------------------------------------
-    # LOAD HISTORY
+    # HISTORY
     # --------------------------------------------------------
 
     history = load_history()
@@ -469,16 +791,20 @@ def main():
     )
 
     # --------------------------------------------------------
-    # GET CONTRACTS
+    # CONTRACTS
     # --------------------------------------------------------
 
     try:
+
         contracts = get_contracts()
 
     except Exception as e:
+
         print(
-            f"Failed to get Gate contracts: {e}"
+            f"Failed to get Gate contracts: "
+            f"{e}"
         )
+
         return
 
     print(
@@ -487,11 +813,15 @@ def main():
     )
 
     if not contracts:
+
         print(
-            "ERROR: No USDT futures contracts found."
+            "ERROR: No USDT futures "
+            "contracts found."
         )
+
         return
 
+    print()
     print("Scanning...")
     print()
 
@@ -500,6 +830,8 @@ def main():
     # --------------------------------------------------------
 
     signals = []
+
+    completed_count = 0
 
     with ThreadPoolExecutor(
         max_workers=MAX_WORKERS
@@ -513,20 +845,45 @@ def main():
             for contract in contracts
         }
 
-        for future in as_completed(futures):
+        for future in as_completed(
+            futures
+        ):
 
-            contract = futures[future]
+            contract = futures[
+                future
+            ]
 
             try:
+
                 result = future.result()
 
+                completed_count += 1
+
                 if result:
-                    signals.append(result)
+
+                    signals.append(
+                        result
+                    )
 
             except Exception as e:
+
+                completed_count += 1
+
                 print(
                     f"{contract}: "
                     f"worker error - {e}"
+                )
+
+            # Progress every 100 contracts.
+            if (
+                completed_count % 100 == 0
+                or completed_count == len(contracts)
+            ):
+
+                print(
+                    f"Progress: "
+                    f"{completed_count}/"
+                    f"{len(contracts)}"
                 )
 
     # --------------------------------------------------------
@@ -534,6 +891,7 @@ def main():
     # --------------------------------------------------------
 
     print()
+
     print(
         f"OBV breakouts found: "
         f"{len(signals)}"
@@ -541,7 +899,8 @@ def main():
 
     # Strongest absolute OBV breakouts first.
     signals.sort(
-        key=lambda x: x["breakout_amount"],
+        key=lambda x:
+        x["breakout_amount"],
         reverse=True
     )
 
@@ -553,20 +912,16 @@ def main():
 
     for signal in signals:
 
-        key = signal["signal_key"]
+        key = signal[
+            "signal_key"
+        ]
 
         if key in history:
             continue
 
-        new_signals.append(signal)
-
-        history[key] = {
-            "contract": signal["contract"],
-            "timestamp": signal["timestamp"],
-            "created_at": datetime.now(
-                timezone.utc
-            ).isoformat()
-        }
+        new_signals.append(
+            signal
+        )
 
     print(
         f"New signals: "
@@ -586,7 +941,9 @@ def main():
 
         for signal in new_signals:
 
-            message = format_signal(signal)
+            message = format_signal(
+                signal
+            )
 
             print(
                 f"NEW SIGNAL: "
@@ -595,14 +952,35 @@ def main():
                 f"{signal['breakout_percent']:.2f}%"
             )
 
-            success = send_telegram(message)
+            success = send_telegram(
+                message
+            )
 
             if success:
+
                 print(
                     f"Telegram sent: "
                     f"{signal['contract']}"
                 )
+
+                # IMPORTANT:
+                # Only save the signal after
+                # Telegram successfully sends it.
+                history[
+                    signal["signal_key"]
+                ] = {
+                    "contract":
+                        signal["contract"],
+                    "timestamp":
+                        signal["timestamp"],
+                    "created_at":
+                        datetime.now(
+                            timezone.utc
+                        ).isoformat()
+                }
+
             else:
+
                 print(
                     f"Telegram FAILED: "
                     f"{signal['contract']}"
@@ -617,32 +995,49 @@ def main():
     else:
 
         print()
-        print("NO NEW OBV BREAKOUT")
-
-        report = format_no_signal_report(
-            len(contracts)
+        print(
+            "NO NEW OBV BREAKOUT"
         )
 
-        success = send_telegram(report)
+        report = (
+            format_no_signal_report(
+                len(contracts)
+            )
+        )
+
+        success = send_telegram(
+            report
+        )
 
         if success:
-            print("Scan report sent to Telegram.")
+
+            print(
+                "Scan report sent to Telegram."
+            )
+
         else:
-            print("Scan report failed to send.")
+
+            print(
+                "Scan report failed to send."
+            )
 
     # --------------------------------------------------------
     # SAVE HISTORY
     # --------------------------------------------------------
 
-    save_history(history)
+    save_history(
+        history
+    )
 
     print()
+
     print(
         f"Signal history saved: "
         f"{len(history)} records"
     )
 
     print()
+
     print("=" * 60)
     print("SCAN COMPLETE")
     print("=" * 60)
