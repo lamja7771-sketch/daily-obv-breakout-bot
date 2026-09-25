@@ -49,6 +49,16 @@
     "created_at": "2026-09-08T10:03:56.540758+00:00",
     "timestamp": 1788393600
   },
+  "ACT_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "ACT_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789344000,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789862400,
+    "previous_low_timestamp": 1789257600,
+    "score": 96.1,
+    "timeframe": "DAILY"
+  },
   "ADA_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
     "contract": "ADA_USDT",
     "created_at": "2026-09-08T10:00:23.137590+00:00",
@@ -88,6 +98,16 @@
     "contract": "ADSK_USDT",
     "created_at": "2026-09-08T10:03:16.898587+00:00",
     "timestamp": 1787702400
+  },
+  "AEON_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "AEON_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789689600,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789862400,
+    "previous_low_timestamp": 1789516800,
+    "score": 97.14,
+    "timeframe": "DAILY"
   },
   "AERO_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "AERO_USDT",
@@ -284,6 +304,16 @@
     "created_at": "2026-09-08T09:32:35.151650+00:00",
     "timestamp": 1788739200
   },
+  "ARB_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "ARB_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1788652800,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789257600,
+    "previous_low_timestamp": 1788048000,
+    "score": 87.47,
+    "timeframe": "DAILY"
+  },
   "ARB_USDT|DAILY|OBV_HH_HL_HH|1787443200": {
     "contract": "ARB_USDT",
     "created_at": "2026-09-08T10:11:45.989315+00:00",
@@ -306,7 +336,7 @@
   },
   "ARIA_USDT|DAILY|OBV_BEAUTIFUL_V2|1789776000": {
     "contract": "ARIA_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1789430400,
     "hh2_timestamp": 1789776000,
     "hl_timestamp": 1789603200,
@@ -323,6 +353,16 @@
     "contract": "ARK_USDT",
     "created_at": "2026-09-08T10:01:16.988974+00:00",
     "timestamp": 1787788800
+  },
+  "ARM_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "ARM_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789171200,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789344000,
+    "previous_low_timestamp": 1788220800,
+    "score": 95.05,
+    "timeframe": "DAILY"
   },
   "ARM_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "ARM_USDT",
@@ -488,6 +528,16 @@
     "contract": "BAC_USDT",
     "created_at": "2026-09-08T10:04:25.031065+00:00",
     "timestamp": 1788393600
+  },
+  "BAND_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "BAND_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789257600,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789430400,
+    "previous_low_timestamp": 1788998400,
+    "score": 94.6,
+    "timeframe": "DAILY"
   },
   "BANK_USDT|DAILY|OBV_HIGHER_HIGH|1788220800": {
     "contract": "BANK_USDT",
@@ -683,6 +733,16 @@
     "contract": "BRKB_USDT",
     "created_at": "2026-09-08T10:04:11.974826+00:00",
     "timestamp": 1788393600
+  },
+  "BROCCOLIF3B_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "BROCCOLIF3B_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789344000,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789516800,
+    "previous_low_timestamp": 1788912000,
+    "score": 88.08,
+    "timeframe": "DAILY"
   },
   "BROCCOLI_USDT|DAILY|OBV_HIGHER_HIGH|1788566400": {
     "contract": "BROCCOLI_USDT",
@@ -989,6 +1049,16 @@
     "created_at": "2026-09-08T10:01:50.110599+00:00",
     "timestamp": 1788393600
   },
+  "CHZ_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "CHZ_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789257600,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789430400,
+    "previous_low_timestamp": 1788998400,
+    "score": 96.01,
+    "timeframe": "DAILY"
+  },
   "CITIC_USDT|DAILY|OBV_HH_HL_HH|1788307200": {
     "contract": "CITIC_USDT",
     "created_at": "2026-09-08T10:13:31.554424+00:00",
@@ -1051,7 +1121,7 @@
   },
   "COHR_USDT|DAILY|OBV_BEAUTIFUL_V2|1789948800": {
     "contract": "COHR_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1789084800,
     "hh2_timestamp": 1789948800,
     "hl_timestamp": 1789344000,
@@ -1108,6 +1178,16 @@
     "contract": "CRM_USDT",
     "created_at": "2026-09-08T10:03:30.085485+00:00",
     "timestamp": 1788393600
+  },
+  "CRO_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "CRO_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789689600,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789862400,
+    "previous_low_timestamp": 1789430400,
+    "score": 88.33,
+    "timeframe": "DAILY"
   },
   "CRV_USDT|DAILY|OBV_HH_HL_HH|1788220800": {
     "contract": "CRV_USDT",
@@ -1243,6 +1323,16 @@
     "contract": "DELL_USDT",
     "created_at": "2026-09-08T10:00:20.288784+00:00",
     "timestamp": 1788480000
+  },
+  "DEXE_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "DEXE_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789776000,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789862400,
+    "previous_low_timestamp": 1789430400,
+    "score": 85.25,
+    "timeframe": "DAILY"
   },
   "DFDVX_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
     "contract": "DFDVX_USDT",
@@ -1484,6 +1574,16 @@
     "created_at": "2026-09-08T10:00:50.619515+00:00",
     "timestamp": 1787702400
   },
+  "EWZ_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "EWZ_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789603200,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789776000,
+    "previous_low_timestamp": 1789516800,
+    "score": 89.53,
+    "timeframe": "DAILY"
+  },
   "FARTCOIN_USDT|DAILY|OBV_HH_HL_HH|1787702400": {
     "contract": "FARTCOIN_USDT",
     "created_at": "2026-09-08T10:11:46.713436+00:00",
@@ -1586,7 +1686,7 @@
   },
   "FLUX_USDT|DAILY|OBV_BEAUTIFUL_V2|1789344000": {
     "contract": "FLUX_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1788912000,
     "hh2_timestamp": 1789344000,
     "hl_timestamp": 1788998400,
@@ -1686,7 +1786,7 @@
   },
   "GGLL_USDT|DAILY|OBV_BEAUTIFUL_V2|1789948800": {
     "contract": "GGLL_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1789344000,
     "hh2_timestamp": 1789948800,
     "hl_timestamp": 1789516800,
@@ -1698,6 +1798,16 @@
     "contract": "GGLL_USDT",
     "created_at": "2026-09-08T10:04:33.331554+00:00",
     "timestamp": 1788393600
+  },
+  "GIGGLE_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "GIGGLE_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789171200,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789430400,
+    "previous_low_timestamp": 1788998400,
+    "score": 85.82,
+    "timeframe": "DAILY"
   },
   "GIGGLE_USDT|DAILY|OBV_HH_HL_HH|1788480000": {
     "contract": "GIGGLE_USDT",
@@ -1736,7 +1846,7 @@
   },
   "GLW_USDT|DAILY|OBV_BEAUTIFUL_V2|1789948800": {
     "contract": "GLW_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1789171200,
     "hh2_timestamp": 1789948800,
     "hl_timestamp": 1789430400,
@@ -1974,6 +2084,16 @@
     "score": 86.76,
     "timeframe": "DAILY"
   },
+  "HYPER_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "HYPER_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789344000,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789516800,
+    "previous_low_timestamp": 1789084800,
+    "score": 86.19,
+    "timeframe": "DAILY"
+  },
   "HYPER_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "HYPER_USDT",
     "created_at": "2026-09-08T09:40:19.189888+00:00",
@@ -2073,6 +2193,16 @@
     "contract": "INFQ_USDT",
     "created_at": "2026-09-08T10:02:29.944185+00:00",
     "timestamp": 1788134400
+  },
+  "INIT_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "INIT_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789689600,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789862400,
+    "previous_low_timestamp": 1789430400,
+    "score": 92.46,
+    "timeframe": "DAILY"
   },
   "INIT_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "INIT_USDT",
@@ -2659,6 +2789,16 @@
     "created_at": "2026-09-08T09:39:54.133544+00:00",
     "timestamp": 1788739200
   },
+  "LUNR_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "LUNR_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789603200,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789862400,
+    "previous_low_timestamp": 1789257600,
+    "score": 86.66,
+    "timeframe": "DAILY"
+  },
   "LUXSHARE_USDT|DAILY|OBV_HH_HL_HH|1788220800": {
     "contract": "LUXSHARE_USDT",
     "created_at": "2026-09-08T10:13:27.551700+00:00",
@@ -2811,7 +2951,7 @@
   },
   "MITO_USDT|DAILY|OBV_BEAUTIFUL_V2|1789862400": {
     "contract": "MITO_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1789171200,
     "hh2_timestamp": 1789862400,
     "hl_timestamp": 1789516800,
@@ -2826,7 +2966,7 @@
   },
   "MNT_USDT|DAILY|OBV_BEAUTIFUL_V2|1789689600": {
     "contract": "MNT_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1789344000,
     "hh2_timestamp": 1789689600,
     "hl_timestamp": 1789430400,
@@ -3146,7 +3286,7 @@
   },
   "OKTA_USDT|DAILY|OBV_BEAUTIFUL_V2|1789430400": {
     "contract": "OKTA_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1788912000,
     "hh2_timestamp": 1789430400,
     "hl_timestamp": 1789084800,
@@ -3356,7 +3496,7 @@
   },
   "POL_USDT|DAILY|OBV_BEAUTIFUL_V2|1789948800": {
     "contract": "POL_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1789689600,
     "hh2_timestamp": 1789948800,
     "hl_timestamp": 1789776000,
@@ -3584,6 +3724,16 @@
     "created_at": "2026-09-08T10:00:59.269198+00:00",
     "timestamp": 1787702400
   },
+  "RIF_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "RIF_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789430400,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789516800,
+    "previous_low_timestamp": 1788998400,
+    "score": 87.19,
+    "timeframe": "DAILY"
+  },
   "RIVN_USDT|DAILY|OBV_BEAUTIFUL_V2|1788998400": {
     "contract": "RIVN_USDT",
     "created_at": 1789602734,
@@ -3611,7 +3761,7 @@
   },
   "RSR_USDT|DAILY|OBV_BEAUTIFUL_V2|1789862400": {
     "contract": "RSR_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1789257600,
     "hh2_timestamp": 1789862400,
     "hl_timestamp": 1789430400,
@@ -3659,6 +3809,16 @@
     "created_at": "2026-09-08T10:01:51.657931+00:00",
     "timestamp": 1788566400
   },
+  "SAMSUNG_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "SAMSUNG_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789603200,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789776000,
+    "previous_low_timestamp": 1789430400,
+    "score": 88.42,
+    "timeframe": "DAILY"
+  },
   "SAMSUNG_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "SAMSUNG_USDT",
     "created_at": "2026-09-08T09:32:35.151668+00:00",
@@ -3692,6 +3852,16 @@
     "hl_timestamp": 1788739200,
     "previous_low_timestamp": 1788307200,
     "score": 96.39,
+    "timeframe": "DAILY"
+  },
+  "SCR_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "SCR_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789344000,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789516800,
+    "previous_low_timestamp": 1788998400,
+    "score": 85.0,
     "timeframe": "DAILY"
   },
   "SEI_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
@@ -4046,7 +4216,7 @@
   },
   "STX_USDT|DAILY|OBV_BEAUTIFUL_V2|1789948800": {
     "contract": "STX_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1788912000,
     "hh2_timestamp": 1789948800,
     "hl_timestamp": 1789430400,
@@ -4081,7 +4251,7 @@
   },
   "SUPER_USDT|DAILY|OBV_BEAUTIFUL_V2|1789084800": {
     "contract": "SUPER_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1788393600,
     "hh2_timestamp": 1789084800,
     "hl_timestamp": 1788825600,
@@ -4153,6 +4323,16 @@
     "contract": "TBT_USDT",
     "created_at": "2026-09-08T10:03:20.540203+00:00",
     "timestamp": 1788307200
+  },
+  "TENCENTHKD_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "TENCENTHKD_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789430400,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789689600,
+    "previous_low_timestamp": 1789171200,
+    "score": 86.61,
+    "timeframe": "DAILY"
   },
   "TENCENTHKD_USDT|DAILY|OBV_HIGHER_HIGH|1787875200": {
     "contract": "TENCENTHKD_USDT",
@@ -4361,7 +4541,7 @@
   },
   "TWLO_USDT|DAILY|OBV_BEAUTIFUL_V2|1789430400": {
     "contract": "TWLO_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1788998400,
     "hh2_timestamp": 1789430400,
     "hl_timestamp": 1789257600,
@@ -4556,7 +4736,7 @@
   },
   "VET_USDT|DAILY|OBV_BEAUTIFUL_V2|1789948800": {
     "contract": "VET_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1789257600,
     "hh2_timestamp": 1789948800,
     "hl_timestamp": 1789430400,
@@ -4711,7 +4891,7 @@
   },
   "WLFI_USDT|DAILY|OBV_BEAUTIFUL_V2|1789689600": {
     "contract": "WLFI_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1789344000,
     "hh2_timestamp": 1789689600,
     "hl_timestamp": 1789430400,
@@ -4726,7 +4906,7 @@
   },
   "WUXIAPPTEC_USDT|DAILY|OBV_BEAUTIFUL_V2|1789948800": {
     "contract": "WUXIAPPTEC_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1789603200,
     "hh2_timestamp": 1789948800,
     "hl_timestamp": 1789776000,
@@ -4781,7 +4961,7 @@
   },
   "XIAOMI_USDT|DAILY|OBV_BEAUTIFUL_V2|1789948800": {
     "contract": "XIAOMI_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1789344000,
     "hh2_timestamp": 1789948800,
     "hl_timestamp": 1789516800,
@@ -4791,7 +4971,7 @@
   },
   "XLE_USDT|DAILY|OBV_BEAUTIFUL_V2|1788912000": {
     "contract": "XLE_USDT",
-    "created_at": 1790288968,
+    "created_at": 1790297113,
     "hh1_timestamp": 1788307200,
     "hh2_timestamp": 1788912000,
     "hl_timestamp": 1788480000,
@@ -4872,6 +5052,16 @@
     "hl_timestamp": 1788739200,
     "previous_low_timestamp": 1788048000,
     "score": 94.88,
+    "timeframe": "DAILY"
+  },
+  "XVS_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
+    "contract": "XVS_USDT",
+    "created_at": 1790297113,
+    "hh1_timestamp": 1789689600,
+    "hh2_timestamp": 1790035200,
+    "hl_timestamp": 1789862400,
+    "previous_low_timestamp": 1789516800,
+    "score": 94.91,
     "timeframe": "DAILY"
   },
   "YANGTZE_USDT|DAILY|OBV_HIGHER_HIGH|1787875200": {
