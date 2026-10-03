@@ -587,10 +587,17 @@ def main():
     # NEW SIGNALS ONLY
     # --------------------------------------------------------
 
+    # Retry signals that were written to history by the earlier
+    # version even though Telegram rejected the oversized message.
+    # Old entries have no telegram_sent=True marker, so they remain pending.
     new_signals = [
         signal
         for signal in results
-        if signal["key"] not in history
+        if (
+            signal["key"] not in history
+            or not isinstance(history.get(signal["key"]), dict)
+            or not history[signal["key"]].get("telegram_sent", False)
+        )
     ]
 
     long_count = sum(
@@ -620,12 +627,16 @@ def main():
 
     # --------------------------------------------------------
     # TELEGRAM
+    # Split alerts into safe-sized messages. Only mark signals
+    # as sent in history when Telegram confirms delivery.
     # --------------------------------------------------------
+
+    delivered_signal_keys = set()
 
     if new_signals:
 
         print(
-            "Sending ONE Daily breakout list..."
+            "Sending Daily breakout alerts in batches..."
         )
 
         new_signals.sort(
@@ -635,74 +646,116 @@ def main():
             )
         )
 
-        lines = [
-            "🚨 DAILY BREAKOUT SETUPS",
-            "",
-            "Current Daily Candle broke Previous Daily Candle",
-            "Wick break is enough.",
-            ""
-        ]
-
-        for number, signal in enumerate(
-            new_signals,
-            start=1
-        ):
-
-            if signal["direction"] == "LONG":
-
-                lines.append(
-                    f"{number}. 🟢 "
-                    f"{signal['contract']} — "
-                    f"DAILY LONG SETUP"
-                )
-
-                lines.append(
-                    f"   Previous High: "
-                    f"{signal['previous_high']}"
-                )
-
-                lines.append(
-                    f"   Current High: "
-                    f"{signal['current_high']}"
-                )
-
-            else:
-
-                lines.append(
-                    f"{number}. 🔴 "
-                    f"{signal['contract']} — "
-                    f"DAILY SHORT SETUP"
-                )
-
-                lines.append(
-                    f"   Previous Low: "
-                    f"{signal['previous_low']}"
-                )
-
-                lines.append(
-                    f"   Current Low: "
-                    f"{signal['current_low']}"
-                )
-
-            lines.append("")
-
-        lines.extend([
-            f"Total: {len(new_signals)}",
-            "",
-            "Check LTF retest manually:",
-            "15M / 1H / 4H",
-            "",
-            "PRICE ACTION ONLY"
-        ])
-
-        message = "\n".join(
-            lines
+        header = (
+            "🚨 DAILY BREAKOUT SETUPS\n\n"
+            "Current Daily candle broke Previous Daily candle.\n"
+            "Wick break is enough.\n\n"
         )
 
-        if telegram_ok:
+        footer = (
+            "\nCheck LTF retest manually: 15M / 1H / 4H\n"
+            "PRICE ACTION ONLY"
+        )
 
-            send_telegram(
-                message
+        # Keep comfortably below Telegram's 4096-character limit.
+        max_message_length = 3500
+        batch_blocks = []
+        batch_keys = []
+        batch_number = 1
+
+        def send_batch(blocks, keys, number, total_batches):
+            if not blocks:
+                return
+
+            batch_header = (
+                header
+                + f"Batch {number}/{total_batches}\n\n"
+            )
+
+            message = (
+                batch_header
+                + "\n".join(blocks)
+                + footer
+            )
+
+            if len(message) > max_message_length:
+                print(
+                    f"Batch {number} is too long "
+                    f"({len(message)} chars); not sending."
+                )
+                return
+
+            if telegram_ok and send_telegram(message):
+                delivered_signal_keys.update(keys)
+                print(
+                    f"Batch {number}/{total_batches} sent "
+                    f"({len(keys)} setups)."
+                )
+            else:
+                print(
+                    f"Batch {number}/{total_batches} failed; "
+                    "signals will not be marked as sent."
+                )
+
+        # Build batches first so the total batch count is known.
+        batches = []
+        current_blocks = []
+        current_keys = []
+
+        for signal in new_signals:
+
+            if signal["direction"] == "LONG":
+                block = (
+                    f"🟢 {signal['contract']} — DAILY LONG SETUP\n"
+                    f"   Previous High: {signal['previous_high']}\n"
+                    f"   Current High: {signal['current_high']}"
+                )
+            else:
+                block = (
+                    f"🔴 {signal['contract']} — DAILY SHORT SETUP\n"
+                    f"   Previous Low: {signal['previous_low']}\n"
+                    f"   Current Low: {signal['current_low']}"
+                )
+
+            projected = (
+                len(header)
+                + len(f"Batch 999/999\n\n")
+                + sum(len(item) + 2 for item in current_blocks)
+                + len(block)
+                + len(footer)
+            )
+
+            if current_blocks and projected > max_message_length:
+                batches.append(
+                    (current_blocks, current_keys)
+                )
+                current_blocks = []
+                current_keys = []
+
+            current_blocks.append(block)
+            current_keys.append(signal["key"])
+
+        if current_blocks:
+            batches.append(
+                (current_blocks, current_keys)
+            )
+
+        total_batches = len(batches)
+
+        print(
+            f"Sending {len(new_signals)} setups "
+            f"in {total_batches} Telegram messages."
+        )
+
+        for index, (blocks, keys) in enumerate(
+            batches,
+            start=1
+        ):
+            send_batch(
+                blocks,
+                keys,
+                index,
+                total_batches
             )
 
     else:
@@ -727,10 +780,13 @@ def main():
             )
 
     # --------------------------------------------------------
-    # SAVE SIGNALS
+    # SAVE ONLY SIGNALS CONFIRMED SENT BY TELEGRAM
     # --------------------------------------------------------
 
-    for signal in results:
+    for signal in new_signals:
+
+        if signal["key"] not in delivered_signal_keys:
+            continue
 
         history[
             signal["key"]
@@ -758,6 +814,9 @@ def main():
 
             "current_low":
                 signal["current_low"],
+
+            "telegram_sent":
+                True,
 
             "created_at":
                 int(time.time())
