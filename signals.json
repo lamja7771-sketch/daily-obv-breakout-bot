@@ -39,6 +39,17 @@
     "created_at": "2026-09-08T10:04:03.074806+00:00",
     "timestamp": 1788220800
   },
+  "ACE_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ACE_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.1919,
+    "current_low": 0.1801,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.1914,
+    "previous_low": 0.1805,
+    "timeframe": "DAILY"
+  },
   "ACE_USDT|DAILY|OBV_BEAUTIFUL_V2|1790380800": {
     "contract": "ACE_USDT",
     "created_at": 1791031446,
@@ -47,6 +58,28 @@
     "hl_timestamp": 1789776000,
     "previous_low_timestamp": 1789257600,
     "score": 85.93,
+    "timeframe": "DAILY"
+  },
+  "ACE_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "ACE_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.1919,
+    "current_low": 0.1801,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.1914,
+    "previous_low": 0.1805,
+    "timeframe": "DAILY"
+  },
+  "ACH_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ACH_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.006505,
+    "current_low": 0.006233,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.006457,
+    "previous_low": 0.005961,
     "timeframe": "DAILY"
   },
   "ACH_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
@@ -67,6 +100,17 @@
     "hl_timestamp": 1789862400,
     "previous_low_timestamp": 1789257600,
     "score": 96.1,
+    "timeframe": "DAILY"
+  },
+  "ACU_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "ACU_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.13477,
+    "current_low": 0.12801,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.1367,
+    "previous_low": 0.13,
     "timeframe": "DAILY"
   },
   "ADA_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
@@ -119,6 +163,17 @@
     "score": 97.14,
     "timeframe": "DAILY"
   },
+  "AERO_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "AERO_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.8069,
+    "current_low": 0.7798,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.8068,
+    "previous_low": 0.761,
+    "timeframe": "DAILY"
+  },
   "AERO_USDT|DAILY|OBV_BEAUTIFUL_V2|1790380800": {
     "contract": "AERO_USDT",
     "created_at": 1791031446,
@@ -144,6 +199,17 @@
     "created_at": "2026-09-08T09:59:53.737703+00:00",
     "timestamp": 1787270400
   },
+  "AGLD_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "AGLD_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.22,
+    "current_low": 0.2094,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.2198,
+    "previous_low": 0.2028,
+    "timeframe": "DAILY"
+  },
   "AGLD_USDT|DAILY|OBV_BEAUTIFUL_V2|1789776000": {
     "contract": "AGLD_USDT",
     "created_at": 1790288968,
@@ -152,6 +218,28 @@
     "hl_timestamp": 1789430400,
     "previous_low_timestamp": 1788998400,
     "score": 86.05,
+    "timeframe": "DAILY"
+  },
+  "AGRIPPA_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "AGRIPPA_USDT",
+    "created_at": 1791037366,
+    "current_high": 1.75e-05,
+    "current_low": 1.35e-05,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 2.509e-05,
+    "previous_low": 1.65e-05,
+    "timeframe": "DAILY"
+  },
+  "AGT_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "AGT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.029969,
+    "current_low": 0.021802,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.026776,
+    "previous_low": 0.022304,
     "timeframe": "DAILY"
   },
   "AGT_USDT|DAILY|OBV_HH_HL_HH|1788134400": {
@@ -163,6 +251,17 @@
     "contract": "AGT_USDT",
     "created_at": "2026-09-08T10:04:27.114413+00:00",
     "timestamp": 1788134400
+  },
+  "AGT_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "AGT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.029969,
+    "current_low": 0.021802,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.026776,
+    "previous_low": 0.022304,
+    "timeframe": "DAILY"
   },
   "AIA_USDT|DAILY|OBV_BEAUTIFUL_V2|1788825600": {
     "contract": "AIA_USDT",
@@ -179,6 +278,17 @@
     "created_at": "2026-09-08T09:32:35.151689+00:00",
     "timestamp": 1788739200
   },
+  "AIA_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "AIA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.07224,
+    "current_low": 0.06878,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.07529,
+    "previous_low": 0.07001,
+    "timeframe": "DAILY"
+  },
   "AIGENSYN_USDT|DAILY|OBV_BEAUTIFUL_V2|1790294400": {
     "contract": "AIGENSYN_USDT",
     "created_at": 1791031446,
@@ -187,6 +297,50 @@
     "hl_timestamp": 1790121600,
     "previous_low_timestamp": 1789430400,
     "score": 89.56,
+    "timeframe": "DAILY"
+  },
+  "AINVDA_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "AINVDA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.14789,
+    "current_low": 0.12452,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.18386,
+    "previous_low": 0.13366,
+    "timeframe": "DAILY"
+  },
+  "AIN_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "AIN_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.02649,
+    "current_low": 0.02313,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.02431,
+    "previous_low": 0.02315,
+    "timeframe": "DAILY"
+  },
+  "AIN_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "AIN_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.02649,
+    "current_low": 0.02313,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.02431,
+    "previous_low": 0.02315,
+    "timeframe": "DAILY"
+  },
+  "AIOT_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "AIOT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.06006,
+    "current_low": 0.05706,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.06212,
+    "previous_low": 0.05972,
     "timeframe": "DAILY"
   },
   "AIO_USDT|DAILY|OBV_HH_HL_HH|1788566400": {
@@ -209,6 +363,17 @@
     "created_at": "2026-09-08T10:01:39.369575+00:00",
     "timestamp": 1788393600
   },
+  "AKE_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "AKE_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0365896,
+    "current_low": 0.0316753,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.0338254,
+    "previous_low": 0.0309566,
+    "timeframe": "DAILY"
+  },
   "AKE_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "AKE_USDT",
     "created_at": "2026-09-08T09:32:35.151680+00:00",
@@ -229,6 +394,17 @@
     "created_at": "2026-09-08T10:04:20.624914+00:00",
     "timestamp": 1788307200
   },
+  "ALCH_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "ALCH_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0502,
+    "current_low": 0.04877,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.05271,
+    "previous_low": 0.04892,
+    "timeframe": "DAILY"
+  },
   "ALGO_USDT|DAILY|OBV_BEAUTIFUL_V2|1790553600": {
     "contract": "ALGO_USDT",
     "created_at": 1791031446,
@@ -243,6 +419,28 @@
     "contract": "ALGO_USDT",
     "created_at": "2026-09-08T09:32:35.151686+00:00",
     "timestamp": 1788739200
+  },
+  "ALLINU_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "ALLINU_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.00704,
+    "current_low": 0.005832,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.010569,
+    "previous_low": 0.005975,
+    "timeframe": "DAILY"
+  },
+  "ALLO_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "ALLO_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.27202,
+    "current_low": 0.26236,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.2787,
+    "previous_low": 0.26291,
+    "timeframe": "DAILY"
   },
   "ALL_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "ALL_USDT",
@@ -259,6 +457,17 @@
     "score": 96.67,
     "timeframe": "DAILY"
   },
+  "ANDURIL_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ANDURIL_USDT",
+    "created_at": 1791037366,
+    "current_high": 137.95,
+    "current_low": 115.81,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 134.62,
+    "previous_low": 120.14,
+    "timeframe": "DAILY"
+  },
   "ANDURIL_USDT|DAILY|OBV_HH_HL_HH|1787702400": {
     "contract": "ANDURIL_USDT",
     "created_at": "2026-09-08T10:13:20.233797+00:00",
@@ -268,6 +477,28 @@
     "contract": "ANDURIL_USDT",
     "created_at": "2026-09-08T10:02:51.462620+00:00",
     "timestamp": 1787702400
+  },
+  "ANDURIL_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "ANDURIL_USDT",
+    "created_at": 1791037366,
+    "current_high": 137.95,
+    "current_low": 115.81,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 134.62,
+    "previous_low": 120.14,
+    "timeframe": "DAILY"
+  },
+  "ANET_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ANET_USDT",
+    "created_at": 1791037366,
+    "current_high": 213.42,
+    "current_low": 207.95,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 210.95,
+    "previous_low": 206.43,
+    "timeframe": "DAILY"
   },
   "ANET_USDT|DAILY|OBV_HH_HL_HH|1788566400": {
     "contract": "ANET_USDT",
@@ -314,10 +545,32 @@
     "created_at": "2026-09-08T10:02:58.282954+00:00",
     "timestamp": 1788307200
   },
+  "APD_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "APD_USDT",
+    "created_at": 1791037366,
+    "current_high": 280.36,
+    "current_low": 275.38,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 280.0,
+    "previous_low": 271.39,
+    "timeframe": "DAILY"
+  },
   "APD_USDT|DAILY|OBV_HIGHER_HIGH|1788134400": {
     "contract": "APD_USDT",
     "created_at": "2026-09-08T10:04:23.562633+00:00",
     "timestamp": 1788134400
+  },
+  "API3_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "API3_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.2993,
+    "current_low": 0.2778,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.2891,
+    "previous_low": 0.266,
+    "timeframe": "DAILY"
   },
   "API3_USDT|DAILY|OBV_HH_HL_HH|1788566400": {
     "contract": "API3_USDT",
@@ -374,6 +627,28 @@
     "created_at": "2026-09-08T10:02:05.145648+00:00",
     "timestamp": 1788307200
   },
+  "ARC_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "ARC_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.07267,
+    "current_low": 0.06947,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.0756,
+    "previous_low": 0.0698,
+    "timeframe": "DAILY"
+  },
+  "ARIA_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ARIA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0374,
+    "current_low": 0.03548,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.03647,
+    "previous_low": 0.03415,
+    "timeframe": "DAILY"
+  },
   "ARIA_USDT|DAILY|OBV_BEAUTIFUL_V2|1789776000": {
     "contract": "ARIA_USDT",
     "created_at": 1790376346,
@@ -382,6 +657,17 @@
     "hl_timestamp": 1789603200,
     "previous_low_timestamp": 1789257600,
     "score": 89.23,
+    "timeframe": "DAILY"
+  },
+  "ARK_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ARK_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.241,
+    "current_low": 0.2028,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.2349,
+    "previous_low": 0.2098,
     "timeframe": "DAILY"
   },
   "ARK_USDT|DAILY|OBV_HH_HL_HH|1787788800": {
@@ -393,6 +679,17 @@
     "contract": "ARK_USDT",
     "created_at": "2026-09-08T10:01:16.988974+00:00",
     "timestamp": 1787788800
+  },
+  "ARK_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "ARK_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.241,
+    "current_low": 0.2028,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.2349,
+    "previous_low": 0.2098,
+    "timeframe": "DAILY"
   },
   "ARM_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
     "contract": "ARM_USDT",
@@ -409,10 +706,32 @@
     "created_at": "2026-09-08T09:32:35.151684+00:00",
     "timestamp": 1788739200
   },
+  "ARPA_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ARPA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0118,
+    "current_low": 0.011289,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.011589,
+    "previous_low": 0.010949,
+    "timeframe": "DAILY"
+  },
   "ARX_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "ARX_USDT",
     "created_at": "2026-09-08T09:32:35.151693+00:00",
     "timestamp": 1788739200
+  },
+  "AR_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "AR_USDT",
+    "created_at": 1791037366,
+    "current_high": 4.773,
+    "current_low": 4.239,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 4.49,
+    "previous_low": 4.11,
+    "timeframe": "DAILY"
   },
   "AR_USDT|DAILY|OBV_HH_HL_HH|1787702400": {
     "contract": "AR_USDT",
@@ -464,6 +783,17 @@
     "created_at": "2026-09-08T10:00:44.286830+00:00",
     "timestamp": 1787788800
   },
+  "ASX_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ASX_USDT",
+    "created_at": 1791037366,
+    "current_high": 48.17,
+    "current_low": 47.67,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 47.89,
+    "previous_low": 44.76,
+    "timeframe": "DAILY"
+  },
   "ASX_USDT|DAILY|OBV_HH_HL_HH|1787788800": {
     "contract": "ASX_USDT",
     "created_at": "2026-09-08T10:13:36.335333+00:00",
@@ -473,6 +803,17 @@
     "contract": "ASX_USDT",
     "created_at": "2026-09-08T10:03:57.950163+00:00",
     "timestamp": 1787788800
+  },
+  "ATH_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ATH_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.007398,
+    "current_low": 0.006383,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.006942,
+    "previous_low": 0.005818,
+    "timeframe": "DAILY"
   },
   "ATH_USDT|DAILY|OBV_HH_HL_HH|1787529600": {
     "contract": "ATH_USDT",
@@ -494,6 +835,17 @@
     "score": 89.58,
     "timeframe": "DAILY"
   },
+  "AT_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "AT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.15414,
+    "current_low": 0.13863,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.1558,
+    "previous_low": 0.15082,
+    "timeframe": "DAILY"
+  },
   "AUCTION_USDT|DAILY|OBV_HH_HL_HH|1788048000": {
     "contract": "AUCTION_USDT",
     "created_at": "2026-09-08T10:12:18.884071+00:00",
@@ -508,6 +860,28 @@
     "contract": "AUS200_USDT",
     "created_at": "2026-09-08T09:32:35.151717+00:00",
     "timestamp": 1788739200
+  },
+  "AVAAI_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "AVAAI_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.00997,
+    "current_low": 0.009093,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.010118,
+    "previous_low": 0.009593,
+    "timeframe": "DAILY"
+  },
+  "AVA_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "AVA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.2829,
+    "current_low": 0.2583,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.2729,
+    "previous_low": 0.2461,
+    "timeframe": "DAILY"
   },
   "AVGO_USDT|DAILY|OBV_HH_HL_HH|1788220800": {
     "contract": "AVGO_USDT",
@@ -549,6 +923,28 @@
     "created_at": "2026-09-08T10:02:58.968944+00:00",
     "timestamp": 1788393600
   },
+  "AWE_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "AWE_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0707,
+    "current_low": 0.06759,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.07528,
+    "previous_low": 0.06907,
+    "timeframe": "DAILY"
+  },
+  "AXS_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "AXS_USDT",
+    "created_at": 1791037366,
+    "current_high": 1.3059,
+    "current_low": 1.197,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 1.2902,
+    "previous_low": 1.1332,
+    "timeframe": "DAILY"
+  },
   "AZTEC_USDT|DAILY|OBV_HH_HL_HH|1788480000": {
     "contract": "AZTEC_USDT",
     "created_at": "2026-09-08T10:13:46.118852+00:00",
@@ -567,6 +963,17 @@
     "hl_timestamp": 1790121600,
     "previous_low_timestamp": 1789430400,
     "score": 94.68,
+    "timeframe": "DAILY"
+  },
+  "BABY_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "BABY_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.01374,
+    "current_low": 0.01322,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.01422,
+    "previous_low": 0.01329,
     "timeframe": "DAILY"
   },
   "BAC_USDT|DAILY|OBV_HH_HL_HH|1788393600": {
@@ -599,6 +1006,17 @@
     "created_at": "2026-09-08T10:03:02.399185+00:00",
     "timestamp": 1788307200
   },
+  "BAN_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "BAN_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.06549,
+    "current_low": 0.06266,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.0672,
+    "previous_low": 0.06267,
+    "timeframe": "DAILY"
+  },
   "BARD_USDT|DAILY|OBV_HH_HL_HH|1788134400": {
     "contract": "BARD_USDT",
     "created_at": "2026-09-08T10:12:55.577460+00:00",
@@ -608,6 +1026,28 @@
     "contract": "BARD_USDT",
     "created_at": "2026-09-08T10:01:55.875742+00:00",
     "timestamp": 1788134400
+  },
+  "BASECAT_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "BASECAT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.01129,
+    "current_low": 0.01029,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.01278,
+    "previous_low": 0.01064,
+    "timeframe": "DAILY"
+  },
+  "BAS_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "BAS_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.024181,
+    "current_low": 0.023328,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.024149,
+    "previous_low": 0.022944,
+    "timeframe": "DAILY"
   },
   "BAS_USDT|DAILY|OBV_HIGHER_HIGH|1788566400": {
     "contract": "BAS_USDT",
@@ -619,6 +1059,17 @@
     "created_at": "2026-09-08T09:32:35.151709+00:00",
     "timestamp": 1788739200
   },
+  "BA_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "BA_USDT",
+    "created_at": 1791037366,
+    "current_high": 195.72,
+    "current_low": 186.51,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 197.3,
+    "previous_low": 191.7,
+    "timeframe": "DAILY"
+  },
   "BEL_USDT|DAILY|OBV_HH_HL_HH|1788393600": {
     "contract": "BEL_USDT",
     "created_at": "2026-09-08T10:11:48.885870+00:00",
@@ -629,6 +1080,17 @@
     "created_at": "2026-09-08T10:02:10.675744+00:00",
     "timestamp": 1788393600
   },
+  "BEN_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "BEN_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.000584,
+    "current_low": 0.000518,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.000624,
+    "previous_low": 0.000519,
+    "timeframe": "DAILY"
+  },
   "BE_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "BE_USDT",
     "created_at": "2026-09-08T09:32:35.151675+00:00",
@@ -638,6 +1100,17 @@
     "contract": "BE_USDT",
     "created_at": "2026-09-08T10:00:40.148324+00:00",
     "timestamp": 1788480000
+  },
+  "BIGTIME_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "BIGTIME_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.010266,
+    "current_low": 0.008984,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.009636,
+    "previous_low": 0.008665,
+    "timeframe": "DAILY"
   },
   "BIGTIME_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "BIGTIME_USDT",
@@ -684,6 +1157,17 @@
     "created_at": "2026-09-08T10:01:57.477665+00:00",
     "timestamp": 1788566400
   },
+  "BIWIN_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "BIWIN_USDT",
+    "created_at": 1791037366,
+    "current_high": 29.18,
+    "current_low": 29.18,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 28.89,
+    "previous_low": 28.65,
+    "timeframe": "DAILY"
+  },
   "BIWIN_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "BIWIN_USDT",
     "created_at": "2026-09-08T09:32:35.151721+00:00",
@@ -697,6 +1181,17 @@
     "hl_timestamp": 1789257600,
     "previous_low_timestamp": 1788912000,
     "score": 92.15,
+    "timeframe": "DAILY"
+  },
+  "BKNG_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "BKNG_USDT",
+    "created_at": 1791037366,
+    "current_high": 161.3,
+    "current_low": 158.7,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 162.82,
+    "previous_low": 158.8,
     "timeframe": "DAILY"
   },
   "BLEND_USDT|DAILY|OBV_HIGHER_HIGH|1788048000": {
@@ -728,6 +1223,39 @@
     "contract": "BLUEFOCUS_USDT",
     "created_at": "2026-09-08T10:03:15.680962+00:00",
     "timestamp": 1788220800
+  },
+  "BLUR_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "BLUR_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.02262,
+    "current_low": 0.02077,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.02217,
+    "previous_low": 0.02002,
+    "timeframe": "DAILY"
+  },
+  "BMT_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "BMT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.02207,
+    "current_low": 0.01801,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.01947,
+    "previous_low": 0.01831,
+    "timeframe": "DAILY"
+  },
+  "BMT_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "BMT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.02207,
+    "current_low": 0.01801,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.01947,
+    "previous_low": 0.01831,
+    "timeframe": "DAILY"
   },
   "BNB_USDT|DAILY|OBV_HH_HL_HH|1788566400": {
     "contract": "BNB_USDT",
@@ -804,6 +1332,17 @@
     "score": 88.08,
     "timeframe": "DAILY"
   },
+  "BROCCOLIF3B_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "BROCCOLIF3B_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.006612,
+    "current_low": 0.006493,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.006987,
+    "previous_low": 0.006497,
+    "timeframe": "DAILY"
+  },
   "BROCCOLI_USDT|DAILY|OBV_HIGHER_HIGH|1788566400": {
     "contract": "BROCCOLI_USDT",
     "created_at": "2026-09-08T10:00:18.900496+00:00",
@@ -818,6 +1357,28 @@
     "contract": "BR_USDT",
     "created_at": "2026-09-08T10:01:13.463213+00:00",
     "timestamp": 1788393600
+  },
+  "BR_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "BR_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.66099,
+    "current_low": 0.5275,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.7249,
+    "previous_low": 0.63269,
+    "timeframe": "DAILY"
+  },
+  "BSB_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "BSB_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.1039,
+    "current_low": 0.09579,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.10158,
+    "previous_low": 0.09346,
+    "timeframe": "DAILY"
   },
   "BSB_USDT|DAILY|OBV_BEAUTIFUL_V2|1788134400": {
     "contract": "BSB_USDT",
@@ -849,10 +1410,32 @@
     "created_at": "2026-09-08T10:01:22.678386+00:00",
     "timestamp": 1788134400
   },
+  "BTR_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "BTR_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.05061,
+    "current_low": 0.04928,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.05138,
+    "previous_low": 0.04948,
+    "timeframe": "DAILY"
+  },
   "BTW_USDT|DAILY|OBV_HIGHER_HIGH|1788307200": {
     "contract": "BTW_USDT",
     "created_at": "2026-09-08T10:02:01.672241+00:00",
     "timestamp": 1788307200
+  },
+  "BUD_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "BUD_USDT",
+    "created_at": 1791037366,
+    "current_high": 74.83,
+    "current_low": 73.41,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 74.75,
+    "previous_low": 72.65,
+    "timeframe": "DAILY"
   },
   "BUD_USDT|DAILY|OBV_BEAUTIFUL_V2|1789516800": {
     "contract": "BUD_USDT",
@@ -879,6 +1462,17 @@
     "created_at": "2026-09-08T09:59:33.565703+00:00",
     "timestamp": 1788566400
   },
+  "BULLA_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "BULLA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.085064,
+    "current_low": 0.079571,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.088882,
+    "previous_low": 0.081018,
+    "timeframe": "DAILY"
+  },
   "BVOL_USDT|DAILY|OBV_HH_HL_HH|1788480000": {
     "contract": "BVOL_USDT",
     "created_at": "2026-09-08T10:13:15.602810+00:00",
@@ -888,6 +1482,28 @@
     "contract": "BVOL_USDT",
     "created_at": "2026-09-08T10:04:36.114285+00:00",
     "timestamp": 1788480000
+  },
+  "BVOL_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "BVOL_USDT",
+    "created_at": 1791037366,
+    "current_high": 35.39,
+    "current_low": 34.68,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 37.0,
+    "previous_low": 35.02,
+    "timeframe": "DAILY"
+  },
+  "BWET_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "BWET_USDT",
+    "created_at": 1791037366,
+    "current_high": 899.07,
+    "current_low": 848.24,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 882.91,
+    "previous_low": 769.46,
+    "timeframe": "DAILY"
   },
   "BWXT_USDT|DAILY|OBV_HH_HL_HH|1788393600": {
     "contract": "BWXT_USDT",
@@ -934,6 +1550,17 @@
     "created_at": "2026-09-08T10:00:39.461784+00:00",
     "timestamp": 1788566400
   },
+  "C98_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "C98_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.01703,
+    "current_low": 0.01625,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.01699,
+    "previous_low": 0.01568,
+    "timeframe": "DAILY"
+  },
   "C98_USDT|DAILY|OBV_BEAUTIFUL_V2|1790380800": {
     "contract": "C98_USDT",
     "created_at": 1791031446,
@@ -979,10 +1606,32 @@
     "created_at": "2026-09-08T10:02:20.155683+00:00",
     "timestamp": 1788307200
   },
+  "CARDS_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "CARDS_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.29141,
+    "current_low": 0.25354,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.29,
+    "previous_low": 0.19881,
+    "timeframe": "DAILY"
+  },
   "CARR_USDT|DAILY|OBV_HIGHER_HIGH|1788134400": {
     "contract": "CARR_USDT",
     "created_at": "2026-09-08T10:04:42.336104+00:00",
     "timestamp": 1788134400
+  },
+  "CARV_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "CARV_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.04429,
+    "current_low": 0.0431,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.04413,
+    "previous_low": 0.04195,
+    "timeframe": "DAILY"
   },
   "CARV_USDT|DAILY|OBV_BEAUTIFUL_V2|1789344000": {
     "contract": "CARV_USDT",
@@ -1024,6 +1673,17 @@
     "created_at": "2026-09-08T10:03:34.236462+00:00",
     "timestamp": 1787702400
   },
+  "CBRS_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "CBRS_USDT",
+    "created_at": 1791037366,
+    "current_high": 178.9,
+    "current_low": 171.8,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 175.4,
+    "previous_low": 165.6,
+    "timeframe": "DAILY"
+  },
   "CBRS_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "CBRS_USDT",
     "created_at": "2026-09-08T09:32:35.151677+00:00",
@@ -1038,6 +1698,28 @@
     "contract": "CCJ_USDT",
     "created_at": "2026-09-08T10:03:36.998070+00:00",
     "timestamp": 1787702400
+  },
+  "CCJ_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "CCJ_USDT",
+    "created_at": 1791037366,
+    "current_high": 88.79,
+    "current_low": 85.05,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 89.51,
+    "previous_low": 85.1,
+    "timeframe": "DAILY"
+  },
+  "CCL_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "CCL_USDT",
+    "created_at": 1791037366,
+    "current_high": 26.037,
+    "current_low": 25.853,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 25.939,
+    "previous_low": 24.97,
+    "timeframe": "DAILY"
   },
   "CEG_USDT|DAILY|OBV_BEAUTIFUL_V2|1788825600": {
     "contract": "CEG_USDT",
@@ -1058,6 +1740,17 @@
     "contract": "CEG_USDT",
     "created_at": "2026-09-08T10:04:04.633521+00:00",
     "timestamp": 1788307200
+  },
+  "CELR_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "CELR_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.003173,
+    "current_low": 0.003042,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.003169,
+    "previous_low": 0.002947,
+    "timeframe": "DAILY"
   },
   "CETUS_USDT|DAILY|OBV_HH_HL_HH|1788393600": {
     "contract": "CETUS_USDT",
@@ -1119,6 +1812,28 @@
     "created_at": "2026-09-08T10:01:50.110599+00:00",
     "timestamp": 1788393600
   },
+  "CHR_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "CHR_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.02396,
+    "current_low": 0.02277,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.02359,
+    "previous_low": 0.0222,
+    "timeframe": "DAILY"
+  },
+  "CHZ_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "CHZ_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.018,
+    "current_low": 0.01669,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.01712,
+    "previous_low": 0.01574,
+    "timeframe": "DAILY"
+  },
   "CHZ_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
     "contract": "CHZ_USDT",
     "created_at": 1790553142,
@@ -1127,6 +1842,28 @@
     "hl_timestamp": 1789430400,
     "previous_low_timestamp": 1788998400,
     "score": 96.01,
+    "timeframe": "DAILY"
+  },
+  "CIG_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "CIG_USDT",
+    "created_at": 1791037366,
+    "current_high": 30.9,
+    "current_low": 29.8,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 30.55,
+    "previous_low": 30.47,
+    "timeframe": "DAILY"
+  },
+  "CIG_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "CIG_USDT",
+    "created_at": 1791037366,
+    "current_high": 30.9,
+    "current_low": 29.8,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 30.55,
+    "previous_low": 30.47,
     "timeframe": "DAILY"
   },
   "CITIC_USDT|DAILY|OBV_HH_HL_HH|1788307200": {
@@ -1139,10 +1876,43 @@
     "created_at": "2026-09-08T10:04:40.930958+00:00",
     "timestamp": 1788307200
   },
+  "CJS_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "CJS_USDT",
+    "created_at": 1791037366,
+    "current_high": 5.98,
+    "current_low": 5.761,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 5.864,
+    "previous_low": 5.864,
+    "timeframe": "DAILY"
+  },
   "CJS_USDT|DAILY|OBV_HIGHER_HIGH|1788134400": {
     "contract": "CJS_USDT",
     "created_at": "2026-09-08T10:04:13.620954+00:00",
     "timestamp": 1788134400
+  },
+  "CJS_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "CJS_USDT",
+    "created_at": 1791037366,
+    "current_high": 5.98,
+    "current_low": 5.761,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 5.864,
+    "previous_low": 5.864,
+    "timeframe": "DAILY"
+  },
+  "CLO_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "CLO_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.06663,
+    "current_low": 0.06125,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.06402,
+    "previous_low": 0.057,
+    "timeframe": "DAILY"
   },
   "CLO_USDT|DAILY|OBV_HH_HL_HH|1788307200": {
     "contract": "CLO_USDT",
@@ -1163,6 +1933,39 @@
     "contract": "CLSK_USDT",
     "created_at": "2026-09-08T10:03:55.155356+00:00",
     "timestamp": 1787788800
+  },
+  "CLSK_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "CLSK_USDT",
+    "created_at": 1791037366,
+    "current_high": 12.737,
+    "current_low": 12.623,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 13.354,
+    "previous_low": 12.72,
+    "timeframe": "DAILY"
+  },
+  "CLS_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "CLS_USDT",
+    "created_at": 1791037366,
+    "current_high": 414.0,
+    "current_low": 380.0,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 406.0,
+    "previous_low": 380.2,
+    "timeframe": "DAILY"
+  },
+  "CLS_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "CLS_USDT",
+    "created_at": 1791037366,
+    "current_high": 414.0,
+    "current_low": 380.0,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 406.0,
+    "previous_low": 380.2,
+    "timeframe": "DAILY"
   },
   "CL_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "CL_USDT",
@@ -1204,10 +2007,32 @@
     "created_at": "2026-09-08T10:01:12.756312+00:00",
     "timestamp": 1788393600
   },
+  "COMP_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "COMP_USDT",
+    "created_at": 1791037366,
+    "current_high": 25.46,
+    "current_low": 24.35,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 24.88,
+    "previous_low": 23.25,
+    "timeframe": "DAILY"
+  },
   "COMP_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "COMP_USDT",
     "created_at": "2026-09-08T09:40:01.162785+00:00",
     "timestamp": 1788739200
+  },
+  "COOL_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "COOL_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.000742,
+    "current_low": 0.000562,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.000801,
+    "previous_low": 0.000669,
+    "timeframe": "DAILY"
   },
   "COST_USDT|DAILY|OBV_HIGHER_HIGH|1787961600": {
     "contract": "COST_USDT",
@@ -1234,6 +2059,17 @@
     "created_at": "2026-09-08T10:03:32.170661+00:00",
     "timestamp": 1787702400
   },
+  "CP_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "CP_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.01305,
+    "current_low": 0.0125,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.01299,
+    "previous_low": 0.01217,
+    "timeframe": "DAILY"
+  },
   "CRDO_USDT|DAILY|OBV_HH_HL_HH|1787788800": {
     "contract": "CRDO_USDT",
     "created_at": "2026-09-08T10:13:02.662825+00:00",
@@ -1248,6 +2084,17 @@
     "contract": "CRM_USDT",
     "created_at": "2026-09-08T10:03:30.085485+00:00",
     "timestamp": 1788393600
+  },
+  "CROSS_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "CROSS_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.14774,
+    "current_low": 0.13653,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.1432,
+    "previous_low": 0.13282,
+    "timeframe": "DAILY"
   },
   "CRO_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
     "contract": "CRO_USDT",
@@ -1268,6 +2115,17 @@
     "contract": "CRV_USDT",
     "created_at": "2026-09-08T09:59:39.933700+00:00",
     "timestamp": 1788220800
+  },
+  "CSCO_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "CSCO_USDT",
+    "created_at": 1791037366,
+    "current_high": 112.23,
+    "current_low": 112.17,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 112.16,
+    "previous_low": 108.5,
+    "timeframe": "DAILY"
   },
   "CSOPSKHYNIX2L_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "CSOPSKHYNIX2L_USDT",
@@ -1294,6 +2152,17 @@
     "created_at": "2026-09-08T10:02:31.396849+00:00",
     "timestamp": 1788393600
   },
+  "CTSI_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "CTSI_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.03147,
+    "current_low": 0.02929,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.03022,
+    "previous_low": 0.02825,
+    "timeframe": "DAILY"
+  },
   "CTSI_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
     "contract": "CTSI_USDT",
     "created_at": "2026-09-08T10:01:10.586853+00:00",
@@ -1308,6 +2177,17 @@
     "contract": "CVC_USDT",
     "created_at": "2026-09-08T10:01:37.070715+00:00",
     "timestamp": 1788566400
+  },
+  "CVC_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "CVC_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.03022,
+    "current_low": 0.02933,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.03131,
+    "previous_low": 0.0297,
+    "timeframe": "DAILY"
   },
   "CVS_USDT|DAILY|OBV_HIGHER_HIGH|1788220800": {
     "contract": "CVS_USDT",
@@ -1329,6 +2209,17 @@
     "created_at": "2026-09-08T10:00:23.828254+00:00",
     "timestamp": 1787961600
   },
+  "C_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "C_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.09989,
+    "current_low": 0.09509,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.09721,
+    "previous_low": 0.09304,
+    "timeframe": "DAILY"
+  },
   "C_USDT|DAILY|OBV_HH_HL_HH|1787270400": {
     "contract": "C_USDT",
     "created_at": "2026-09-08T10:13:01.288103+00:00",
@@ -1348,6 +2239,17 @@
     "contract": "DASH_USDT",
     "created_at": "2026-09-08T10:00:06.118855+00:00",
     "timestamp": 1788134400
+  },
+  "DATA_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "DATA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.2208,
+    "current_low": 0.2084,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.2215,
+    "previous_low": 0.2103,
+    "timeframe": "DAILY"
   },
   "DEEPTECH_USDT|DAILY|OBV_BEAUTIFUL_V2|1788134400": {
     "contract": "DEEPTECH_USDT",
@@ -1424,10 +2326,32 @@
     "score": 85.25,
     "timeframe": "DAILY"
   },
+  "DEXE_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "DEXE_USDT",
+    "created_at": 1791037366,
+    "current_high": 1.935,
+    "current_low": 1.871,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 2.159,
+    "previous_low": 1.895,
+    "timeframe": "DAILY"
+  },
   "DFDVX_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
     "contract": "DFDVX_USDT",
     "created_at": "2026-09-08T10:02:48.023272+00:00",
     "timestamp": 1788393600
+  },
+  "DGAI_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "DGAI_USDT",
+    "created_at": 1791037366,
+    "current_high": 1.0457,
+    "current_low": 0.9072,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.9217,
+    "previous_low": 0.8987,
+    "timeframe": "DAILY"
   },
   "DIA_USDT|DAILY|OBV_HIGHER_HIGH|1788566400": {
     "contract": "DIA_USDT",
@@ -1484,6 +2408,17 @@
     "created_at": "2026-09-08T10:03:29.385398+00:00",
     "timestamp": 1788134400
   },
+  "DOLO_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "DOLO_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.03022,
+    "current_low": 0.02947,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.03154,
+    "previous_low": 0.02961,
+    "timeframe": "DAILY"
+  },
   "DOT_USDT|DAILY|OBV_BEAUTIFUL_V2|1790467200": {
     "contract": "DOT_USDT",
     "created_at": 1790982259,
@@ -1514,6 +2449,17 @@
     "created_at": "2026-09-08T10:00:52.712819+00:00",
     "timestamp": 1788134400
   },
+  "DRAM_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "DRAM_USDT",
+    "created_at": 1791037366,
+    "current_high": 61.69,
+    "current_low": 61.18,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 63.01,
+    "previous_low": 61.19,
+    "timeframe": "DAILY"
+  },
   "DRIFT_USDT|DAILY|OBV_HIGHER_HIGH|1788566400": {
     "contract": "DRIFT_USDT",
     "created_at": "2026-09-08T10:02:52.151470+00:00",
@@ -1533,6 +2479,39 @@
     "contract": "DUSK_USDT",
     "created_at": "2026-09-08T10:02:41.322778+00:00",
     "timestamp": 1787270400
+  },
+  "DYDX_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "DYDX_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.15806,
+    "current_low": 0.14543,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.15648,
+    "previous_low": 0.14244,
+    "timeframe": "DAILY"
+  },
+  "EACC_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "EACC_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.015636,
+    "current_low": 0.012766,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.019247,
+    "previous_low": 0.013105,
+    "timeframe": "DAILY"
+  },
+  "EBAY_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "EBAY_USDT",
+    "created_at": 1791037366,
+    "current_high": 106.76,
+    "current_low": 106.76,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 106.7,
+    "previous_low": 105.56,
+    "timeframe": "DAILY"
   },
   "EBAY_USDT|DAILY|OBV_HH_HL_HH|1788307200": {
     "contract": "EBAY_USDT",
@@ -1563,6 +2542,39 @@
     "contract": "EDGEX_USDT",
     "created_at": "2026-09-08T10:01:17.695335+00:00",
     "timestamp": 1788393600
+  },
+  "EDGEX_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "EDGEX_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.4886,
+    "current_low": 0.4702,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.5191,
+    "previous_low": 0.4737,
+    "timeframe": "DAILY"
+  },
+  "EDGE_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "EDGE_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.10402,
+    "current_low": 0.1017,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.10864,
+    "previous_low": 0.102,
+    "timeframe": "DAILY"
+  },
+  "EDU_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "EDU_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.054,
+    "current_low": 0.0508,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.05305,
+    "previous_low": 0.04869,
+    "timeframe": "DAILY"
   },
   "EDU_USDT|DAILY|OBV_HIGHER_HIGH|1788480000": {
     "contract": "EDU_USDT",
@@ -1614,6 +2626,17 @@
     "score": 96.09,
     "timeframe": "DAILY"
   },
+  "EMBER_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "EMBER_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.00735,
+    "current_low": 0.00632,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.00911,
+    "previous_low": 0.00653,
+    "timeframe": "DAILY"
+  },
   "ENJ_USDT|DAILY|OBV_HIGHER_HIGH|1788480000": {
     "contract": "ENJ_USDT",
     "created_at": "2026-09-08T10:00:25.923697+00:00",
@@ -1629,6 +2652,17 @@
     "created_at": "2026-09-08T10:02:12.962357+00:00",
     "timestamp": 1788566400
   },
+  "ENSO_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "ENSO_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.9806,
+    "current_low": 0.9386,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 1.0224,
+    "previous_low": 0.9615,
+    "timeframe": "DAILY"
+  },
   "EOPTOLINK_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "EOPTOLINK_USDT",
     "created_at": "2026-09-08T09:40:27.805644+00:00",
@@ -1638,6 +2672,17 @@
     "contract": "ERA_USDT",
     "created_at": "2026-09-08T10:00:47.122165+00:00",
     "timestamp": 1788048000
+  },
+  "ESP_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "ESP_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.10465,
+    "current_low": 0.10068,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.10744,
+    "previous_low": 0.10074,
+    "timeframe": "DAILY"
   },
   "ETHFI_USDT|DAILY|OBV_HH_HL_HH|1787529600": {
     "contract": "ETHFI_USDT",
@@ -1658,6 +2703,28 @@
     "contract": "EUL_USDT",
     "created_at": "2026-09-08T10:01:34.718674+00:00",
     "timestamp": 1788307200
+  },
+  "EVAA_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "EVAA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.8482,
+    "current_low": 0.7152,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.8351,
+    "previous_low": 0.6524,
+    "timeframe": "DAILY"
+  },
+  "EVOL_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "EVOL_USDT",
+    "created_at": 1791037366,
+    "current_high": 48.86,
+    "current_low": 48.0,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 48.86,
+    "previous_low": 48.24,
+    "timeframe": "DAILY"
   },
   "EWJ_USDT|DAILY|OBV_HH_HL_HH|1788134400": {
     "contract": "EWJ_USDT",
@@ -1683,6 +2750,17 @@
     "contract": "EWY_USDT",
     "created_at": "2026-09-08T10:00:50.619515+00:00",
     "timestamp": 1787702400
+  },
+  "EWZ_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "EWZ_USDT",
+    "created_at": 1791037366,
+    "current_high": 38.64,
+    "current_low": 38.18,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 38.57,
+    "previous_low": 36.93,
+    "timeframe": "DAILY"
   },
   "EWZ_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
     "contract": "EWZ_USDT",
@@ -1739,6 +2817,17 @@
     "score": 91.33,
     "timeframe": "DAILY"
   },
+  "FII_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "FII_USDT",
+    "created_at": 1791037366,
+    "current_high": 8.699,
+    "current_low": 8.699,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 8.695,
+    "previous_low": 8.692,
+    "timeframe": "DAILY"
+  },
   "FII_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "FII_USDT",
     "created_at": "2026-09-08T09:40:33.424788+00:00",
@@ -1748,6 +2837,17 @@
     "contract": "FII_USDT",
     "created_at": "2026-09-08T10:03:41.689059+00:00",
     "timestamp": 1787788800
+  },
+  "FIL_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "FIL_USDT",
+    "created_at": 1791037366,
+    "current_high": 1.0716,
+    "current_low": 1.0318,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 1.0594,
+    "previous_low": 0.9776,
+    "timeframe": "DAILY"
   },
   "FIL_USDT|DAILY|OBV_BEAUTIFUL_V2|1789257600": {
     "contract": "FIL_USDT",
@@ -1804,10 +2904,43 @@
     "score": 93.12,
     "timeframe": "DAILY"
   },
+  "FLORK_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "FLORK_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.006209,
+    "current_low": 0.005568,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.006622,
+    "previous_low": 0.005871,
+    "timeframe": "DAILY"
+  },
+  "FLOW_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "FLOW_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.03284,
+    "current_low": 0.03134,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.0327,
+    "previous_low": 0.0298,
+    "timeframe": "DAILY"
+  },
   "FLR_USDT|DAILY|OBV_HIGHER_HIGH|1788134400": {
     "contract": "FLR_USDT",
     "created_at": "2026-09-08T10:02:54.820554+00:00",
     "timestamp": 1788134400
+  },
+  "FLUID_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "FLUID_USDT",
+    "created_at": 1791037366,
+    "current_high": 1.673,
+    "current_low": 1.58,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 1.639,
+    "previous_low": 1.48,
+    "timeframe": "DAILY"
   },
   "FLUID_USDT|DAILY|OBV_HIGHER_HIGH|1787702400": {
     "contract": "FLUID_USDT",
@@ -1859,6 +2992,17 @@
     "created_at": "2026-09-08T10:03:33.547903+00:00",
     "timestamp": 1788048000
   },
+  "FOLKS_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "FOLKS_USDT",
+    "created_at": 1791037366,
+    "current_high": 2.504,
+    "current_low": 2.372,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 2.574,
+    "previous_low": 2.428,
+    "timeframe": "DAILY"
+  },
   "FORM_USDT|DAILY|OBV_HH_HL_HH|1788566400": {
     "contract": "FORM_USDT",
     "created_at": "2026-09-08T10:12:33.830673+00:00",
@@ -1884,10 +3028,43 @@
     "created_at": "2026-09-08T10:03:42.373978+00:00",
     "timestamp": 1788393600
   },
+  "FRONG_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "FRONG_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.004893,
+    "current_low": 0.004103,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.004841,
+    "previous_low": 0.00411,
+    "timeframe": "DAILY"
+  },
+  "FRONG_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "FRONG_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.004893,
+    "current_low": 0.004103,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.004841,
+    "previous_low": 0.00411,
+    "timeframe": "DAILY"
+  },
   "F_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
     "contract": "F_USDT",
     "created_at": "2026-09-08T10:00:38.770546+00:00",
     "timestamp": 1788393600
+  },
+  "GALA_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "GALA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.002758,
+    "current_low": 0.002493,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.002747,
+    "previous_low": 0.002241,
+    "timeframe": "DAILY"
   },
   "GALA_USDT|DAILY|OBV_BEAUTIFUL_V2|1788652800": {
     "contract": "GALA_USDT",
@@ -1908,6 +3085,17 @@
     "contract": "GALA_USDT",
     "created_at": "2026-09-08T10:00:20.990867+00:00",
     "timestamp": 1788220800
+  },
+  "GBPUSD_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "GBPUSD_USDT",
+    "created_at": 1791037366,
+    "current_high": 1.3305,
+    "current_low": 1.3253,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 1.3301,
+    "previous_low": 1.3235,
+    "timeframe": "DAILY"
   },
   "GER40_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
     "contract": "GER40_USDT",
@@ -1938,6 +3126,17 @@
     "contract": "GGLL_USDT",
     "created_at": "2026-09-08T10:04:33.331554+00:00",
     "timestamp": 1788393600
+  },
+  "GIGGLEMAX_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "GIGGLEMAX_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.00477,
+    "current_low": 0.00424,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.00552,
+    "previous_low": 0.0044,
+    "timeframe": "DAILY"
   },
   "GIGGLE_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
     "contract": "GIGGLE_USDT",
@@ -1979,6 +3178,17 @@
     "created_at": "2026-09-08T10:03:44.422662+00:00",
     "timestamp": 1788393600
   },
+  "GLD_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "GLD_USDT",
+    "created_at": 1791037366,
+    "current_high": 382.7,
+    "current_low": 379.5,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 387.8,
+    "previous_low": 379.6,
+    "timeframe": "DAILY"
+  },
   "GLM_USDT|DAILY|OBV_HIGHER_HIGH|1787875200": {
     "contract": "GLM_USDT",
     "created_at": "2026-09-08T10:02:17.324614+00:00",
@@ -1992,6 +3202,17 @@
     "hl_timestamp": 1789430400,
     "previous_low_timestamp": 1788307200,
     "score": 92.21,
+    "timeframe": "DAILY"
+  },
+  "GME_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "GME_USDT",
+    "created_at": 1791037366,
+    "current_high": 25.479,
+    "current_low": 25.124,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 25.347,
+    "previous_low": 23.888,
     "timeframe": "DAILY"
   },
   "GME_USDT|DAILY|OBV_BEAUTIFUL_V2|1790726400": {
@@ -2013,6 +3234,28 @@
     "contract": "GME_USDT",
     "created_at": "2026-09-08T10:02:29.253651+00:00",
     "timestamp": 1788393600
+  },
+  "GMT_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "GMT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.00926,
+    "current_low": 0.00854,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.00922,
+    "previous_low": 0.00838,
+    "timeframe": "DAILY"
+  },
+  "GMX_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "GMX_USDT",
+    "created_at": 1791037366,
+    "current_high": 8.238,
+    "current_low": 7.917,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 8.211,
+    "previous_low": 7.756,
+    "timeframe": "DAILY"
   },
   "GOAT_USDT|DAILY|OBV_BEAUTIFUL_V2|1788652800": {
     "contract": "GOAT_USDT",
@@ -2039,6 +3282,17 @@
     "created_at": "2026-09-08T10:00:57.776548+00:00",
     "timestamp": 1788393600
   },
+  "GP_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "GP_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.00456,
+    "current_low": 0.00311,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.00535,
+    "previous_low": 0.00356,
+    "timeframe": "DAILY"
+  },
   "GRAM_USDT|DAILY|OBV_BEAUTIFUL_V2|1790467200": {
     "contract": "GRAM_USDT",
     "created_at": 1791031446,
@@ -2054,6 +3308,17 @@
     "created_at": "2026-09-08T10:01:15.561050+00:00",
     "timestamp": 1788134400
   },
+  "GRASS_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "GRASS_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.7643,
+    "current_low": 0.7,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.7366,
+    "previous_low": 0.6546,
+    "timeframe": "DAILY"
+  },
   "GRASS_USDT|DAILY|OBV_HH_HL_HH|1787270400": {
     "contract": "GRASS_USDT",
     "created_at": "2026-09-08T10:13:55.491050+00:00",
@@ -2063,6 +3328,17 @@
     "contract": "GRASS_USDT",
     "created_at": "2026-09-08T10:02:15.770069+00:00",
     "timestamp": 1787270400
+  },
+  "GRIFFAIN_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "GRIFFAIN_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.017303,
+    "current_low": 0.016279,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.017141,
+    "previous_low": 0.015703,
+    "timeframe": "DAILY"
   },
   "GRIFFAIN_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
     "contract": "GRIFFAIN_USDT",
@@ -2079,6 +3355,17 @@
     "score": 86.87,
     "timeframe": "DAILY"
   },
+  "GSTOCKBSC_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "GSTOCKBSC_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0188,
+    "current_low": 0.015626,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.019906,
+    "previous_low": 0.016278,
+    "timeframe": "DAILY"
+  },
   "GT_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "GT_USDT",
     "created_at": "2026-09-08T09:40:15.406959+00:00",
@@ -2093,6 +3380,17 @@
     "contract": "GT_USDT",
     "created_at": "2026-09-08T10:01:55.182533+00:00",
     "timestamp": 1787788800
+  },
+  "GUA_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "GUA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.03753,
+    "current_low": 0.03505,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.03689,
+    "previous_low": 0.03393,
+    "timeframe": "DAILY"
   },
   "HAEDAL_USDT|DAILY|OBV_BEAUTIFUL_V2|1790294400": {
     "contract": "HAEDAL_USDT",
@@ -2119,6 +3417,28 @@
     "created_at": "2026-09-08T09:40:19.861164+00:00",
     "timestamp": 1788739200
   },
+  "HD_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "HD_USDT",
+    "created_at": 1791037366,
+    "current_high": 283.9,
+    "current_low": 281.8,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 287.3,
+    "previous_low": 282.0,
+    "timeframe": "DAILY"
+  },
+  "HEI_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "HEI_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.14419,
+    "current_low": 0.13665,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.15271,
+    "previous_low": 0.1389,
+    "timeframe": "DAILY"
+  },
   "HEMI_USDT|DAILY|OBV_BEAUTIFUL_V2|1788393600": {
     "contract": "HEMI_USDT",
     "created_at": 1789686343,
@@ -2138,6 +3458,17 @@
     "contract": "HEMI_USDT",
     "created_at": "2026-09-08T09:59:45.024115+00:00",
     "timestamp": 1788393600
+  },
+  "HEMI_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "HEMI_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.006172,
+    "current_low": 0.005925,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.006513,
+    "previous_low": 0.006012,
+    "timeframe": "DAILY"
   },
   "HHGRACE_USDT|DAILY|OBV_HH_HL_HH|1788134400": {
     "contract": "HHGRACE_USDT",
@@ -2209,6 +3540,17 @@
     "created_at": "2026-09-08T09:59:55.133483+00:00",
     "timestamp": 1788566400
   },
+  "HNT_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "HNT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.4985,
+    "current_low": 0.4844,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.538,
+    "previous_low": 0.4851,
+    "timeframe": "DAILY"
+  },
   "HOME_USDT|DAILY|OBV_HH_HL_HH|1788393600": {
     "contract": "HOME_USDT",
     "created_at": "2026-09-08T10:11:52.340869+00:00",
@@ -2259,6 +3601,17 @@
     "created_at": "2026-09-08T10:03:32.854647+00:00",
     "timestamp": 1788480000
   },
+  "HTGD_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "HTGD_USDT",
+    "created_at": 1791037366,
+    "current_high": 8.284,
+    "current_low": 8.169,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 8.268,
+    "previous_low": 8.169,
+    "timeframe": "DAILY"
+  },
   "HUAGONGTECH_USDT|DAILY|OBV_HH_HL_HH|1788134400": {
     "contract": "HUAGONGTECH_USDT",
     "created_at": "2026-09-08T10:13:24.882926+00:00",
@@ -2268,6 +3621,17 @@
     "contract": "HUAGONGTECH_USDT",
     "created_at": "2026-09-08T10:03:50.487191+00:00",
     "timestamp": 1788134400
+  },
+  "HUMA_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "HUMA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.03403,
+    "current_low": 0.03203,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.03624,
+    "previous_low": 0.0328,
+    "timeframe": "DAILY"
   },
   "HYGON_USDT|DAILY|OBV_HIGHER_HIGH|1788220800": {
     "contract": "HYGON_USDT",
@@ -2339,6 +3703,17 @@
     "created_at": "2026-09-08T10:02:42.768781+00:00",
     "timestamp": 1788566400
   },
+  "ICP_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ICP_USDT",
+    "created_at": 1791037366,
+    "current_high": 3.382,
+    "current_low": 3.262,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 3.348,
+    "previous_low": 3.161,
+    "timeframe": "DAILY"
+  },
   "ICP_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "ICP_USDT",
     "created_at": "2026-09-08T09:39:47.640039+00:00",
@@ -2353,6 +3728,17 @@
     "contract": "ICP_USDT",
     "created_at": "2026-09-08T09:59:28.010305+00:00",
     "timestamp": 1788220800
+  },
+  "IDOL_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "IDOL_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.01061,
+    "current_low": 0.010246,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.010945,
+    "previous_low": 0.010369,
+    "timeframe": "DAILY"
   },
   "ID_USDT|DAILY|OBV_BEAUTIFUL_V2|1788825600": {
     "contract": "ID_USDT",
@@ -2378,6 +3764,17 @@
     "contract": "ILV_USDT",
     "created_at": "2026-09-08T09:40:01.874556+00:00",
     "timestamp": 1788739200
+  },
+  "IMX_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "IMX_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.2032,
+    "current_low": 0.1768,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.1883,
+    "previous_low": 0.1698,
+    "timeframe": "DAILY"
   },
   "IMX_USDT|DAILY|OBV_BEAUTIFUL_V2|1790467200": {
     "contract": "IMX_USDT",
@@ -2429,6 +3826,17 @@
     "created_at": "2026-09-08T10:02:20.847681+00:00",
     "timestamp": 1787270400
   },
+  "INJ_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "INJ_USDT",
+    "created_at": 1791037366,
+    "current_high": 7.835,
+    "current_low": 7.44,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 7.679,
+    "previous_low": 7.126,
+    "timeframe": "DAILY"
+  },
   "INJ_USDT|DAILY|OBV_HH_HL_HH|1787529600": {
     "contract": "INJ_USDT",
     "created_at": "2026-09-08T10:14:22.739634+00:00",
@@ -2444,10 +3852,32 @@
     "created_at": "2026-09-08T09:40:04.996115+00:00",
     "timestamp": 1788739200
   },
+  "INTC_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "INTC_USDT",
+    "created_at": 1791037366,
+    "current_high": 119.63,
+    "current_low": 117.9,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 126.04,
+    "previous_low": 119.09,
+    "timeframe": "DAILY"
+  },
   "INTU_USDT|DAILY|OBV_HIGHER_HIGH|1787529600": {
     "contract": "INTU_USDT",
     "created_at": "2026-09-08T10:04:00.841943+00:00",
     "timestamp": 1787529600
+  },
+  "INTU_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "INTU_USDT",
+    "created_at": 1791037366,
+    "current_high": 279.74,
+    "current_low": 279.06,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 285.16,
+    "previous_low": 280.89,
+    "timeframe": "DAILY"
   },
   "INTW_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "INTW_USDT",
@@ -2463,6 +3893,17 @@
     "contract": "INTW_USDT",
     "created_at": "2026-09-08T10:03:10.719974+00:00",
     "timestamp": 1788134400
+  },
+  "INTW_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "INTW_USDT",
+    "created_at": 1791037366,
+    "current_high": 30.88,
+    "current_low": 30.11,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 34.2,
+    "previous_low": 30.65,
+    "timeframe": "DAILY"
   },
   "INX_USDT|DAILY|OBV_HH_HL_HH|1788566400": {
     "contract": "INX_USDT",
@@ -2494,6 +3935,17 @@
     "created_at": "2026-09-08T09:59:55.847205+00:00",
     "timestamp": 1788220800
   },
+  "IOST_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "IOST_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.000868,
+    "current_low": 0.000833,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.000892,
+    "previous_low": 0.000838,
+    "timeframe": "DAILY"
+  },
   "IOTX_USDT|DAILY|OBV_BEAUTIFUL_V2|1788739200": {
     "contract": "IOTX_USDT",
     "created_at": 1789510518,
@@ -2519,6 +3971,17 @@
     "created_at": "2026-09-08T10:00:32.504436+00:00",
     "timestamp": 1788393600
   },
+  "IO_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "IO_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.16262,
+    "current_low": 0.15227,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.16249,
+    "previous_low": 0.14927,
+    "timeframe": "DAILY"
+  },
   "IRYS_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "IRYS_USDT",
     "created_at": "2026-09-08T09:40:22.510896+00:00",
@@ -2542,6 +4005,28 @@
     "hl_timestamp": 1790121600,
     "previous_low_timestamp": 1789776000,
     "score": 92.14,
+    "timeframe": "DAILY"
+  },
+  "ISRG_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "ISRG_USDT",
+    "created_at": 1791037366,
+    "current_high": 394.4,
+    "current_low": 392.1,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 407.2,
+    "previous_low": 392.3,
+    "timeframe": "DAILY"
+  },
+  "IVV_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "IVV_USDT",
+    "created_at": 1791037366,
+    "current_high": 767.9,
+    "current_low": 758.9,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 776.8,
+    "previous_low": 763.5,
     "timeframe": "DAILY"
   },
   "IWM_USDT|DAILY|OBV_BEAUTIFUL_V2|1787788800": {
@@ -2599,6 +4084,17 @@
     "created_at": "2026-09-08T10:03:05.216216+00:00",
     "timestamp": 1788393600
   },
+  "JELLYJELLY_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "JELLYJELLY_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.05915,
+    "current_low": 0.0561,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.05911,
+    "previous_low": 0.05669,
+    "timeframe": "DAILY"
+  },
   "JELLYJELLY_USDT|DAILY|OBV_BEAUTIFUL_V2|1789689600": {
     "contract": "JELLYJELLY_USDT",
     "created_at": 1790288968,
@@ -2618,6 +4114,28 @@
     "contract": "JELLYJELLY_USDT",
     "created_at": "2026-09-08T10:02:27.115669+00:00",
     "timestamp": 1788307200
+  },
+  "JELLYJELLY_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "JELLYJELLY_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.05915,
+    "current_low": 0.0561,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.05911,
+    "previous_low": 0.05669,
+    "timeframe": "DAILY"
+  },
+  "JEPQ_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "JEPQ_USDT",
+    "created_at": 1791037366,
+    "current_high": 60.94,
+    "current_low": 60.72,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 60.98,
+    "previous_low": 60.91,
+    "timeframe": "DAILY"
   },
   "JMKE_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "JMKE_USDT",
@@ -2659,10 +4177,54 @@
     "created_at": "2026-09-08T10:03:37.699754+00:00",
     "timestamp": 1787702400
   },
+  "JST_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "JST_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.13786,
+    "current_low": 0.13202,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.1326,
+    "previous_low": 0.1263,
+    "timeframe": "DAILY"
+  },
   "JST_USDT|DAILY|OBV_HIGHER_HIGH|1788307200": {
     "contract": "JST_USDT",
     "created_at": "2026-09-08T10:03:13.585795+00:00",
     "timestamp": 1788307200
+  },
+  "JUGGERNAUT_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "JUGGERNAUT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0064,
+    "current_low": 0.005582,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.00621,
+    "previous_low": 0.005645,
+    "timeframe": "DAILY"
+  },
+  "JUGGERNAUT_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "JUGGERNAUT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0064,
+    "current_low": 0.005582,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.00621,
+    "previous_low": 0.005645,
+    "timeframe": "DAILY"
+  },
+  "JUNZHENG_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "JUNZHENG_USDT",
+    "created_at": 1791037366,
+    "current_high": 18.943,
+    "current_low": 18.94,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 19.3,
+    "previous_low": 19.3,
+    "timeframe": "DAILY"
   },
   "JUP_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
     "contract": "JUP_USDT",
@@ -2678,6 +4240,17 @@
     "contract": "KALSHI_USDT",
     "created_at": "2026-09-08T10:03:14.964240+00:00",
     "timestamp": 1788480000
+  },
+  "KALSHI_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "KALSHI_USDT",
+    "created_at": 1791037366,
+    "current_high": 28.3,
+    "current_low": 27.4,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 28.88,
+    "previous_low": 27.439,
+    "timeframe": "DAILY"
   },
   "KAS_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "KAS_USDT",
@@ -2714,6 +4287,17 @@
     "created_at": "2026-09-08T10:00:35.951053+00:00",
     "timestamp": 1788393600
   },
+  "KBHLD_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "KBHLD_USDT",
+    "created_at": 1791037366,
+    "current_high": 7.425,
+    "current_low": 7.237,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 7.377,
+    "previous_low": 7.022,
+    "timeframe": "DAILY"
+  },
   "KBHLD_USDT|DAILY|OBV_HH_HL_HH|1788307200": {
     "contract": "KBHLD_USDT",
     "created_at": "2026-09-08T10:13:58.937809+00:00",
@@ -2723,6 +4307,17 @@
     "contract": "KBHLD_USDT",
     "created_at": "2026-09-08T10:04:03.842682+00:00",
     "timestamp": 1788307200
+  },
+  "KBLAM_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "KBLAM_USDT",
+    "created_at": 1791037366,
+    "current_high": 6.35,
+    "current_low": 6.301,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 6.337,
+    "previous_low": 6.151,
+    "timeframe": "DAILY"
   },
   "KBLAM_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "KBLAM_USDT",
@@ -2769,6 +4364,17 @@
     "created_at": "2026-09-08T10:02:34.864924+00:00",
     "timestamp": 1788480000
   },
+  "KII_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "KII_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.08731,
+    "current_low": 0.08515,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.09072,
+    "previous_low": 0.08639,
+    "timeframe": "DAILY"
+  },
   "KIOXIA_USDT|DAILY|OBV_HIGHER_HIGH|1788480000": {
     "contract": "KIOXIA_USDT",
     "created_at": "2026-09-08T10:02:52.855379+00:00",
@@ -2809,6 +4415,17 @@
     "created_at": "2026-09-08T10:01:14.167638+00:00",
     "timestamp": 1787788800
   },
+  "KNC_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "KNC_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.1486,
+    "current_low": 0.1383,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.1411,
+    "previous_low": 0.1333,
+    "timeframe": "DAILY"
+  },
   "KNC_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "KNC_USDT",
     "created_at": "2026-09-08T09:40:03.740255+00:00",
@@ -2823,6 +4440,17 @@
     "contract": "KNC_USDT",
     "created_at": "2026-09-08T10:00:49.221081+00:00",
     "timestamp": 1787961600
+  },
+  "KODEX200_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "KODEX200_USDT",
+    "created_at": 1791037366,
+    "current_high": 84.28,
+    "current_low": 84.19,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 82.07,
+    "previous_low": 82.07,
+    "timeframe": "DAILY"
   },
   "KOMA_USDT|DAILY|OBV_BEAUTIFUL_V2|1789344000": {
     "contract": "KOMA_USDT",
@@ -2853,6 +4481,17 @@
     "contract": "KR200_USDT",
     "created_at": "2026-09-08T10:03:49.107277+00:00",
     "timestamp": 1788134400
+  },
+  "KSM_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "KSM_USDT",
+    "created_at": 1791037366,
+    "current_high": 5.472,
+    "current_low": 5.058,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 5.255,
+    "previous_low": 4.941,
+    "timeframe": "DAILY"
   },
   "KSM_USDT|DAILY|OBV_BEAUTIFUL_V2|1788393600": {
     "contract": "KSM_USDT",
@@ -2904,6 +4543,17 @@
     "created_at": "2026-09-08T10:03:06.626715+00:00",
     "timestamp": 1788134400
   },
+  "LAOPU_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "LAOPU_USDT",
+    "created_at": 1791037366,
+    "current_high": 43.35,
+    "current_low": 40.99,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 43.96,
+    "previous_low": 41.27,
+    "timeframe": "DAILY"
+  },
   "LA_USDT|DAILY|OBV_BEAUTIFUL_V2|1789776000": {
     "contract": "LA_USDT",
     "created_at": 1790288968,
@@ -2924,15 +4574,48 @@
     "created_at": "2026-09-08T10:02:21.545049+00:00",
     "timestamp": 1788393600
   },
+  "LENOVO_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "LENOVO_USDT",
+    "created_at": 1791037366,
+    "current_high": 4.3697,
+    "current_low": 4.2969,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 4.4758,
+    "previous_low": 4.3208,
+    "timeframe": "DAILY"
+  },
   "LETTALL_USDT|DAILY|OBV_HIGHER_HIGH|1788307200": {
     "contract": "LETTALL_USDT",
     "created_at": "2026-09-08T10:02:38.412600+00:00",
     "timestamp": 1788307200
   },
+  "LGELECTRONICS_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "LGELECTRONICS_USDT",
+    "created_at": 1791037366,
+    "current_high": 159.93,
+    "current_low": 158.06,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 159.59,
+    "previous_low": 155.01,
+    "timeframe": "DAILY"
+  },
   "LGELECTRONICS_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "LGELECTRONICS_USDT",
     "created_at": "2026-09-08T09:40:16.674905+00:00",
     "timestamp": 1788739200
+  },
+  "LIGHT_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "LIGHT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.1963,
+    "current_low": 0.1863,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.1958,
+    "previous_low": 0.1821,
+    "timeframe": "DAILY"
   },
   "LIGHT_USDT|DAILY|OBV_HH_HL_HH|1788566400": {
     "contract": "LIGHT_USDT",
@@ -2954,10 +4637,32 @@
     "score": 92.35,
     "timeframe": "DAILY"
   },
+  "LIN_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "LIN_USDT",
+    "created_at": 1791037366,
+    "current_high": 484.0,
+    "current_low": 483.2,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 482.4,
+    "previous_low": 472.5,
+    "timeframe": "DAILY"
+  },
   "LIT_USDT|DAILY|OBV_HIGHER_HIGH|1788480000": {
     "contract": "LIT_USDT",
     "created_at": "2026-09-08T10:00:28.096662+00:00",
     "timestamp": 1788480000
+  },
+  "LIT_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "LIT_USDT",
+    "created_at": 1791037366,
+    "current_high": 3.569,
+    "current_low": 3.415,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 3.898,
+    "previous_low": 3.531,
+    "timeframe": "DAILY"
   },
   "LMT_USDT|DAILY|OBV_HIGHER_HIGH|1787788800": {
     "contract": "LMT_USDT",
@@ -2979,6 +4684,17 @@
     "created_at": "2026-09-08T10:04:05.335895+00:00",
     "timestamp": 1788134400
   },
+  "LPT_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "LPT_USDT",
+    "created_at": 1791037366,
+    "current_high": 1.844,
+    "current_low": 1.702,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 1.786,
+    "previous_low": 1.588,
+    "timeframe": "DAILY"
+  },
   "LPT_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "LPT_USDT",
     "created_at": "2026-09-08T09:40:08.874738+00:00",
@@ -2993,6 +4709,17 @@
     "contract": "LRCX_USDT",
     "created_at": "2026-09-08T10:02:24.317985+00:00",
     "timestamp": 1787702400
+  },
+  "LRC_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "LRC_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.01067,
+    "current_low": 0.01026,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.01062,
+    "previous_low": 0.01007,
+    "timeframe": "DAILY"
   },
   "LRC_USDT|DAILY|OBV_BEAUTIFUL_V2|1788393600": {
     "contract": "LRC_USDT",
@@ -3018,6 +4745,17 @@
     "contract": "LSK_USDT",
     "created_at": "2026-09-08T10:01:09.318275+00:00",
     "timestamp": 1788393600
+  },
+  "LTC_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "LTC_USDT",
+    "created_at": 1791037366,
+    "current_high": 71.3,
+    "current_low": 68.41,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 71.25,
+    "previous_low": 67.43,
+    "timeframe": "DAILY"
   },
   "LTC_USDT|DAILY|OBV_HIGHER_HIGH|1787270400": {
     "contract": "LTC_USDT",
@@ -3054,10 +4792,87 @@
     "created_at": "2026-09-08T10:02:14.361717+00:00",
     "timestamp": 1788134400
   },
+  "MAGMA_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "MAGMA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.3807,
+    "current_low": 0.22325,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.372,
+    "previous_low": 0.21639,
+    "timeframe": "DAILY"
+  },
+  "MANA_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "MANA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.11517,
+    "current_low": 0.09661,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.111,
+    "previous_low": 0.08821,
+    "timeframe": "DAILY"
+  },
+  "MANTRA_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "MANTRA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.004611,
+    "current_low": 0.004457,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.004589,
+    "previous_low": 0.004289,
+    "timeframe": "DAILY"
+  },
+  "MARA_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "MARA_USDT",
+    "created_at": 1791037366,
+    "current_high": 11.293,
+    "current_low": 11.238,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 11.965,
+    "previous_low": 11.3,
+    "timeframe": "DAILY"
+  },
+  "MARSCOIN_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "MARSCOIN_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.11353,
+    "current_low": 0.10348,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.13435,
+    "previous_low": 0.10573,
+    "timeframe": "DAILY"
+  },
+  "MAR_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "MAR_USDT",
+    "created_at": 1791037366,
+    "current_high": 363.2,
+    "current_low": 361.0,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 361.5,
+    "previous_low": 353.8,
+    "timeframe": "DAILY"
+  },
   "MAR_USDT|DAILY|OBV_HIGHER_HIGH|1787529600": {
     "contract": "MAR_USDT",
     "created_at": "2026-09-08T10:04:26.406640+00:00",
     "timestamp": 1787529600
+  },
+  "MASK_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "MASK_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.5082,
+    "current_low": 0.4781,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.5062,
+    "previous_low": 0.4536,
+    "timeframe": "DAILY"
   },
   "MAV_USDT|DAILY|OBV_BEAUTIFUL_V2|1790467200": {
     "contract": "MAV_USDT",
@@ -3067,6 +4882,17 @@
     "hl_timestamp": 1790121600,
     "previous_low_timestamp": 1789257600,
     "score": 88.83,
+    "timeframe": "DAILY"
+  },
+  "MCD_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "MCD_USDT",
+    "created_at": 1791037366,
+    "current_high": 237.32,
+    "current_low": 233.8,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 236.17,
+    "previous_low": 232.0,
     "timeframe": "DAILY"
   },
   "MCD_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
@@ -3093,6 +4919,28 @@
     "contract": "MELANIA_USDT",
     "created_at": "2026-09-08T10:00:33.189258+00:00",
     "timestamp": 1788393600
+  },
+  "MELI_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "MELI_USDT",
+    "created_at": 1791037366,
+    "current_high": 1715.2,
+    "current_low": 1715.2,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 1714.7,
+    "previous_low": 1699.0,
+    "timeframe": "DAILY"
+  },
+  "MEMECOIN_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "MEMECOIN_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.01737,
+    "current_low": 0.01459,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.01998,
+    "previous_low": 0.01521,
+    "timeframe": "DAILY"
   },
   "MEME_USDT|DAILY|OBV_HIGHER_HIGH|1788566400": {
     "contract": "MEME_USDT",
@@ -3154,6 +5002,28 @@
     "created_at": "2026-09-08T10:03:48.411663+00:00",
     "timestamp": 1788480000
   },
+  "MEW_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "MEW_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0005355,
+    "current_low": 0.0005133,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.000531,
+    "previous_low": 0.0004872,
+    "timeframe": "DAILY"
+  },
+  "ME_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ME_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.083,
+    "current_low": 0.0767,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.0805,
+    "previous_low": 0.0742,
+    "timeframe": "DAILY"
+  },
   "ME_USDT|DAILY|OBV_BEAUTIFUL_V2|1788652800": {
     "contract": "ME_USDT",
     "created_at": 1789602734,
@@ -3162,6 +5032,28 @@
     "hl_timestamp": 1788480000,
     "previous_low_timestamp": 1787875200,
     "score": 85.37,
+    "timeframe": "DAILY"
+  },
+  "MICRODUCK_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "MICRODUCK_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.00186,
+    "current_low": 0.0016,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.0025,
+    "previous_low": 0.00165,
+    "timeframe": "DAILY"
+  },
+  "MINA_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "MINA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.17004,
+    "current_low": 0.15681,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.16706,
+    "previous_low": 0.15057,
     "timeframe": "DAILY"
   },
   "MINA_USDT|DAILY|OBV_BEAUTIFUL_V2|1789171200": {
@@ -3198,6 +5090,17 @@
     "contract": "MINIMAX_USDT",
     "created_at": "2026-09-08T10:01:29.485899+00:00",
     "timestamp": 1787702400
+  },
+  "MIRA_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "MIRA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.05367,
+    "current_low": 0.05161,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.05308,
+    "previous_low": 0.05052,
+    "timeframe": "DAILY"
   },
   "MIRA_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "MIRA_USDT",
@@ -3244,6 +5147,17 @@
     "created_at": "2026-09-08T10:02:18.721367+00:00",
     "timestamp": 1788048000
   },
+  "MNT_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "MNT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.6537,
+    "current_low": 0.6418,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.689,
+    "previous_low": 0.6481,
+    "timeframe": "DAILY"
+  },
   "MOCA_USDT|DAILY|OBV_BEAUTIFUL_V2|1788393600": {
     "contract": "MOCA_USDT",
     "created_at": 1789165244,
@@ -3289,6 +5203,61 @@
     "created_at": "2026-09-08T10:02:23.629378+00:00",
     "timestamp": 1788220800
   },
+  "MOUTAI_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "MOUTAI_USDT",
+    "created_at": 1791037366,
+    "current_high": 188.87,
+    "current_low": 187.49,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 188.67,
+    "previous_low": 187.48,
+    "timeframe": "DAILY"
+  },
+  "MOVE_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "MOVE_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0106,
+    "current_low": 0.00991,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.01055,
+    "previous_low": 0.00952,
+    "timeframe": "DAILY"
+  },
+  "MOVR_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "MOVR_USDT",
+    "created_at": 1791037366,
+    "current_high": 1.999,
+    "current_low": 1.669,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 3.088,
+    "previous_low": 1.85,
+    "timeframe": "DAILY"
+  },
+  "MO_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "MO_USDT",
+    "created_at": 1791037366,
+    "current_high": 68.13,
+    "current_low": 66.58,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 67.28,
+    "previous_low": 67.28,
+    "timeframe": "DAILY"
+  },
+  "MO_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "MO_USDT",
+    "created_at": 1791037366,
+    "current_high": 68.13,
+    "current_low": 66.58,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 67.28,
+    "previous_low": 67.28,
+    "timeframe": "DAILY"
+  },
   "MRK_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
     "contract": "MRK_USDT",
     "created_at": "2026-09-08T10:03:01.700083+00:00",
@@ -3319,6 +5288,39 @@
     "created_at": "2026-09-08T09:59:40.663701+00:00",
     "timestamp": 1788566400
   },
+  "MUBARAK_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "MUBARAK_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.06396,
+    "current_low": 0.05969,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.06942,
+    "previous_low": 0.05983,
+    "timeframe": "DAILY"
+  },
+  "MUFG_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "MUFG_USDT",
+    "created_at": 1791037366,
+    "current_high": 23.253,
+    "current_low": 22.893,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 23.141,
+    "previous_low": 22.551,
+    "timeframe": "DAILY"
+  },
+  "MUSEBOOK_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "MUSEBOOK_USDT",
+    "created_at": 1791037366,
+    "current_high": 4.669e-05,
+    "current_low": 3.595e-05,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 5.39e-05,
+    "previous_low": 3.918e-05,
+    "timeframe": "DAILY"
+  },
   "MUU_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "MUU_USDT",
     "created_at": "2026-09-08T09:39:49.727172+00:00",
@@ -3334,6 +5336,17 @@
     "created_at": "2026-09-08T09:59:45.738826+00:00",
     "timestamp": 1788134400
   },
+  "MUU_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "MUU_USDT",
+    "created_at": 1791037366,
+    "current_high": 36.97,
+    "current_low": 36.5,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 39.93,
+    "previous_low": 36.73,
+    "timeframe": "DAILY"
+  },
   "MU_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "MU_USDT",
     "created_at": "2026-09-08T09:39:55.382775+00:00",
@@ -3348,6 +5361,17 @@
     "contract": "MU_USDT",
     "created_at": "2026-09-08T10:00:03.192553+00:00",
     "timestamp": 1788134400
+  },
+  "MU_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "MU_USDT",
+    "created_at": 1791037366,
+    "current_high": 1073.0,
+    "current_low": 1066.57,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 1114.81,
+    "previous_low": 1069.65,
+    "timeframe": "DAILY"
   },
   "MVLL_USDT|DAILY|OBV_HH_HL_HH|1787702400": {
     "contract": "MVLL_USDT",
@@ -3373,6 +5397,28 @@
     "contract": "M_USDT",
     "created_at": "2026-09-08T10:02:42.024912+00:00",
     "timestamp": 1787616000
+  },
+  "M_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "M_USDT",
+    "created_at": 1791037366,
+    "current_high": 1.0727,
+    "current_low": 1.0175,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 1.087,
+    "previous_low": 1.0349,
+    "timeframe": "DAILY"
+  },
+  "NAVER_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "NAVER_USDT",
+    "created_at": 1791037366,
+    "current_high": 143.48,
+    "current_low": 141.97,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 143.38,
+    "previous_low": 140.99,
+    "timeframe": "DAILY"
   },
   "NBIS_USDT|DAILY|OBV_HH_HL_HH|1788480000": {
     "contract": "NBIS_USDT",
@@ -3424,6 +5470,17 @@
     "created_at": "2026-09-08T10:02:07.206588+00:00",
     "timestamp": 1788307200
   },
+  "NIGHT_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "NIGHT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.05309,
+    "current_low": 0.04812,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.05042,
+    "previous_low": 0.03791,
+    "timeframe": "DAILY"
+  },
   "NIGHT_USDT|DAILY|OBV_HH_HL_HH|1788393600": {
     "contract": "NIGHT_USDT",
     "created_at": "2026-09-08T10:14:19.957083+00:00",
@@ -3433,6 +5490,17 @@
     "contract": "NIGHT_USDT",
     "created_at": "2026-09-08T10:01:06.276710+00:00",
     "timestamp": 1788393600
+  },
+  "NIL_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "NIL_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.08594,
+    "current_low": 0.08127,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.08465,
+    "previous_low": 0.07688,
+    "timeframe": "DAILY"
   },
   "NIL_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "NIL_USDT",
@@ -3449,6 +5517,17 @@
     "created_at": "2026-09-08T09:59:39.191561+00:00",
     "timestamp": 1787961600
   },
+  "NKE_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "NKE_USDT",
+    "created_at": 1791037366,
+    "current_high": 34.87,
+    "current_low": 33.74,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 33.92,
+    "previous_low": 31.6,
+    "timeframe": "DAILY"
+  },
   "NOK_USDT|DAILY|OBV_HIGHER_HIGH|1787702400": {
     "contract": "NOK_USDT",
     "created_at": "2026-09-08T10:01:28.774357+00:00",
@@ -3463,6 +5542,17 @@
     "contract": "NOM_USDT",
     "created_at": "2026-09-08T09:59:47.906964+00:00",
     "timestamp": 1788566400
+  },
+  "NOM_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "NOM_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.002583,
+    "current_low": 0.002291,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.00286,
+    "previous_low": 0.002423,
+    "timeframe": "DAILY"
   },
   "NOT_USDT|DAILY|OBV_HIGHER_HIGH|1788134400": {
     "contract": "NOT_USDT",
@@ -3584,6 +5674,17 @@
     "score": 89.26,
     "timeframe": "DAILY"
   },
+  "OKTA_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "OKTA_USDT",
+    "created_at": 1791037366,
+    "current_high": 211.52,
+    "current_low": 209.85,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 215.22,
+    "previous_low": 209.92,
+    "timeframe": "DAILY"
+  },
   "ONDO_USDT|DAILY|OBV_BEAUTIFUL_V2|1790467200": {
     "contract": "ONDO_USDT",
     "created_at": 1791031446,
@@ -3594,10 +5695,32 @@
     "score": 96.39,
     "timeframe": "DAILY"
   },
+  "ONE_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ONE_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.002349,
+    "current_low": 0.002004,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.002095,
+    "previous_low": 0.001888,
+    "timeframe": "DAILY"
+  },
   "ONG_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
     "contract": "ONG_USDT",
     "created_at": "2026-09-08T10:00:31.777575+00:00",
     "timestamp": 1788393600
+  },
+  "ONT_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ONT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.06195,
+    "current_low": 0.05968,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.06066,
+    "previous_low": 0.05694,
+    "timeframe": "DAILY"
   },
   "ONT_USDT|DAILY|OBV_HIGHER_HIGH|1788480000": {
     "contract": "ONT_USDT",
@@ -3608,6 +5731,39 @@
     "contract": "OPENAI_USDT",
     "created_at": "2026-09-08T09:39:57.307515+00:00",
     "timestamp": 1788739200
+  },
+  "OPEN_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "OPEN_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.1315,
+    "current_low": 0.1153,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.1357,
+    "previous_low": 0.1222,
+    "timeframe": "DAILY"
+  },
+  "OPG_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "OPG_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.1359,
+    "current_low": 0.1298,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.1354,
+    "previous_low": 0.1275,
+    "timeframe": "DAILY"
+  },
+  "OPN_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "OPN_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0588,
+    "current_low": 0.05412,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.06332,
+    "previous_low": 0.05436,
+    "timeframe": "DAILY"
   },
   "OP_USDT|DAILY|OBV_BEAUTIFUL_V2|1788739200": {
     "contract": "OP_USDT",
@@ -3634,6 +5790,28 @@
     "created_at": "2026-09-08T10:00:08.250646+00:00",
     "timestamp": 1788393600
   },
+  "ORBIO_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "ORBIO_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.08609,
+    "current_low": 0.07299,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.09111,
+    "previous_low": 0.07517,
+    "timeframe": "DAILY"
+  },
+  "ORCA_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ORCA_USDT",
+    "created_at": 1791037366,
+    "current_high": 1.7942,
+    "current_low": 1.737,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 1.7621,
+    "previous_low": 1.6632,
+    "timeframe": "DAILY"
+  },
   "ORCA_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "ORCA_USDT",
     "created_at": "2026-09-08T09:39:52.869952+00:00",
@@ -3648,6 +5826,28 @@
     "contract": "ORDER_USDT",
     "created_at": "2026-09-08T10:02:00.292253+00:00",
     "timestamp": 1787788800
+  },
+  "OURA_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "OURA_USDT",
+    "created_at": 1791037366,
+    "current_high": 54.46,
+    "current_low": 50.42,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 54.17,
+    "previous_low": 50.28,
+    "timeframe": "DAILY"
+  },
+  "OUST_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "OUST_USDT",
+    "created_at": 1791037366,
+    "current_high": 44.59,
+    "current_low": 44.2,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 44.55,
+    "previous_low": 41.0,
+    "timeframe": "DAILY"
   },
   "OUST_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "OUST_USDT",
@@ -3669,6 +5869,28 @@
     "created_at": "2026-09-08T10:01:02.027120+00:00",
     "timestamp": 1788220800
   },
+  "PAID_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "PAID_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.008499,
+    "current_low": 0.006205,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.012043,
+    "previous_low": 0.007732,
+    "timeframe": "DAILY"
+  },
+  "PAIR_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "PAIR_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.00246,
+    "current_low": 0.00197,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.00283,
+    "previous_low": 0.00232,
+    "timeframe": "DAILY"
+  },
   "PANW_USDT|DAILY|OBV_BEAUTIFUL_V2|1790553600": {
     "contract": "PANW_USDT",
     "created_at": 1791031446,
@@ -3677,6 +5899,17 @@
     "hl_timestamp": 1790294400,
     "previous_low_timestamp": 1789776000,
     "score": 93.44,
+    "timeframe": "DAILY"
+  },
+  "PARTI_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "PARTI_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.03,
+    "current_low": 0.02714,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.02845,
+    "previous_low": 0.02585,
     "timeframe": "DAILY"
   },
   "PARTI_USDT|DAILY|OBV_BEAUTIFUL_V2|1790553600": {
@@ -3699,10 +5932,32 @@
     "created_at": "2026-09-08T10:01:04.834783+00:00",
     "timestamp": 1788566400
   },
+  "PATH_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "PATH_USDT",
+    "created_at": 1791037366,
+    "current_high": 13.231,
+    "current_low": 13.193,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 13.456,
+    "previous_low": 13.405,
+    "timeframe": "DAILY"
+  },
   "PAYP_USDT|DAILY|OBV_HIGHER_HIGH|1787616000": {
     "contract": "PAYP_USDT",
     "created_at": "2026-09-08T10:02:46.620497+00:00",
     "timestamp": 1787616000
+  },
+  "PDD_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "PDD_USDT",
+    "created_at": 1791037366,
+    "current_high": 75.69,
+    "current_low": 74.91,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 76.5,
+    "previous_low": 74.97,
+    "timeframe": "DAILY"
   },
   "PENDLE_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "PENDLE_USDT",
@@ -3754,6 +6009,17 @@
     "created_at": "2026-09-08T09:59:50.849311+00:00",
     "timestamp": 1787529600
   },
+  "PHA_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "PHA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.07259,
+    "current_low": 0.06809,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.07716,
+    "previous_low": 0.06908,
+    "timeframe": "DAILY"
+  },
   "PIEVERSE_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "PIEVERSE_USDT",
     "created_at": "2026-09-08T09:40:06.907958+00:00",
@@ -3779,6 +6045,17 @@
     "created_at": "2026-09-08T10:01:08.439515+00:00",
     "timestamp": 1788393600
   },
+  "PIXEL_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "PIXEL_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.006523,
+    "current_low": 0.006079,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.006318,
+    "previous_low": 0.005762,
+    "timeframe": "DAILY"
+  },
   "PI_USDT|DAILY|OBV_HH_HL_HH|1788393600": {
     "contract": "PI_USDT",
     "created_at": "2026-09-08T10:14:24.857159+00:00",
@@ -3799,6 +6076,17 @@
     "created_at": "2026-09-08T10:03:17.651626+00:00",
     "timestamp": 1788134400
   },
+  "PLAY_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "PLAY_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0315,
+    "current_low": 0.02978,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.03284,
+    "previous_low": 0.0304,
+    "timeframe": "DAILY"
+  },
   "PLTRX_USDT|DAILY|OBV_HH_HL_HH|1788134400": {
     "contract": "PLTRX_USDT",
     "created_at": "2026-09-08T10:14:13.231557+00:00",
@@ -3808,6 +6096,17 @@
     "contract": "PLTRX_USDT",
     "created_at": "2026-09-08T10:01:05.587045+00:00",
     "timestamp": 1788134400
+  },
+  "POD_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "POD_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.805,
+    "current_low": 0.5557,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.8008,
+    "previous_low": 0.4609,
+    "timeframe": "DAILY"
   },
   "POLYMARKET_USDT|DAILY|OBV_HIGHER_HIGH|1788480000": {
     "contract": "POLYMARKET_USDT",
@@ -3832,6 +6131,17 @@
     "hl_timestamp": 1789776000,
     "previous_low_timestamp": 1789430400,
     "score": 85.68,
+    "timeframe": "DAILY"
+  },
+  "PONS_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "PONS_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.4481,
+    "current_low": 0.4129,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.5427,
+    "previous_low": 0.437,
     "timeframe": "DAILY"
   },
   "POPMART_USDT|DAILY|OBV_HIGHER_HIGH|1788048000": {
@@ -3864,6 +6174,28 @@
     "created_at": "2026-09-08T10:01:33.290346+00:00",
     "timestamp": 1787011200
   },
+  "PROLOGUE_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "PROLOGUE_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.007795,
+    "current_low": 0.00679,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.007707,
+    "previous_low": 0.006,
+    "timeframe": "DAILY"
+  },
+  "PROMPT_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "PROMPT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.02102,
+    "current_low": 0.01993,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.0208,
+    "previous_low": 0.01901,
+    "timeframe": "DAILY"
+  },
   "PROMPT_USDT|DAILY|OBV_HH_HL_HH|1787961600": {
     "contract": "PROMPT_USDT",
     "created_at": "2026-09-08T10:12:31.036392+00:00",
@@ -3874,10 +6206,32 @@
     "created_at": "2026-09-08T10:00:13.970755+00:00",
     "timestamp": 1787961600
   },
+  "PROM_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "PROM_USDT",
+    "created_at": 1791037366,
+    "current_high": 6.59,
+    "current_low": 6.078,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 6.572,
+    "previous_low": 6.21,
+    "timeframe": "DAILY"
+  },
   "PROM_USDT|DAILY|OBV_HIGHER_HIGH|1787961600": {
     "contract": "PROM_USDT",
     "created_at": "2026-09-08T09:59:27.318482+00:00",
     "timestamp": 1787961600
+  },
+  "PROM_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "PROM_USDT",
+    "created_at": 1791037366,
+    "current_high": 6.59,
+    "current_low": 6.078,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 6.572,
+    "previous_low": 6.21,
+    "timeframe": "DAILY"
   },
   "PROS_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "PROS_USDT",
@@ -3974,6 +6328,17 @@
     "created_at": "2026-09-08T10:04:32.632096+00:00",
     "timestamp": 1788134400
   },
+  "PYTH_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "PYTH_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.08169,
+    "current_low": 0.07767,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.08079,
+    "previous_low": 0.07408,
+    "timeframe": "DAILY"
+  },
   "PYTH_USDT|DAILY|OBV_HH_HL_HH|1788307200": {
     "contract": "PYTH_USDT",
     "created_at": "2026-09-08T10:12:16.746612+00:00",
@@ -3999,6 +6364,28 @@
     "created_at": "2026-09-08T10:00:42.212385+00:00",
     "timestamp": 1788307200
   },
+  "QLD_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "QLD_USDT",
+    "created_at": 1791037366,
+    "current_high": 98.83,
+    "current_low": 97.42,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 98.26,
+    "previous_low": 98.25,
+    "timeframe": "DAILY"
+  },
+  "QLD_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "QLD_USDT",
+    "created_at": 1791037366,
+    "current_high": 98.83,
+    "current_low": 97.42,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 98.26,
+    "previous_low": 98.25,
+    "timeframe": "DAILY"
+  },
   "QNTX_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "QNTX_USDT",
     "created_at": "2026-09-08T09:40:31.545903+00:00",
@@ -4008,6 +6395,28 @@
     "contract": "QNTX_USDT",
     "created_at": "2026-09-08T10:04:22.719282+00:00",
     "timestamp": 1788134400
+  },
+  "QNTX_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "QNTX_USDT",
+    "created_at": 1791037366,
+    "current_high": 46.39,
+    "current_low": 46.19,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 48.74,
+    "previous_low": 46.22,
+    "timeframe": "DAILY"
+  },
+  "QNT_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "QNT_USDT",
+    "created_at": 1791037366,
+    "current_high": 269.47,
+    "current_low": 242.76,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 261.35,
+    "previous_low": 221.67,
+    "timeframe": "DAILY"
   },
   "QQQX_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "QQQX_USDT",
@@ -4054,6 +6463,28 @@
     "created_at": "2026-09-08T10:01:44.388129+00:00",
     "timestamp": 1788480000
   },
+  "RATS_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "RATS_USDT",
+    "created_at": 1791037366,
+    "current_high": 4.137e-05,
+    "current_low": 4.001e-05,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 4.134e-05,
+    "previous_low": 3.908e-05,
+    "timeframe": "DAILY"
+  },
+  "RAY_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "RAY_USDT",
+    "created_at": 1791037366,
+    "current_high": 2.0985,
+    "current_low": 1.905,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 1.9852,
+    "previous_low": 1.8363,
+    "timeframe": "DAILY"
+  },
   "RAY_USDT|DAILY|OBV_HH_HL_HH|1787788800": {
     "contract": "RAY_USDT",
     "created_at": "2026-09-08T10:12:35.943876+00:00",
@@ -4063,6 +6494,17 @@
     "contract": "RAY_USDT",
     "created_at": "2026-09-08T10:00:22.413303+00:00",
     "timestamp": 1787788800
+  },
+  "REGN_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "REGN_USDT",
+    "created_at": 1791037366,
+    "current_high": 744.0,
+    "current_low": 744.0,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 742.6,
+    "previous_low": 726.0,
+    "timeframe": "DAILY"
   },
   "REGN_USDT|DAILY|OBV_HH_HL_HH|1788307200": {
     "contract": "REGN_USDT",
@@ -4084,6 +6526,28 @@
     "created_at": "2026-09-08T10:00:59.269198+00:00",
     "timestamp": 1787702400
   },
+  "RESOLV_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "RESOLV_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.02698,
+    "current_low": 0.0187,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.02259,
+    "previous_low": 0.01908,
+    "timeframe": "DAILY"
+  },
+  "RESOLV_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "RESOLV_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.02698,
+    "current_low": 0.0187,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.02259,
+    "previous_low": 0.01908,
+    "timeframe": "DAILY"
+  },
   "REZ_USDT|DAILY|OBV_BEAUTIFUL_V2|1790726400": {
     "contract": "REZ_USDT",
     "created_at": 1791031446,
@@ -4094,6 +6558,28 @@
     "score": 88.59,
     "timeframe": "DAILY"
   },
+  "REZ_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "REZ_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.004224,
+    "current_low": 0.004028,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.004533,
+    "previous_low": 0.004043,
+    "timeframe": "DAILY"
+  },
+  "RE_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "RE_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.5089,
+    "current_low": 0.48457,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.51966,
+    "previous_low": 0.48617,
+    "timeframe": "DAILY"
+  },
   "RIF_USDT|DAILY|OBV_BEAUTIFUL_V2|1790035200": {
     "contract": "RIF_USDT",
     "created_at": 1790725146,
@@ -4102,6 +6588,28 @@
     "hl_timestamp": 1789516800,
     "previous_low_timestamp": 1788998400,
     "score": 87.19,
+    "timeframe": "DAILY"
+  },
+  "RIO_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "RIO_USDT",
+    "created_at": 1791037366,
+    "current_high": 94.88,
+    "current_low": 94.88,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 94.28,
+    "previous_low": 93.26,
+    "timeframe": "DAILY"
+  },
+  "RIVER_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "RIVER_USDT",
+    "created_at": 1791037366,
+    "current_high": 1.24,
+    "current_low": 1.161,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 1.231,
+    "previous_low": 1.123,
     "timeframe": "DAILY"
   },
   "RIVN_USDT|DAILY|OBV_BEAUTIFUL_V2|1788998400": {
@@ -4118,6 +6626,17 @@
     "contract": "RIVN_USDT",
     "created_at": "2026-09-08T10:03:51.179733+00:00",
     "timestamp": 1788393600
+  },
+  "ROK_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ROK_USDT",
+    "created_at": 1791037366,
+    "current_high": 466.3,
+    "current_low": 451.0,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 454.6,
+    "previous_low": 441.9,
+    "timeframe": "DAILY"
   },
   "RPL_USDT|DAILY|OBV_BEAUTIFUL_V2|1790294400": {
     "contract": "RPL_USDT",
@@ -4147,6 +6666,28 @@
     "hl_timestamp": 1789430400,
     "previous_low_timestamp": 1788480000,
     "score": 94.88,
+    "timeframe": "DAILY"
+  },
+  "RTX_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "RTX_USDT",
+    "created_at": 1791037366,
+    "current_high": 193.43,
+    "current_low": 179.94,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 190.16,
+    "previous_low": 186.85,
+    "timeframe": "DAILY"
+  },
+  "RTX_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "RTX_USDT",
+    "created_at": 1791037366,
+    "current_high": 193.43,
+    "current_low": 179.94,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 190.16,
+    "previous_low": 186.85,
     "timeframe": "DAILY"
   },
   "RUNE_USDT|DAILY|OBV_HIGHER_HIGH|1787788800": {
@@ -4179,6 +6720,17 @@
     "created_at": "2026-09-08T09:59:34.264128+00:00",
     "timestamp": 1787443200
   },
+  "SAGA_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "SAGA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.02327,
+    "current_low": 0.02227,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.02572,
+    "previous_low": 0.02245,
+    "timeframe": "DAILY"
+  },
   "SAHARA_USDT|DAILY|OBV_HH_HL_HH|1788566400": {
     "contract": "SAHARA_USDT",
     "created_at": "2026-09-08T10:14:18.615178+00:00",
@@ -4203,6 +6755,17 @@
     "contract": "SAMSUNG_USDT",
     "created_at": "2026-09-08T09:32:35.151668+00:00",
     "timestamp": 1788739200
+  },
+  "SAND_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "SAND_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.08373,
+    "current_low": 0.06122,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.07171,
+    "previous_low": 0.04424,
+    "timeframe": "DAILY"
   },
   "SAND_USDT|DAILY|OBV_BEAUTIFUL_V2|1788825600": {
     "contract": "SAND_USDT",
@@ -4244,10 +6807,32 @@
     "score": 85.0,
     "timeframe": "DAILY"
   },
+  "SCR_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "SCR_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.02859,
+    "current_low": 0.02565,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.03721,
+    "previous_low": 0.02656,
+    "timeframe": "DAILY"
+  },
   "SEI_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
     "contract": "SEI_USDT",
     "created_at": "2026-09-08T10:01:06.965510+00:00",
     "timestamp": 1788393600
+  },
+  "SENT_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "SENT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.02257,
+    "current_low": 0.02105,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.02192,
+    "previous_low": 0.02025,
+    "timeframe": "DAILY"
   },
   "SHAZ_USDT|DAILY|OBV_BEAUTIFUL_V2|1789084800": {
     "contract": "SHAZ_USDT",
@@ -4264,10 +6849,32 @@
     "created_at": "2026-09-08T10:03:27.311907+00:00",
     "timestamp": 1788480000
   },
+  "SHELL_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "SHELL_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.02507,
+    "current_low": 0.0239,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.02572,
+    "previous_low": 0.02395,
+    "timeframe": "DAILY"
+  },
   "SHIB_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
     "contract": "SHIB_USDT",
     "created_at": "2026-09-08T09:59:42.133335+00:00",
     "timestamp": 1788393600
+  },
+  "SHROOM_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "SHROOM_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.01255,
+    "current_low": 0.01054,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.01474,
+    "previous_low": 0.01068,
+    "timeframe": "DAILY"
   },
   "SIGN_USDT|DAILY|OBV_BEAUTIFUL_V2|1788825600": {
     "contract": "SIGN_USDT",
@@ -4294,10 +6901,43 @@
     "created_at": "2026-09-08T10:01:49.361557+00:00",
     "timestamp": 1787702400
   },
+  "SINOCERA_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "SINOCERA_USDT",
+    "created_at": 1791037366,
+    "current_high": 9.431,
+    "current_low": 9.431,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 9.39,
+    "previous_low": 9.376,
+    "timeframe": "DAILY"
+  },
   "SINOCERA_USDT|DAILY|OBV_HIGHER_HIGH|1788134400": {
     "contract": "SINOCERA_USDT",
     "created_at": "2026-09-08T10:02:56.211880+00:00",
     "timestamp": 1788134400
+  },
+  "SI_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "SI_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.05215,
+    "current_low": 0.03961,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.05054,
+    "previous_low": 0.02951,
+    "timeframe": "DAILY"
+  },
+  "SKR_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "SKR_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.017452,
+    "current_low": 0.016751,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.017842,
+    "previous_low": 0.016827,
+    "timeframe": "DAILY"
   },
   "SKUU_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "SKUU_USDT",
@@ -4349,6 +6989,17 @@
     "created_at": "2026-09-08T10:00:16.050650+00:00",
     "timestamp": 1787788800
   },
+  "SLV_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "SLV_USDT",
+    "created_at": 1791037366,
+    "current_high": 55.25,
+    "current_low": 54.6,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 55.91,
+    "previous_low": 54.67,
+    "timeframe": "DAILY"
+  },
   "SLX_USDT|DAILY|OBV_HH_HL_HH|1787616000": {
     "contract": "SLX_USDT",
     "created_at": "2026-09-08T10:14:16.621977+00:00",
@@ -4399,6 +7050,17 @@
     "created_at": "2026-09-08T09:59:35.556568+00:00",
     "timestamp": 1788134400
   },
+  "SNDK_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "SNDK_USDT",
+    "created_at": 1791037366,
+    "current_high": 1725.15,
+    "current_low": 1714.44,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 1806.8,
+    "previous_low": 1715.0,
+    "timeframe": "DAILY"
+  },
   "SNOW_USDT|DAILY|OBV_HH_HL_HH|1788307200": {
     "contract": "SNOW_USDT",
     "created_at": "2026-09-08T10:12:37.279867+00:00",
@@ -4423,6 +7085,28 @@
     "contract": "SNXX_USDT",
     "created_at": "2026-09-08T09:59:47.181646+00:00",
     "timestamp": 1788134400
+  },
+  "SNXX_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "SNXX_USDT",
+    "created_at": 1791037366,
+    "current_high": 16.395,
+    "current_low": 16.162,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 18.045,
+    "previous_low": 16.238,
+    "timeframe": "DAILY"
+  },
+  "SOFI_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "SOFI_USDT",
+    "created_at": 1791037366,
+    "current_high": 15.83,
+    "current_low": 15.762,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 16.191,
+    "previous_low": 15.854,
+    "timeframe": "DAILY"
   },
   "SOLV_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "SOLV_USDT",
@@ -4484,10 +7168,43 @@
     "created_at": "2026-09-08T10:03:57.234602+00:00",
     "timestamp": 1787875200
   },
+  "SOON_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "SOON_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.3852,
+    "current_low": 0.3611,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.4455,
+    "previous_low": 0.3628,
+    "timeframe": "DAILY"
+  },
+  "SOPH_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "SOPH_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.00386,
+    "current_low": 0.003682,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.003829,
+    "previous_low": 0.003676,
+    "timeframe": "DAILY"
+  },
   "SOPH_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "SOPH_USDT",
     "created_at": "2026-09-08T09:32:35.151664+00:00",
     "timestamp": 1788739200
+  },
+  "SPACEHOOD_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "SPACEHOOD_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.001416,
+    "current_low": 0.001247,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.002117,
+    "previous_low": 0.00129,
+    "timeframe": "DAILY"
   },
   "SPACE_USDT|DAILY|OBV_HH_HL_HH|1788566400": {
     "contract": "SPACE_USDT",
@@ -4554,6 +7271,17 @@
     "created_at": "2026-09-08T10:03:05.907955+00:00",
     "timestamp": 1787702400
   },
+  "SPYM_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "SPYM_USDT",
+    "created_at": 1791037366,
+    "current_high": 92.51,
+    "current_low": 91.0,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 91.8,
+    "previous_low": 90.7,
+    "timeframe": "DAILY"
+  },
   "SPYX_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
     "contract": "SPYX_USDT",
     "created_at": "2026-09-08T10:02:07.917728+00:00",
@@ -4594,6 +7322,39 @@
     "score": 97.22,
     "timeframe": "DAILY"
   },
+  "STABLE_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "STABLE_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.02807,
+    "current_low": 0.02649,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.02895,
+    "previous_low": 0.02723,
+    "timeframe": "DAILY"
+  },
+  "STAMP_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "STAMP_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.000417,
+    "current_low": 0.00034,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.00109,
+    "previous_low": 0.000342,
+    "timeframe": "DAILY"
+  },
+  "STAR_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "STAR_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.03828,
+    "current_low": 0.03456,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.03782,
+    "previous_low": 0.03424,
+    "timeframe": "DAILY"
+  },
   "STBL_USDT|DAILY|OBV_HH_HL_HH|1787961600": {
     "contract": "STBL_USDT",
     "created_at": "2026-09-08T10:12:20.899212+00:00",
@@ -4604,6 +7365,17 @@
     "created_at": "2026-09-08T10:01:18.424809+00:00",
     "timestamp": 1787961600
   },
+  "STEEM_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "STEEM_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.06764,
+    "current_low": 0.062,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.0652,
+    "previous_low": 0.06233,
+    "timeframe": "DAILY"
+  },
   "STEEM_USDT|DAILY|OBV_HH_HL_HH|1788566400": {
     "contract": "STEEM_USDT",
     "created_at": "2026-09-08T10:13:07.485930+00:00",
@@ -4613,6 +7385,28 @@
     "contract": "STEEM_USDT",
     "created_at": "2026-09-08T10:03:03.823404+00:00",
     "timestamp": 1788566400
+  },
+  "STEEM_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "STEEM_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.06764,
+    "current_low": 0.062,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.0652,
+    "previous_low": 0.06233,
+    "timeframe": "DAILY"
+  },
+  "STM_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "STM_USDT",
+    "created_at": 1791037366,
+    "current_high": 58.1,
+    "current_low": 57.57,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 57.32,
+    "previous_low": 53.5,
+    "timeframe": "DAILY"
   },
   "STM_USDT|DAILY|OBV_BEAUTIFUL_V2|1790640000": {
     "contract": "STM_USDT",
@@ -4633,6 +7427,28 @@
     "contract": "STO_USDT",
     "created_at": "2026-09-08T10:00:46.394588+00:00",
     "timestamp": 1787875200
+  },
+  "STRC_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "STRC_USDT",
+    "created_at": 1791037366,
+    "current_high": 99.53,
+    "current_low": 98.23,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 99.79,
+    "previous_low": 99.19,
+    "timeframe": "DAILY"
+  },
+  "STX_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "STX_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.3815,
+    "current_low": 0.3632,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.381,
+    "previous_low": 0.3504,
+    "timeframe": "DAILY"
   },
   "STX_USDT|DAILY|OBV_BEAUTIFUL_V2|1789948800": {
     "contract": "STX_USDT",
@@ -4659,15 +7475,59 @@
     "created_at": "2026-09-08T10:00:25.201058+00:00",
     "timestamp": 1788393600
   },
+  "SUE_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "SUE_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.000898,
+    "current_low": 0.000656,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.000958,
+    "previous_low": 0.000677,
+    "timeframe": "DAILY"
+  },
   "SUI_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "SUI_USDT",
     "created_at": "2026-09-08T09:32:35.151646+00:00",
     "timestamp": 1788739200
   },
+  "SUNGROW_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "SUNGROW_USDT",
+    "created_at": 1791037366,
+    "current_high": 12.403,
+    "current_low": 12.329,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 12.375,
+    "previous_low": 12.211,
+    "timeframe": "DAILY"
+  },
   "SUNGROW_USDT|DAILY|OBV_HIGHER_HIGH|1787443200": {
     "contract": "SUNGROW_USDT",
     "created_at": "2026-09-08T10:04:00.115895+00:00",
     "timestamp": 1787443200
+  },
+  "SUN_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "SUN_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.017199,
+    "current_low": 0.016983,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.01718,
+    "previous_low": 0.016941,
+    "timeframe": "DAILY"
+  },
+  "SUPER_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "SUPER_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.2652,
+    "current_low": 0.2331,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.246,
+    "previous_low": 0.219,
+    "timeframe": "DAILY"
   },
   "SUPER_USDT|DAILY|OBV_BEAUTIFUL_V2|1789084800": {
     "contract": "SUPER_USDT",
@@ -4694,6 +7554,17 @@
     "created_at": "2026-09-08T10:00:01.556305+00:00",
     "timestamp": 1788566400
   },
+  "SYK_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "SYK_USDT",
+    "created_at": 1791037366,
+    "current_high": 278.2,
+    "current_low": 278.2,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 277.5,
+    "previous_low": 273.0,
+    "timeframe": "DAILY"
+  },
   "SYRUP_USDT|DAILY|OBV_HIGHER_HIGH|1787270400": {
     "contract": "SYRUP_USDT",
     "created_at": "2026-09-08T10:01:47.054282+00:00",
@@ -4714,6 +7585,17 @@
     "created_at": "2026-09-08T09:32:35.151671+00:00",
     "timestamp": 1788739200
   },
+  "TAKE_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "TAKE_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.06916,
+    "current_low": 0.05972,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.06166,
+    "previous_low": 0.05631,
+    "timeframe": "DAILY"
+  },
   "TAKE_USDT|DAILY|OBV_BEAUTIFUL_V2|1788739200": {
     "contract": "TAKE_USDT",
     "created_at": 1789510518,
@@ -4728,6 +7610,17 @@
     "contract": "TAO_USDT",
     "created_at": "2026-09-08T10:00:10.342542+00:00",
     "timestamp": 1787788800
+  },
+  "TA_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "TA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.05092,
+    "current_low": 0.04954,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.0509,
+    "previous_low": 0.0475,
+    "timeframe": "DAILY"
   },
   "TA_USDT|DAILY|OBV_HH_HL_HH|1788307200": {
     "contract": "TA_USDT",
@@ -4824,15 +7717,59 @@
     "created_at": "2026-09-08T10:04:22.008391+00:00",
     "timestamp": 1787616000
   },
+  "TLT_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "TLT_USDT",
+    "created_at": 1791037366,
+    "current_high": 77.99,
+    "current_low": 76.47,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 78.58,
+    "previous_low": 77.34,
+    "timeframe": "DAILY"
+  },
   "TM_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
     "contract": "TM_USDT",
     "created_at": "2026-09-08T10:03:07.312907+00:00",
     "timestamp": 1788393600
   },
+  "TOLLY_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "TOLLY_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.004028,
+    "current_low": 0.0033,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.0046,
+    "previous_low": 0.003774,
+    "timeframe": "DAILY"
+  },
+  "TONGGUAN_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "TONGGUAN_USDT",
+    "created_at": 1791037366,
+    "current_high": 15.097,
+    "current_low": 14.96,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 14.907,
+    "previous_low": 14.784,
+    "timeframe": "DAILY"
+  },
   "TONGGUAN_USDT|DAILY|OBV_HIGHER_HIGH|1788134400": {
     "contract": "TONGGUAN_USDT",
     "created_at": "2026-09-08T10:04:19.938560+00:00",
     "timestamp": 1788134400
+  },
+  "TOSHI_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "TOSHI_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0001286,
+    "current_low": 0.000123,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.0001282,
+    "previous_low": 0.0001187,
+    "timeframe": "DAILY"
   },
   "TOSHI_USDT|DAILY|OBV_HIGHER_HIGH|1787270400": {
     "contract": "TOSHI_USDT",
@@ -4848,6 +7785,17 @@
     "contract": "TQQQX_USDT",
     "created_at": "2026-09-08T10:00:43.591488+00:00",
     "timestamp": 1787702400
+  },
+  "TRADOOR_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "TRADOOR_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.736,
+    "current_low": 0.691,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.721,
+    "previous_low": 0.666,
+    "timeframe": "DAILY"
   },
   "TRADOOR_USDT|DAILY|OBV_HIGHER_HIGH|1788566400": {
     "contract": "TRADOOR_USDT",
@@ -4889,6 +7837,17 @@
     "created_at": "2026-09-08T10:01:56.580703+00:00",
     "timestamp": 1788134400
   },
+  "TRIA_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "TRIA_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0043,
+    "current_low": 0.00414,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.00424,
+    "previous_low": 0.00399,
+    "timeframe": "DAILY"
+  },
   "TRIA_USDT|DAILY|OBV_BEAUTIFUL_V2|1790380800": {
     "contract": "TRIA_USDT",
     "created_at": 1790891984,
@@ -4909,6 +7868,17 @@
     "created_at": "2026-09-08T10:03:23.317269+00:00",
     "timestamp": 1788134400
   },
+  "TRUST_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "TRUST_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.06288,
+    "current_low": 0.06042,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.0639,
+    "previous_low": 0.06118,
+    "timeframe": "DAILY"
+  },
   "TRUTH_USDT|DAILY|OBV_HH_HL_HH|1787961600": {
     "contract": "TRUTH_USDT",
     "created_at": "2026-09-08T10:12:33.128188+00:00",
@@ -4918,6 +7888,17 @@
     "contract": "TRUTH_USDT",
     "created_at": "2026-09-08T10:02:34.182080+00:00",
     "timestamp": 1787961600
+  },
+  "TRX_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "TRX_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.33729,
+    "current_low": 0.33375,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.33689,
+    "previous_low": 0.33359,
+    "timeframe": "DAILY"
   },
   "TRX_USDT|DAILY|OBV_HH_HL_HH|1787875200": {
     "contract": "TRX_USDT",
@@ -4933,6 +7914,17 @@
     "contract": "TSEM_USDT",
     "created_at": "2026-09-08T10:02:22.256855+00:00",
     "timestamp": 1787702400
+  },
+  "TSEM_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "TSEM_USDT",
+    "created_at": 1791037366,
+    "current_high": 243.97,
+    "current_low": 239.89,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 250.77,
+    "previous_low": 240.15,
+    "timeframe": "DAILY"
   },
   "TSLAX_USDT|DAILY|OBV_HIGHER_HIGH|1788393600": {
     "contract": "TSLAX_USDT",
@@ -4969,6 +7961,17 @@
     "created_at": "2026-09-08T10:02:57.577681+00:00",
     "timestamp": 1787875200
   },
+  "TURTLE_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "TURTLE_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0448,
+    "current_low": 0.0427,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.04413,
+    "previous_low": 0.04183,
+    "timeframe": "DAILY"
+  },
   "TURTLE_USDT|DAILY|OBV_HH_HL_HH|1788393600": {
     "contract": "TURTLE_USDT",
     "created_at": "2026-09-08T10:13:03.347269+00:00",
@@ -4983,6 +7986,17 @@
     "contract": "TUT_USDT",
     "created_at": "2026-09-08T10:02:16.498835+00:00",
     "timestamp": 1788566400
+  },
+  "TUT_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "TUT_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.025357,
+    "current_low": 0.02375,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.0255,
+    "previous_low": 0.023809,
+    "timeframe": "DAILY"
   },
   "TW88_USDT|DAILY|OBV_HIGHER_HIGH|1788566400": {
     "contract": "TW88_USDT",
@@ -5119,6 +8133,28 @@
     "created_at": "2026-09-08T10:03:54.475103+00:00",
     "timestamp": 1788393600
   },
+  "UNIS_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "UNIS_USDT",
+    "created_at": 1791037366,
+    "current_high": 4.549,
+    "current_low": 4.549,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 4.634,
+    "previous_low": 4.606,
+    "timeframe": "DAILY"
+  },
+  "UNI_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "UNI_USDT",
+    "created_at": 1791037366,
+    "current_high": 9.321,
+    "current_low": 8.931,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 9.308,
+    "previous_low": 8.574,
+    "timeframe": "DAILY"
+  },
   "UP_USDT|DAILY|OBV_HH_HL_HH|1788393600": {
     "contract": "UP_USDT",
     "created_at": "2026-09-08T10:13:50.798384+00:00",
@@ -5128,6 +8164,28 @@
     "contract": "UP_USDT",
     "created_at": "2026-09-08T10:02:56.896681+00:00",
     "timestamp": 1788393600
+  },
+  "USD1_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "USD1_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.9992,
+    "current_low": 0.9976,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.9993,
+    "previous_low": 0.9981,
+    "timeframe": "DAILY"
+  },
+  "USDBRL_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "USDBRL_USDT",
+    "created_at": 1791037366,
+    "current_high": 5.216,
+    "current_low": 5.19,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 5.224,
+    "previous_low": 5.193,
+    "timeframe": "DAILY"
   },
   "USDC_USDT|DAILY|OBV_HIGHER_HIGH|1788220800": {
     "contract": "USDC_USDT",
@@ -5139,10 +8197,65 @@
     "created_at": "2026-09-08T09:59:36.273408+00:00",
     "timestamp": 1788480000
   },
+  "USELESS_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "USELESS_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.23865,
+    "current_low": 0.21342,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.25934,
+    "previous_low": 0.21715,
+    "timeframe": "DAILY"
+  },
+  "US_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "US_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.025429,
+    "current_low": 0.022019,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.040391,
+    "previous_low": 0.022487,
+    "timeframe": "DAILY"
+  },
+  "UVXY_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "UVXY_USDT",
+    "created_at": 1791037366,
+    "current_high": 17.1,
+    "current_low": 16.7,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 17.5,
+    "previous_low": 16.9,
+    "timeframe": "DAILY"
+  },
+  "VALE_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "VALE_USDT",
+    "created_at": 1791037366,
+    "current_high": 13.871,
+    "current_low": 13.871,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 13.735,
+    "previous_low": 13.318,
+    "timeframe": "DAILY"
+  },
   "VANA_USDT|DAILY|OBV_HIGHER_HIGH|1788480000": {
     "contract": "VANA_USDT",
     "created_at": "2026-09-08T10:00:28.821858+00:00",
     "timestamp": 1788480000
+  },
+  "VELODROME_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "VELODROME_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.03559,
+    "current_low": 0.03235,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.03489,
+    "previous_low": 0.03331,
+    "timeframe": "DAILY"
   },
   "VELODROME_USDT|DAILY|OBV_HH_HL_HH|1787529600": {
     "contract": "VELODROME_USDT",
@@ -5153,6 +8266,17 @@
     "contract": "VELODROME_USDT",
     "created_at": "2026-09-08T10:02:12.271395+00:00",
     "timestamp": 1787529600
+  },
+  "VELODROME_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "VELODROME_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.03559,
+    "current_low": 0.03235,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.03489,
+    "previous_low": 0.03331,
+    "timeframe": "DAILY"
   },
   "VELO_USDT|DAILY|OBV_BEAUTIFUL_V2|1788048000": {
     "contract": "VELO_USDT",
@@ -5173,6 +8297,17 @@
     "contract": "VELO_USDT",
     "created_at": "2026-09-08T10:02:09.992885+00:00",
     "timestamp": 1788048000
+  },
+  "VELVET_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "VELVET_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.09548,
+    "current_low": 0.0668,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.09479,
+    "previous_low": 0.05926,
+    "timeframe": "DAILY"
   },
   "VELVET_USDT|DAILY|OBV_HH_HL_HH|1787097600": {
     "contract": "VELVET_USDT",
@@ -5204,6 +8339,17 @@
     "created_at": "2026-09-08T10:00:48.519771+00:00",
     "timestamp": 1787788800
   },
+  "VOLX_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "VOLX_USDT",
+    "created_at": 1791037366,
+    "current_high": 16.45,
+    "current_low": 16.345,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 16.7,
+    "previous_low": 16.439,
+    "timeframe": "DAILY"
+  },
   "VOO_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "VOO_USDT",
     "created_at": "2026-09-08T09:40:24.554669+00:00",
@@ -5229,6 +8375,28 @@
     "created_at": "2026-09-08T10:03:55.843080+00:00",
     "timestamp": 1788307200
   },
+  "VRT_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "VRT_USDT",
+    "created_at": 1791037366,
+    "current_high": 255.0,
+    "current_low": 252.5,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 254.5,
+    "previous_low": 246.2,
+    "timeframe": "DAILY"
+  },
+  "VST_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "VST_USDT",
+    "created_at": 1791037366,
+    "current_high": 145.62,
+    "current_low": 143.37,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 144.37,
+    "previous_low": 134.98,
+    "timeframe": "DAILY"
+  },
   "VST_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "VST_USDT",
     "created_at": "2026-09-08T09:40:23.233075+00:00",
@@ -5238,6 +8406,17 @@
     "contract": "VTHO_USDT",
     "created_at": "2026-09-08T10:00:56.384691+00:00",
     "timestamp": 1787788800
+  },
+  "VTHO_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "VTHO_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.000674,
+    "current_low": 0.0006462,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.0006953,
+    "previous_low": 0.0006517,
+    "timeframe": "DAILY"
   },
   "VZ_USDT|DAILY|OBV_BEAUTIFUL_V2|1789084800": {
     "contract": "VZ_USDT",
@@ -5284,6 +8463,17 @@
     "created_at": "2026-09-08T10:04:29.896552+00:00",
     "timestamp": 1788220800
   },
+  "WAXP_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "WAXP_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.00653,
+    "current_low": 0.006139,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.006485,
+    "previous_low": 0.006141,
+    "timeframe": "DAILY"
+  },
   "WAXP_USDT|DAILY|OBV_BEAUTIFUL_V2|1788652800": {
     "contract": "WAXP_USDT",
     "created_at": 1789165244,
@@ -5314,6 +8504,17 @@
     "created_at": "2026-09-08T09:59:59.376173+00:00",
     "timestamp": 1787875200
   },
+  "WAXP_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "WAXP_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.00653,
+    "current_low": 0.006139,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.006485,
+    "previous_low": 0.006141,
+    "timeframe": "DAILY"
+  },
   "WCT_USDT|DAILY|OBV_HH_HL_HH|1788134400": {
     "contract": "WCT_USDT",
     "created_at": "2026-09-08T10:12:50.817153+00:00",
@@ -5324,10 +8525,32 @@
     "created_at": "2026-09-08T10:01:48.638403+00:00",
     "timestamp": 1788134400
   },
+  "WEN_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "WEN_USDT",
+    "created_at": 1791037366,
+    "current_high": 6.178,
+    "current_low": 6.12,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 6.348,
+    "previous_low": 6.135,
+    "timeframe": "DAILY"
+  },
   "WFC_USDT|DAILY|OBV_HIGHER_HIGH|1788307200": {
     "contract": "WFC_USDT",
     "created_at": "2026-09-08T10:04:28.509065+00:00",
     "timestamp": 1788307200
+  },
+  "WLD_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "WLD_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.6161,
+    "current_low": 0.5497,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.5882,
+    "previous_low": 0.5007,
+    "timeframe": "DAILY"
   },
   "WLD_USDT|DAILY|OBV_BEAUTIFUL_V2|1790467200": {
     "contract": "WLD_USDT",
@@ -5357,6 +8580,28 @@
     "hl_timestamp": 1789430400,
     "previous_low_timestamp": 1789084800,
     "score": 87.83,
+    "timeframe": "DAILY"
+  },
+  "WMT_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "WMT_USDT",
+    "created_at": 1791037366,
+    "current_high": 104.62,
+    "current_low": 104.0,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 105.23,
+    "previous_low": 104.03,
+    "timeframe": "DAILY"
+  },
+  "WOO_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "WOO_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.01421,
+    "current_low": 0.01357,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.01414,
+    "previous_low": 0.01319,
     "timeframe": "DAILY"
   },
   "WOO_USDT|DAILY|OBV_BEAUTIFUL_V2|1790467200": {
@@ -5419,6 +8664,17 @@
     "created_at": "2026-09-08T10:00:00.800109+00:00",
     "timestamp": 1788480000
   },
+  "XDP_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "XDP_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.022013,
+    "current_low": 0.019084,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.02011,
+    "previous_low": 0.018497,
+    "timeframe": "DAILY"
+  },
   "XIAOMIHKD_USDT|DAILY|OBV_BEAUTIFUL_V2|1788652800": {
     "contract": "XIAOMIHKD_USDT",
     "created_at": 1789602734,
@@ -5437,6 +8693,17 @@
     "hl_timestamp": 1789516800,
     "previous_low_timestamp": 1788998400,
     "score": 90.7,
+    "timeframe": "DAILY"
+  },
+  "XLE_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "XLE_USDT",
+    "created_at": 1791037366,
+    "current_high": 63.0,
+    "current_low": 62.44,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 62.95,
+    "previous_low": 61.9,
     "timeframe": "DAILY"
   },
   "XLE_USDT|DAILY|OBV_BEAUTIFUL_V2|1788912000": {
@@ -5459,6 +8726,17 @@
     "created_at": "2026-09-08T10:03:45.796847+00:00",
     "timestamp": 1788307200
   },
+  "XLK_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "XLK_USDT",
+    "created_at": 1791037366,
+    "current_high": 201.57,
+    "current_low": 198.0,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 201.25,
+    "previous_low": 197.59,
+    "timeframe": "DAILY"
+  },
   "XLK_USDT|DAILY|OBV_BEAUTIFUL_V2|1789257600": {
     "contract": "XLK_USDT",
     "created_at": 1790288968,
@@ -5477,6 +8755,17 @@
     "hl_timestamp": 1790467200,
     "previous_low_timestamp": 1790121600,
     "score": 89.55,
+    "timeframe": "DAILY"
+  },
+  "XLU_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "XLU_USDT",
+    "created_at": 1791037366,
+    "current_high": 40.1,
+    "current_low": 40.07,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 40.05,
+    "previous_low": 39.65,
     "timeframe": "DAILY"
   },
   "XLU_USDT|DAILY|OBV_BREAKOUT|1788739200": {
@@ -5513,6 +8802,39 @@
     "contract": "XNO_USDT",
     "created_at": "2026-09-08T10:03:09.444430+00:00",
     "timestamp": 1788393600
+  },
+  "XOM_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "XOM_USDT",
+    "created_at": 1791037366,
+    "current_high": 165.65,
+    "current_low": 164.34,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 164.63,
+    "previous_low": 162.17,
+    "timeframe": "DAILY"
+  },
+  "XPB_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "XPB_USDT",
+    "created_at": 1791037366,
+    "current_high": 1854.84,
+    "current_low": 1847.06,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 1866.64,
+    "previous_low": 1849.57,
+    "timeframe": "DAILY"
+  },
+  "XPIN_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "XPIN_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0009105,
+    "current_low": 0.0008231,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.000903,
+    "previous_low": 0.0008002,
+    "timeframe": "DAILY"
   },
   "XRP_USDT|DAILY|OBV_BEAUTIFUL_V2|1788825600": {
     "contract": "XRP_USDT",
@@ -5569,6 +8891,28 @@
     "created_at": "2026-09-08T10:01:31.097161+00:00",
     "timestamp": 1788480000
   },
+  "YFI_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "YFI_USDT",
+    "created_at": 1791037366,
+    "current_high": 2663.8,
+    "current_low": 2499.3,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 2582.5,
+    "previous_low": 2425.5,
+    "timeframe": "DAILY"
+  },
+  "YGG_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "YGG_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.02941,
+    "current_low": 0.0272,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.02933,
+    "previous_low": 0.02615,
+    "timeframe": "DAILY"
+  },
   "YJTECH_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "YJTECH_USDT",
     "created_at": "2026-09-08T09:40:23.866291+00:00",
@@ -5598,6 +8942,17 @@
     "contract": "ZBT_USDT",
     "created_at": "2026-09-08T10:01:14.863968+00:00",
     "timestamp": 1788134400
+  },
+  "ZEST_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ZEST_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.20172,
+    "current_low": 0.18573,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.1966,
+    "previous_low": 0.17982,
+    "timeframe": "DAILY"
   },
   "ZEST_USDT|DAILY|OBV_BEAUTIFUL_V2|1790640000": {
     "contract": "ZEST_USDT",
@@ -5679,6 +9034,17 @@
     "created_at": "2026-09-08T10:01:53.816192+00:00",
     "timestamp": 1787443200
   },
+  "ZRO_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ZRO_USDT",
+    "created_at": 1791037366,
+    "current_high": 2.12,
+    "current_low": 1.722,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 1.999,
+    "previous_low": 1.73,
+    "timeframe": "DAILY"
+  },
   "ZRO_USDT|DAILY|OBV_BREAKOUT|1788739200": {
     "contract": "ZRO_USDT",
     "created_at": "2026-09-08T09:40:14.754519+00:00",
@@ -5688,6 +9054,28 @@
     "contract": "ZRO_USDT",
     "created_at": "2026-09-08T09:59:52.334285+00:00",
     "timestamp": 1787616000
+  },
+  "ZRO_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "ZRO_USDT",
+    "created_at": 1791037366,
+    "current_high": 2.12,
+    "current_low": 1.722,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 1.999,
+    "previous_low": 1.73,
+    "timeframe": "DAILY"
+  },
+  "ZRX_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "ZRX_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.1281,
+    "current_low": 0.1209,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "previous_high": 0.12554,
+    "previous_low": 0.11734,
+    "timeframe": "DAILY"
   },
   "ZRX_USDT|DAILY|OBV_BEAUTIFUL_V2|1788912000": {
     "contract": "ZRX_USDT",
@@ -5709,6 +9097,17 @@
     "created_at": "2026-09-08T10:03:04.516293+00:00",
     "timestamp": 1787702400
   },
+  "ZZZ_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "ZZZ_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.0168,
+    "current_low": 0.01448,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.01759,
+    "previous_low": 0.0147,
+    "timeframe": "DAILY"
+  },
   "\u5e01\u5b89\u4eba\u751f_USDT|DAILY|OBV_HH_HL_HH|1788566400": {
     "contract": "\u5e01\u5b89\u4eba\u751f_USDT",
     "created_at": "2026-09-08T10:12:41.342263+00:00",
@@ -5718,6 +9117,17 @@
     "contract": "\u5e01\u5b89\u4eba\u751f_USDT",
     "created_at": "2026-09-08T10:02:43.480965+00:00",
     "timestamp": 1788566400
+  },
+  "\u725b\u6765_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "\u725b\u6765_USDT",
+    "created_at": 1791037366,
+    "current_high": 0.08861,
+    "current_low": 0.08093,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "previous_high": 0.10237,
+    "previous_low": 0.08199,
+    "timeframe": "DAILY"
   },
   "\u9f99\u867e_USDT|DAILY|OBV_HH_HL_HH|1788480000": {
     "contract": "\u9f99\u867e_USDT",
