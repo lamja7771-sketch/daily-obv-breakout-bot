@@ -5,28 +5,22 @@ import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # ============================================================
-# DAILY BREAKOUT SETUP BOT
+# DAILY LONG BREAKOUT SETUP BOT
 # ============================================================
 
 BASE_URL = "https://api.gateio.ws/api/v4"
 
 TIMEFRAME = "1d"
 
-# Price must remain within this percentage beyond
-# the previous daily high/low.
+# Maximum distance above previous daily high
 PROXIMITY_PERCENT = 0.02
 
-# Number of workers for candle requests
 MAX_WORKERS = 6
-
-# We only need previous + current daily candle
 CANDLE_LIMIT = 3
 
-# Retry settings
 MAX_RETRIES = 4
 RETRY_DELAY = 1.5
 
-# History file
 HISTORY_FILE = "signals.json"
 
 # Telegram
@@ -36,24 +30,24 @@ TELEGRAM_CHAT_ID_2 = os.getenv("TELEGRAM_CHAT_ID_2")
 
 HEADERS = {
     "Accept": "application/json",
-    "User-Agent": "Daily-Breakout-Setup-Bot/1.0"
+    "User-Agent": "Daily-Long-Breakout-Bot/1.0"
 }
 
 
 # ============================================================
-# PRINT BANNER
+# BANNER
 # ============================================================
 
 print("=" * 60)
-print("DAILY BREAKOUT SETUP BOT")
+print("DAILY LONG BREAKOUT SETUP BOT")
 print("=" * 60)
 print("Timeframe: DAILY")
 print("LONG: Current Daily candle breaks Previous Daily HIGH")
-print("SHORT: Current Daily candle breaks Previous Daily LOW")
 print("Break type: WICK BREAK IS ENOUGH")
-print("Current price must remain beyond broken level")
-print(f"Proximity: {PROXIMITY_PERCENT * 100:.0f}%")
-print("No OBV • No indicators • LTF retest checked manually")
+print("Current price must remain ABOVE broken level")
+print("Proximity: 2%")
+print("No SHORT • No OBV • No indicators")
+print("LTF retest checked manually")
 print("=" * 60)
 
 
@@ -66,35 +60,41 @@ session.headers.update(HEADERS)
 
 
 # ============================================================
-# GENERIC GET WITH RETRIES
+# API GET WITH RETRIES
 # ============================================================
 
 def api_get(endpoint, params=None):
+
     for attempt in range(1, MAX_RETRIES + 1):
 
         try:
+
             response = session.get(
                 BASE_URL + endpoint,
                 params=params,
                 timeout=15
             )
 
-            # Rate limit
             if response.status_code == 429:
+
                 wait_time = RETRY_DELAY * attempt
+
                 time.sleep(wait_time)
+
                 continue
 
             response.raise_for_status()
 
             return response.json()
 
-        except Exception as e:
+        except Exception:
 
             if attempt == MAX_RETRIES:
                 raise
 
-            time.sleep(RETRY_DELAY * attempt)
+            time.sleep(
+                RETRY_DELAY * attempt
+            )
 
     return None
 
@@ -109,7 +109,13 @@ def load_history():
         return {}
 
     try:
-        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+
+        with open(
+            HISTORY_FILE,
+            "r",
+            encoding="utf-8"
+        ) as f:
+
             data = json.load(f)
 
         if isinstance(data, dict):
@@ -118,6 +124,7 @@ def load_history():
         return {}
 
     except Exception:
+
         return {}
 
 
@@ -129,7 +136,12 @@ def save_history(history):
 
     temp_file = HISTORY_FILE + ".tmp"
 
-    with open(temp_file, "w", encoding="utf-8") as f:
+    with open(
+        temp_file,
+        "w",
+        encoding="utf-8"
+    ) as f:
+
         json.dump(
             history,
             f,
@@ -137,7 +149,10 @@ def save_history(history):
             ensure_ascii=False
         )
 
-    os.replace(temp_file, HISTORY_FILE)
+    os.replace(
+        temp_file,
+        HISTORY_FILE
+    )
 
 
 # ============================================================
@@ -146,7 +161,9 @@ def save_history(history):
 
 def get_contracts():
 
-    data = api_get("/futures/usdt/contracts")
+    data = api_get(
+        "/futures/usdt/contracts"
+    )
 
     contracts = []
 
@@ -160,14 +177,10 @@ def get_contracts():
         if not name:
             continue
 
-        # Only USDT perpetual contracts
         if not name.endswith("_USDT"):
             continue
 
-        # Skip inactive contracts
-        in_delisting = item.get("in_delisting", False)
-
-        if in_delisting:
+        if item.get("in_delisting", False):
             continue
 
         contracts.append(name)
@@ -176,7 +189,7 @@ def get_contracts():
 
 
 # ============================================================
-# GET ALL LIVE FUTURES TICKERS
+# GET ALL LIVE FUTURES PRICES
 # ============================================================
 
 def get_all_live_prices():
@@ -185,7 +198,9 @@ def get_all_live_prices():
 
     try:
 
-        data = api_get("/futures/usdt/tickers")
+        data = api_get(
+            "/futures/usdt/tickers"
+        )
 
         if not isinstance(data, list):
             return prices
@@ -206,13 +221,23 @@ def get_all_live_prices():
                 continue
 
             try:
-                prices[contract] = float(last_price)
-            except (TypeError, ValueError):
+
+                prices[contract] = float(
+                    last_price
+                )
+
+            except (
+                TypeError,
+                ValueError
+            ):
+
                 continue
 
     except Exception as e:
 
-        print(f"Ticker error: {e}")
+        print(
+            f"Ticker error: {e}"
+        )
 
     return prices
 
@@ -235,26 +260,21 @@ def get_daily_candles(contract):
     )
 
     if not isinstance(data, list):
-        raise ValueError("Invalid candle response")
+        raise ValueError(
+            "Invalid candle response"
+        )
 
     if len(data) < 2:
-        raise ValueError("Not enough candles")
+        raise ValueError(
+            "Not enough candles"
+        )
 
-    normalized = []
+    candles = []
 
     for candle in data:
 
         # ----------------------------------------------------
-        # CURRENT GATE FUTURES FORMAT
-        # {
-        #   "t": 1539852480,
-        #   "v": "...",
-        #   "c": "...",
-        #   "h": "...",
-        #   "l": "...",
-        #   "o": "...",
-        #   "sum": "..."
-        # }
+        # CURRENT GATE FORMAT
         # ----------------------------------------------------
 
         if isinstance(candle, dict):
@@ -265,135 +285,145 @@ def get_daily_candles(contract):
             close = candle.get("c")
 
             if timestamp is None:
-                raise ValueError("Candle timestamp missing")
+                raise ValueError(
+                    "Timestamp missing"
+                )
 
-            if high is None or low is None:
-                raise ValueError("Candle high/low missing")
+            if high is None:
+                raise ValueError(
+                    "High missing"
+                )
 
-            normalized.append({
-                "timestamp": int(float(timestamp)),
+            if low is None:
+                raise ValueError(
+                    "Low missing"
+                )
+
+            candles.append({
+                "timestamp": int(
+                    float(timestamp)
+                ),
                 "high": float(high),
                 "low": float(low),
-                "close": float(close) if close is not None else None
+                "close": (
+                    float(close)
+                    if close is not None
+                    else None
+                )
             })
 
         # ----------------------------------------------------
         # BACKWARD COMPATIBILITY
         # ----------------------------------------------------
 
-        elif isinstance(candle, (list, tuple)):
+        elif isinstance(
+            candle,
+            (list, tuple)
+        ):
 
             if len(candle) < 5:
                 continue
 
-            normalized.append({
-                "timestamp": int(float(candle[0])),
+            candles.append({
+                "timestamp": int(
+                    float(candle[0])
+                ),
                 "close": float(candle[2]),
                 "high": float(candle[3]),
                 "low": float(candle[4])
             })
 
-        else:
-            continue
+    if len(candles) < 2:
 
-    if len(normalized) < 2:
-        raise ValueError("Could not normalize candles")
+        raise ValueError(
+            "Could not normalize candles"
+        )
 
-    normalized.sort(
+    candles.sort(
         key=lambda x: x["timestamp"]
     )
 
-    return normalized
+    return candles
 
 
 # ============================================================
-# CHECK ONE CONTRACT
+# CHECK LONG SIGNAL
 # ============================================================
 
-def check_signal(contract, live_prices):
+def check_signal(
+    contract,
+    live_prices
+):
 
     try:
 
-        candles = get_daily_candles(contract)
+        candles = get_daily_candles(
+            contract
+        )
 
-        # Latest candle = current/forming daily candle
+        # Current/forming daily candle
         current = candles[-1]
 
-        # Previous candle = previous daily candle
+        # Previous completed daily candle
         previous = candles[-2]
 
         previous_high = previous["high"]
-        previous_low = previous["low"]
 
         current_high = current["high"]
-        current_low = current["low"]
 
-        live_price = live_prices.get(contract)
+        live_price = live_prices.get(
+            contract
+        )
 
         if live_price is None:
             return None
 
         # ====================================================
-        # LONG
+        # LONG ONLY
         #
-        # Current daily candle must have broken previous HIGH
-        # AND live price must still be ABOVE previous HIGH.
+        # Current daily candle must break previous HIGH
+        #
+        # Live price must STILL be above previous HIGH
         #
         # Maximum distance = 2%
         # ====================================================
 
-        if (
+        if not (
             current_high > previous_high
-            and
-            previous_high < live_price <=
-            previous_high * (1 + PROXIMITY_PERCENT)
         ):
+            return None
 
-            distance_percent = (
-                (live_price - previous_high)
-                / previous_high
-            ) * 100
-
-            return {
-                "contract": contract,
-                "direction": "LONG",
-                "price": live_price,
-                "level": previous_high,
-                "distance_percent": distance_percent,
-                "candle_timestamp": current["timestamp"]
-            }
-
-        # ====================================================
-        # SHORT
-        #
-        # Current daily candle must have broken previous LOW
-        # AND live price must still be BELOW previous LOW.
-        #
-        # Maximum distance = 2%
-        # ====================================================
-
-        if (
-            current_low < previous_low
-            and
-            previous_low * (1 - PROXIMITY_PERCENT)
-            <= live_price < previous_low
+        if not (
+            live_price > previous_high
         ):
+            return None
 
-            distance_percent = (
-                (previous_low - live_price)
-                / previous_low
-            ) * 100
+        if not (
+            live_price <=
+            previous_high *
+            (1 + PROXIMITY_PERCENT)
+        ):
+            return None
 
-            return {
-                "contract": contract,
-                "direction": "SHORT",
-                "price": live_price,
-                "level": previous_low,
-                "distance_percent": distance_percent,
-                "candle_timestamp": current["timestamp"]
-            }
+        # Distance above previous high
+        distance_percent = (
+            (
+                live_price -
+                previous_high
+            )
+            / previous_high
+        ) * 100
 
-        return None
+        return {
+            "contract": contract,
+            "direction": "LONG",
+            "price": live_price,
+            "level": previous_high,
+            "distance_percent": distance_percent,
+            "candle_timestamp": current[
+                "timestamp"
+            ]
+        }
 
     except Exception as e:
 
@@ -404,6 +434,25 @@ def check_signal(contract, live_prices):
 
 
 # ============================================================
+# CATEGORY
+# ============================================================
+
+def get_category(distance):
+
+    if distance < 0.50:
+        return "0–0.50%"
+
+    elif distance < 1.00:
+        return "0.50–1.00%"
+
+    elif distance < 1.50:
+        return "1.00–1.50%"
+
+    else:
+        return "1.50–2.00%"
+
+
+# ============================================================
 # SIGNAL KEY
 # ============================================================
 
@@ -411,7 +460,7 @@ def signal_key(signal):
 
     return (
         f"{signal['contract']}_"
-        f"{signal['direction']}_"
+        f"LONG_"
         f"{signal['candle_timestamp']}"
     )
 
@@ -420,10 +469,15 @@ def signal_key(signal):
 # TELEGRAM
 # ============================================================
 
-def send_telegram(message, chat_id):
+def send_telegram(
+    message,
+    chat_id
+):
 
     if not TELEGRAM_BOT_TOKEN:
-        print("Telegram bot token missing.")
+        print(
+            "Telegram bot token missing."
+        )
         return False
 
     if not chat_id:
@@ -451,7 +505,8 @@ def send_telegram(message, chat_id):
             return True
 
         print(
-            f"Telegram error {response.status_code}: "
+            f"Telegram error "
+            f"{response.status_code}: "
             f"{response.text[:300]}"
         )
 
@@ -459,16 +514,21 @@ def send_telegram(message, chat_id):
 
     except Exception as e:
 
-        print(f"Telegram exception: {e}")
+        print(
+            f"Telegram exception: {e}"
+        )
 
         return False
 
 
 # ============================================================
-# SEND TELEGRAM IN CHUNKS
+# TELEGRAM CHUNKS
 # ============================================================
 
-def send_telegram_chunks(message, chat_id):
+def send_telegram_chunks(
+    message,
+    chat_id
+):
 
     if not chat_id:
         return False
@@ -492,7 +552,9 @@ def send_telegram_chunks(message, chat_id):
             message[:split_at]
         )
 
-        message = message[split_at:].lstrip()
+        message = message[
+            split_at:
+        ].lstrip()
 
     if message:
         parts.append(message)
@@ -501,12 +563,119 @@ def send_telegram_chunks(message, chat_id):
 
     for part in parts:
 
-        if not send_telegram(part, chat_id):
+        if not send_telegram(
+            part,
+            chat_id
+        ):
             success = False
 
         time.sleep(0.5)
 
     return success
+
+
+# ============================================================
+# BUILD TELEGRAM MESSAGE
+# ============================================================
+
+def build_message(
+    signals
+):
+
+    categories = {
+        "0–0.50%": [],
+        "0.50–1.00%": [],
+        "1.00–1.50%": [],
+        "1.50–2.00%": []
+    }
+
+    # --------------------------------------------------------
+    # Put signals into categories
+    # --------------------------------------------------------
+
+    for signal in signals:
+
+        distance = signal[
+            "distance_percent"
+        ]
+
+        category = get_category(
+            distance
+        )
+
+        categories[
+            category
+        ].append(signal)
+
+    # --------------------------------------------------------
+    # Sort each category
+    # Closest to previous high first
+    # --------------------------------------------------------
+
+    for category in categories:
+
+        categories[
+            category
+        ].sort(
+            key=lambda x:
+            x["distance_percent"]
+        )
+
+    lines = []
+
+    lines.append(
+        "🚨 DAILY LONG BREAKOUTS"
+    )
+
+    lines.append(
+        "Current price is above "
+        "previous daily HIGH."
+    )
+
+    lines.append("")
+
+    # --------------------------------------------------------
+    # Categories
+    # --------------------------------------------------------
+
+    for category in categories:
+
+        signals_in_category = (
+            categories[category]
+        )
+
+        if not signals_in_category:
+            continue
+
+        lines.append(
+            f"📊 {category}"
+        )
+
+        for signal in signals_in_category:
+
+            symbol = signal[
+                "contract"
+            ].replace(
+                "_USDT",
+                ""
+            )
+
+            distance = signal[
+                "distance_percent"
+            ]
+
+            lines.append(
+                f"🟢 {symbol} "
+                f"+{distance:.2f}%"
+            )
+
+        lines.append("")
+
+    lines.append(
+        "LTF RETEST: 15M / 1H / 4H"
+    )
+
+    return "\n".join(lines)
 
 
 # ============================================================
@@ -525,7 +694,7 @@ def main():
     )
 
     # --------------------------------------------------------
-    # GET CONTRACTS
+    # CONTRACTS
     # --------------------------------------------------------
 
     try:
@@ -534,7 +703,10 @@ def main():
 
     except Exception as e:
 
-        print(f"Contract error: {e}")
+        print(
+            f"Contract error: {e}"
+        )
+
         return
 
     print(
@@ -543,16 +715,24 @@ def main():
     )
 
     if not contracts:
-        print("No contracts found.")
+
+        print(
+            "No contracts found."
+        )
+
         return
 
     # --------------------------------------------------------
-    # GET ALL LIVE PRICES ONCE
+    # LIVE PRICES
     # --------------------------------------------------------
 
-    print("Fetching live futures prices...")
+    print(
+        "Fetching live futures prices..."
+    )
 
-    live_prices = get_all_live_prices()
+    live_prices = (
+        get_all_live_prices()
+    )
 
     print(
         f"Live prices received: "
@@ -561,14 +741,19 @@ def main():
 
     if not live_prices:
 
-        print("No live prices received.")
+        print(
+            "No live prices received."
+        )
+
         return
 
     # --------------------------------------------------------
     # SCAN
     # --------------------------------------------------------
 
-    print("Scanning...")
+    print(
+        "Scanning..."
+    )
 
     setups = []
     errors = []
@@ -588,24 +773,35 @@ def main():
             for contract in contracts
         }
 
-        for future in as_completed(futures):
+        for future in as_completed(
+            futures
+        ):
 
-            contract = futures[future]
+            contract = futures[
+                future
+            ]
 
             try:
 
-                result = future.result()
+                result = (
+                    future.result()
+                )
 
                 if result is None:
+
                     pass
 
                 elif "error" in result:
 
-                    errors.append(result)
+                    errors.append(
+                        result
+                    )
 
                 else:
 
-                    setups.append(result)
+                    setups.append(
+                        result
+                    )
 
             except Exception as e:
 
@@ -618,12 +814,16 @@ def main():
 
             if (
                 completed % 100 == 0
-                or completed == len(contracts)
+                or
+                completed == len(
+                    contracts
+                )
             ):
 
                 print(
                     f"Progress: "
-                    f"{completed}/{len(contracts)}"
+                    f"{completed}/"
+                    f"{len(contracts)}"
                 )
 
     # --------------------------------------------------------
@@ -637,13 +837,11 @@ def main():
             f"{len(errors)}"
         )
 
-        # Print only first 10 errors
-        # so GitHub Actions log stays clean.
-
         for error in errors[:10]:
 
             print(
-                f"Error {error['contract']}: "
+                f"Error "
+                f"{error['contract']}: "
                 f"{error['error']}"
             )
 
@@ -651,67 +849,95 @@ def main():
 
             print(
                 f"... and "
-                f"{len(errors) - 10} more errors"
+                f"{len(errors) - 10} "
+                f"more errors"
             )
 
     # --------------------------------------------------------
-    # SORT SETUPS
-    # Largest distance first
+    # SORT
     # --------------------------------------------------------
 
     setups.sort(
-        key=lambda x: x["distance_percent"],
-        reverse=True
-    )
-
-    long_count = sum(
-        1
-        for x in setups
-        if x["direction"] == "LONG"
-    )
-
-    short_count = sum(
-        1
-        for x in setups
-        if x["direction"] == "SHORT"
+        key=lambda x:
+        x["distance_percent"]
     )
 
     print()
     print(
-        f"Daily wick flip setups found: "
+        f"Daily LONG setups found: "
         f"{len(setups)}"
     )
 
+    # --------------------------------------------------------
+    # CATEGORY COUNTS
+    # --------------------------------------------------------
+
+    category_counts = {
+        "0–0.50%": 0,
+        "0.50–1.00%": 0,
+        "1.00–1.50%": 0,
+        "1.50–2.00%": 0
+    }
+
+    for signal in setups:
+
+        category = get_category(
+            signal["distance_percent"]
+        )
+
+        category_counts[
+            category
+        ] += 1
+
     print(
-        f"LONG: {long_count}"
+        f"0–0.50%: "
+        f"{category_counts['0–0.50%']}"
     )
 
     print(
-        f"SHORT: {short_count}"
+        f"0.50–1.00%: "
+        f"{category_counts['0.50–1.00%']}"
+    )
+
+    print(
+        f"1.00–1.50%: "
+        f"{category_counts['1.00–1.50%']}"
+    )
+
+    print(
+        f"1.50–2.00%: "
+        f"{category_counts['1.50–2.00%']}"
     )
 
     # --------------------------------------------------------
-    # FIND NEW SIGNALS
+    # NEW SIGNALS
     # --------------------------------------------------------
 
     new_signals = []
 
     for signal in setups:
 
-        key = signal_key(signal)
+        key = signal_key(
+            signal
+        )
 
         if key not in history:
 
             history[key] = {
-                "contract": signal["contract"],
-                "direction": signal["direction"],
-                "candle_timestamp": signal[
-                    "candle_timestamp"
+                "contract": signal[
+                    "contract"
                 ],
+                "direction": "LONG",
+                "candle_timestamp":
+                    signal[
+                        "candle_timestamp"
+                    ],
                 "telegram_sent": False
             }
 
-            new_signals.append(signal)
+            new_signals.append(
+                signal
+            )
 
     print(
         f"New signals: "
@@ -719,107 +945,71 @@ def main():
     )
 
     # --------------------------------------------------------
-    # TELEGRAM MESSAGE
+    # UNSENT
     # --------------------------------------------------------
 
     unsent_signals = []
 
     for signal in new_signals:
 
-        key = signal_key(signal)
+        key = signal_key(
+            signal
+        )
 
         if not history[key].get(
             "telegram_sent",
             False
         ):
 
-            unsent_signals.append(signal)
+            unsent_signals.append(
+                signal
+            )
+
+    # --------------------------------------------------------
+    # TELEGRAM
+    # --------------------------------------------------------
 
     if unsent_signals:
 
-        blocks = []
-
-        for signal in unsent_signals:
-
-            symbol = signal["contract"].replace(
-                "_USDT",
-                ""
-            )
-
-            distance = signal[
-                "distance_percent"
-            ]
-
-            if signal["direction"] == "LONG":
-
-                block = (
-                    f"🟢 {symbol} "
-                    f"+{distance:.2f}%"
-                )
-
-            else:
-
-                block = (
-                    f"🔴 {symbol} "
-                    f"-{distance:.2f}%"
-                )
-
-            blocks.append(block)
-
-        message = (
-            "🚨 DAILY WICK FLIP SETUPS\n"
-            "Current price within 2% "
-            "of previous daily wick.\n\n"
-            +
-            "\n".join(blocks)
-            +
-            "\n\n"
-            "LTF RETEST: 15M / 1H / 4H"
+        message = build_message(
+            unsent_signals
         )
 
         print()
-        print("Sending Telegram alerts...")
-
-        # ----------------------------------------------------
-        # CHAT 1
-        # ----------------------------------------------------
+        print(
+            "Sending Telegram alerts..."
+        )
 
         sent_1 = send_telegram_chunks(
             message,
             TELEGRAM_CHAT_ID
         )
 
-        # ----------------------------------------------------
-        # CHAT 2
-        # ----------------------------------------------------
-
         sent_2 = True
 
         if TELEGRAM_CHAT_ID_2:
 
-            sent_2 = send_telegram_chunks(
-                message,
-                TELEGRAM_CHAT_ID_2
+            sent_2 = (
+                send_telegram_chunks(
+                    message,
+                    TELEGRAM_CHAT_ID_2
+                )
             )
-
-        # ----------------------------------------------------
-        # Mark sent only if at least the configured
-        # Telegram destination succeeded.
-        # ----------------------------------------------------
 
         if sent_1 or sent_2:
 
             for signal in unsent_signals:
 
-                key = signal_key(signal)
+                key = signal_key(
+                    signal
+                )
 
                 history[key][
                     "telegram_sent"
                 ] = True
 
             print(
-                f"Telegram messages sent: "
-                f"{len(unsent_signals)} signals"
+                "Telegram alerts sent."
             )
 
         else:
@@ -838,13 +1028,18 @@ def main():
     # SAVE HISTORY
     # --------------------------------------------------------
 
-    save_history(history)
+    save_history(
+        history
+    )
 
     # --------------------------------------------------------
-    # SUMMARY
+    # COMPLETE
     # --------------------------------------------------------
 
-    runtime = time.time() - start_time
+    runtime = (
+        time.time() -
+        start_time
+    )
 
     print()
     print("=" * 60)
@@ -853,7 +1048,8 @@ def main():
         f"Runtime: {runtime:.1f} seconds"
     )
     print(
-        f"History records: {len(history)}"
+        f"History records: "
+        f"{len(history)}"
     )
     print("=" * 60)
 
