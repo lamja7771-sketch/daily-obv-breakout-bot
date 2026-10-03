@@ -10216,5 +10216,29 @@
     "direction": "LONG",
     "candle_timestamp": 1790985600,
     "telegram_sent": true
+  },
+  "MEW_USDT_LONG_1790985600": {
+    "contract": "MEW_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1790985600,
+    "telegram_sent": true
+  },
+  "JTO_USDT_LONG_1790985600": {
+    "contract": "JTO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1790985600,
+    "telegram_sent": true
+  },
+  "RED_USDT_LONG_1790985600": {
+    "contract": "RED_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1790985600,
+    "telegram_sent": true
+  },
+  "ONE_USDT_LONG_1790985600": {
+    "contract": "ONE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1790985600,
+    "telegram_sent": true
   }
 }
