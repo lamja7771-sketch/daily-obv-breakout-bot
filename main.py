@@ -3,32 +3,32 @@ import json
 import time
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timezone
 
 import requests
 
 
 # ============================================================
-# DAILY OBV BEAUTIFUL HH -> HL -> HH BOT
+# DAILY BREAKOUT SETUP BOT
+# ============================================================
+# Logic:
+#   Previous completed Daily candle = reference candle
+#   Current Daily candle breaks previous High -> LONG SETUP
+#   Current Daily candle breaks previous Low  -> SHORT SETUP
+#
+# A wick break is enough.
+# No OBV, SMA, EMA, RSI, BOS, or other indicators.
+# The bot only gives the Daily setup. LTF retest is checked manually.
 # ============================================================
 
 GATE_URL = "https://api.gateio.ws/api/v4"
 
 TIMEFRAME = "1d"
 
-# We only need enough history to identify recent OBV structure.
-CANDLE_LIMIT = 100
+# Only a small amount of history is required.
+CANDLE_LIMIT = 10
 
-# Confirmed OBV pivots.
-PIVOT_LEFT = 2
-PIVOT_RIGHT = 2
-
-# Faster controlled scanning.
 MAX_WORKERS = 12
 REQUEST_DELAY = 0.03
-
-# Only setups scoring 85 or higher are sent.
-BEAUTIFUL_MIN_SCORE = 85
 
 HISTORY_FILE = "signals.json"
 
@@ -45,10 +45,9 @@ TELEGRAM_CHAT_ID_2 = os.getenv(
 ).strip()
 
 HEADERS = {
-    "User-Agent": "Daily-OBV-Beautiful-Bot/2.0"
+    "User-Agent": "Daily-Breakout-Setup-Bot/1.0"
 }
 
-# Prevent requests from being fired at exactly the same moment.
 request_lock = threading.Lock()
 
 
@@ -62,7 +61,6 @@ def gate_get(url, params=None, retries=5):
 
         try:
 
-            # Small controlled delay.
             with request_lock:
                 time.sleep(REQUEST_DELAY)
 
@@ -75,10 +73,6 @@ def gate_get(url, params=None, retries=5):
 
             if response.status_code == 200:
                 return response.json()
-
-            # ------------------------------------------------
-            # Rate limit.
-            # ------------------------------------------------
 
             if response.status_code == 429:
 
@@ -226,7 +220,6 @@ def save_history(history):
 
     try:
 
-        # Write once at the end of the scan.
         with open(
             HISTORY_FILE,
             "w",
@@ -309,7 +302,7 @@ def get_daily_candles(contract):
 
     params = {
         "contract": contract,
-        "interval": "1d",
+        "interval": TIMEFRAME,
         "limit": CANDLE_LIMIT
     }
 
@@ -371,325 +364,7 @@ def get_daily_candles(contract):
         key=lambda x: x["timestamp"]
     )
 
-    # --------------------------------------------------------
-    # Remove currently forming Daily candle.
-    # --------------------------------------------------------
-
-    now = int(
-        time.time()
-    )
-
-    completed = []
-
-    for candle in candles:
-
-        candle_start = candle[
-            "timestamp"
-        ]
-
-        candle_end = (
-            candle_start + 86400
-        )
-
-        if candle_end <= now:
-            completed.append(
-                candle
-            )
-
-    return completed
-
-
-# ============================================================
-# CLASSIC OBV
-# ============================================================
-
-def calculate_obv(candles):
-
-    if not candles:
-        return []
-
-    obv = [0.0]
-
-    for i in range(
-        1,
-        len(candles)
-    ):
-
-        previous_close = candles[
-            i - 1
-        ]["close"]
-
-        current_close = candles[
-            i
-        ]["close"]
-
-        volume = candles[
-            i
-        ]["volume"]
-
-        previous_obv = obv[-1]
-
-        if current_close > previous_close:
-
-            current_obv = (
-                previous_obv + volume
-            )
-
-        elif current_close < previous_close:
-
-            current_obv = (
-                previous_obv - volume
-            )
-
-        else:
-
-            current_obv = previous_obv
-
-        obv.append(
-            current_obv
-        )
-
-    return obv
-
-
-# ============================================================
-# CONFIRMED SWING HIGHS
-# ============================================================
-
-def find_swing_highs(values):
-
-    highs = []
-
-    start = PIVOT_LEFT
-
-    end = (
-        len(values)
-        - PIVOT_RIGHT
-    )
-
-    for i in range(
-        start,
-        end
-    ):
-
-        current = values[i]
-
-        left = values[
-            i - PIVOT_LEFT:i
-        ]
-
-        right = values[
-            i + 1:
-            i + PIVOT_RIGHT + 1
-        ]
-
-        if (
-            all(
-                current > x
-                for x in left
-            )
-            and
-            all(
-                current > x
-                for x in right
-            )
-        ):
-
-            highs.append(i)
-
-    return highs
-
-
-# ============================================================
-# CONFIRMED SWING LOWS
-# ============================================================
-
-def find_swing_lows(values):
-
-    lows = []
-
-    start = PIVOT_LEFT
-
-    end = (
-        len(values)
-        - PIVOT_RIGHT
-    )
-
-    for i in range(
-        start,
-        end
-    ):
-
-        current = values[i]
-
-        left = values[
-            i - PIVOT_LEFT:i
-        ]
-
-        right = values[
-            i + 1:
-            i + PIVOT_RIGHT + 1
-        ]
-
-        if (
-            all(
-                current < x
-                for x in left
-            )
-            and
-            all(
-                current < x
-                for x in right
-            )
-        ):
-
-            lows.append(i)
-
-    return lows
-
-
-# ============================================================
-# BEAUTIFUL SCORE
-# ============================================================
-
-def calculate_beautiful_score(
-    obv,
-    previous_low_index,
-    hh1_index,
-    hl_index,
-    hh2_index
-):
-    """
-    Objective OBV-only quality score.
-
-    Structure:
-
-        HH1
-          \
-           HL
-             \
-              HH2
-
-    Score components:
-
-        40 points = Higher High strength
-        35 points = Higher Low strength
-        25 points = Final recovery strength
-
-    The calculations use RELATIVE MOVEMENT inside the
-    structure, not the absolute cumulative OBV number.
-
-    This avoids the huge / meaningless percentages that
-    occurred in the previous version.
-    """
-
-    previous_low = obv[
-        previous_low_index
-    ]
-
-    hh1 = obv[
-        hh1_index
-    ]
-
-    hl = obv[
-        hl_index
-    ]
-
-    hh2 = obv[
-        hh2_index
-    ]
-
-    # --------------------------------------------------------
-    # Total structural range.
-    # --------------------------------------------------------
-
-    structure_range = (
-        hh2 - previous_low
-    )
-
-    if structure_range <= 0:
-        return 0.0
-
-    # --------------------------------------------------------
-    # 1. Higher High strength
-    #
-    # How much higher HH2 is than HH1.
-    # --------------------------------------------------------
-
-    hh_move = (
-        hh2 - hh1
-    )
-
-    hh_strength = (
-        hh_move / structure_range
-    )
-
-    # --------------------------------------------------------
-    # 2. Higher Low strength
-    #
-    # How much higher HL is than previous low.
-    # --------------------------------------------------------
-
-    hl_move = (
-        hl - previous_low
-    )
-
-    hl_strength = (
-        hl_move / structure_range
-    )
-
-    # --------------------------------------------------------
-    # 3. Recovery strength
-    #
-    # How strongly OBV moved from HL back toward HH2.
-    # --------------------------------------------------------
-
-    recovery_move = (
-        hh2 - hl
-    )
-
-    recovery_strength = (
-        recovery_move / structure_range
-    )
-
-    # --------------------------------------------------------
-    # Convert each component to points.
-    #
-    # Cap each one so extreme OBV values cannot distort
-    # the score.
-    # --------------------------------------------------------
-
-    hh_points = min(
-        1.0,
-        max(0.0, hh_strength * 2.5)
-    ) * 40
-
-    hl_points = min(
-        1.0,
-        max(0.0, hl_strength * 2.5)
-    ) * 35
-
-    recovery_points = min(
-        1.0,
-        max(0.0, recovery_strength * 1.5)
-    ) * 25
-
-    score = (
-        hh_points
-        + hl_points
-        + recovery_points
-    )
-
-    return round(
-        max(
-            0.0,
-            min(
-                100.0,
-                score
-            )
-        ),
-        2
-    )
+    return candles
 
 
 # ============================================================
@@ -702,209 +377,84 @@ def check_signal(contract):
         contract
     )
 
-    if len(candles) < 40:
-        return None
+    if len(candles) < 2:
+        return []
 
-    obv = calculate_obv(
-        candles
-    )
+    now = int(time.time())
 
-    if len(obv) < 40:
-        return None
+    # Gate's latest Daily candle is normally the
+    # currently forming candle. We deliberately KEEP it.
+    current_candle = candles[-1]
+    previous_candle = candles[-2]
 
-    swing_highs = find_swing_highs(
-        obv
-    )
-
-    swing_lows = find_swing_lows(
-        obv
-    )
-
-    if len(swing_highs) < 2:
-        return None
-
-    if len(swing_lows) < 2:
-        return None
-
-    # --------------------------------------------------------
-    # Latest confirmed HH.
-    # --------------------------------------------------------
-
-    hh2_index = swing_highs[-1]
-
-    # Previous confirmed HH.
-    hh1_index = swing_highs[-2]
-
-    if hh2_index <= hh1_index:
-        return None
-
-    # --------------------------------------------------------
-    # HH2 must actually be higher than HH1.
-    # --------------------------------------------------------
-
-    if obv[hh2_index] <= obv[hh1_index]:
-        return None
-
-    # --------------------------------------------------------
-    # EXACT structure:
-    #
-    # HH1 -> HL -> HH2
-    #
-    # Only ONE confirmed swing low between the two HHs.
-    # --------------------------------------------------------
-
-    lows_between = [
-        i
-        for i in swing_lows
-        if hh1_index < i < hh2_index
+    current_start = current_candle[
+        "timestamp"
     ]
 
-    if len(lows_between) != 1:
-        return None
-
-    hl_index = lows_between[0]
-
-    # --------------------------------------------------------
-    # Previous swing low before HL.
-    # --------------------------------------------------------
-
-    previous_lows = [
-        i
-        for i in swing_lows
-        if i < hl_index
-    ]
-
-    if not previous_lows:
-        return None
-
-    previous_low_index = (
-        previous_lows[-1]
+    current_end = (
+        current_start + 86400
     )
 
-    # --------------------------------------------------------
-    # HL must be higher than previous low.
-    # --------------------------------------------------------
+    # Safety check: the latest candle must actually
+    # be the current/forming Daily candle.
+    if current_end <= now:
+        return []
 
-    if (
-        obv[hl_index]
-        <= obv[previous_low_index]
-    ):
-        return None
+    signals = []
 
-    # --------------------------------------------------------
-    # Exact chronological order.
-    # --------------------------------------------------------
+    previous_high = previous_candle["high"]
+    previous_low = previous_candle["low"]
 
-    if not (
-        previous_low_index
-        < hh1_index
-        < hl_index
-        < hh2_index
-    ):
-        return None
+    current_high = current_candle["high"]
+    current_low = current_candle["low"]
 
     # --------------------------------------------------------
-    # HH2 must be the latest confirmed HH.
+    # LONG SETUP
+    # Current candle WICK breaks previous candle HIGH.
     # --------------------------------------------------------
 
-    if hh2_index != swing_highs[-1]:
-        return None
+    if current_high > previous_high:
+
+        signals.append({
+            "key": (
+                f"{contract}|DAILY|"
+                f"LONG_BREAK|"
+                f"{current_start}"
+            ),
+            "contract": contract,
+            "timeframe": "DAILY",
+            "direction": "LONG",
+            "current_timestamp": current_start,
+            "previous_high": previous_high,
+            "previous_low": previous_low,
+            "current_high": current_high,
+            "current_low": current_low
+        })
 
     # --------------------------------------------------------
-    # BEAUTIFUL SCORE
+    # SHORT SETUP
+    # Current candle WICK breaks previous candle LOW.
     # --------------------------------------------------------
 
-    score = calculate_beautiful_score(
-        obv,
-        previous_low_index,
-        hh1_index,
-        hl_index,
-        hh2_index
-    )
+    if current_low < previous_low:
 
-    # --------------------------------------------------------
-    # Only 85+.
-    # --------------------------------------------------------
+        signals.append({
+            "key": (
+                f"{contract}|DAILY|"
+                f"SHORT_BREAK|"
+                f"{current_start}"
+            ),
+            "contract": contract,
+            "timeframe": "DAILY",
+            "direction": "SHORT",
+            "current_timestamp": current_start,
+            "previous_high": previous_high,
+            "previous_low": previous_low,
+            "current_high": current_high,
+            "current_low": current_low
+        })
 
-    if score < BEAUTIFUL_MIN_SCORE:
-        return None
-
-    # --------------------------------------------------------
-    # Real timestamps.
-    # --------------------------------------------------------
-
-    previous_low_timestamp = candles[
-        previous_low_index
-    ]["timestamp"]
-
-    hh1_timestamp = candles[
-        hh1_index
-    ]["timestamp"]
-
-    hl_timestamp = candles[
-        hl_index
-    ]["timestamp"]
-
-    hh2_timestamp = candles[
-        hh2_index
-    ]["timestamp"]
-
-    # --------------------------------------------------------
-    # Unique signal.
-    # --------------------------------------------------------
-
-    signal_key = (
-        f"{contract}|DAILY|"
-        f"OBV_BEAUTIFUL_V2|"
-        f"{hh2_timestamp}"
-    )
-
-    return {
-        "key": signal_key,
-        "contract": contract,
-        "timeframe": "DAILY",
-        "score": score,
-
-        "previous_low": obv[
-            previous_low_index
-        ],
-
-        "hh1": obv[
-            hh1_index
-        ],
-
-        "hl": obv[
-            hl_index
-        ],
-
-        "hh2": obv[
-            hh2_index
-        ],
-
-        "previous_low_timestamp":
-            previous_low_timestamp,
-
-        "hh1_timestamp":
-            hh1_timestamp,
-
-        "hl_timestamp":
-            hl_timestamp,
-
-        "hh2_timestamp":
-            hh2_timestamp
-    }
-
-
-# ============================================================
-# DATE FORMAT
-# ============================================================
-
-def format_date(timestamp):
-
-    return datetime.fromtimestamp(
-        timestamp,
-        tz=timezone.utc
-    ).strftime("%Y-%m-%d")
+    return signals
 
 
 # ============================================================
@@ -917,44 +467,25 @@ def main():
 
     print("=" * 60)
     print(
-        "DAILY OBV BEAUTIFUL "
-        "HH -> HL -> HH BOT"
+        "DAILY BREAKOUT SETUP BOT"
     )
     print("=" * 60)
 
     print("Timeframe: DAILY")
-
     print(
-        "Structure: "
-        "OBV HIGHER HIGH -> "
-        "HIGHER LOW -> "
-        "HIGHER HIGH"
+        "LONG: Current Daily candle breaks "
+        "Previous Daily HIGH"
     )
-
     print(
-        f"Pivot left: {PIVOT_LEFT}"
+        "SHORT: Current Daily candle breaks "
+        "Previous Daily LOW"
     )
-
     print(
-        f"Pivot right: {PIVOT_RIGHT}"
+        "Break type: WICK BREAK IS ENOUGH"
     )
-
     print(
-        f"Candle limit: {CANDLE_LIMIT}"
-    )
-
-    print(
-        f"Beautiful minimum score: "
-        f"{BEAUTIFUL_MIN_SCORE}"
-    )
-
-    print(
-        f"Max workers: {MAX_WORKERS}"
-    )
-
-    print(
-        f"Request delay: "
-        f"{REQUEST_DELAY}s"
+        "No OBV • No indicators • "
+        "LTF retest checked manually"
     )
 
     telegram_ok = bool(
@@ -971,20 +502,12 @@ def main():
         )
     )
 
-    # --------------------------------------------------------
-    # History
-    # --------------------------------------------------------
-
     history = load_history()
 
     print(
         f"Previously recorded signals: "
         f"{len(history)}"
     )
-
-    # --------------------------------------------------------
-    # Contracts
-    # --------------------------------------------------------
 
     contracts = get_usdt_contracts()
 
@@ -1006,10 +529,7 @@ def main():
     results = []
 
     completed = 0
-
-    total = len(
-        contracts
-    )
+    total = len(contracts)
 
     # --------------------------------------------------------
     # PARALLEL SCAN
@@ -1037,11 +557,11 @@ def main():
 
             try:
 
-                result = future.result()
+                signals = future.result()
 
-                if result:
-                    results.append(
-                        result
+                if signals:
+                    results.extend(
+                        signals
                     )
 
             except Exception as e:
@@ -1064,20 +584,6 @@ def main():
                 )
 
     # --------------------------------------------------------
-    # Highest beauty first.
-    # --------------------------------------------------------
-
-    results.sort(
-        key=lambda x: x["score"],
-        reverse=True
-    )
-
-    print(
-        f"Beautiful OBV setups found: "
-        f"{len(results)}"
-    )
-
-    # --------------------------------------------------------
     # NEW SIGNALS ONLY
     # --------------------------------------------------------
 
@@ -1087,28 +593,53 @@ def main():
         if signal["key"] not in history
     ]
 
+    long_count = sum(
+        1
+        for signal in new_signals
+        if signal["direction"] == "LONG"
+    )
+
+    short_count = sum(
+        1
+        for signal in new_signals
+        if signal["direction"] == "SHORT"
+    )
+
     print(
-        f"New beautiful signals: "
-        f"{len(new_signals)}"
+        f"Daily breakout setups found: "
+        f"{len(results)}"
+    )
+
+    print(
+        f"New LONG setups: {long_count}"
+    )
+
+    print(
+        f"New SHORT setups: {short_count}"
     )
 
     # --------------------------------------------------------
     # TELEGRAM
-    #
-    # ONE MESSAGE
-    # ONE COIN PER LINE
     # --------------------------------------------------------
 
     if new_signals:
 
         print(
-            "Sending ONE beautiful OBV list..."
+            "Sending ONE Daily breakout list..."
+        )
+
+        new_signals.sort(
+            key=lambda x: (
+                x["direction"],
+                x["contract"]
+            )
         )
 
         lines = [
-            "📊 DAILY OBV — BEAUTIFUL SETUPS",
+            "🚨 DAILY BREAKOUT SETUPS",
             "",
-            "HH → HL → HH",
+            "Current Daily Candle broke Previous Daily Candle",
+            "Wick break is enough.",
             ""
         ]
 
@@ -1117,18 +648,51 @@ def main():
             start=1
         ):
 
-            lines.append(
-                f"{number}. "
-                f"{signal['contract']} "
-                f"⭐ {signal['score']:.0f}"
-            )
+            if signal["direction"] == "LONG":
+
+                lines.append(
+                    f"{number}. 🟢 "
+                    f"{signal['contract']} — "
+                    f"DAILY LONG SETUP"
+                )
+
+                lines.append(
+                    f"   Previous High: "
+                    f"{signal['previous_high']}"
+                )
+
+                lines.append(
+                    f"   Current High: "
+                    f"{signal['current_high']}"
+                )
+
+            else:
+
+                lines.append(
+                    f"{number}. 🔴 "
+                    f"{signal['contract']} — "
+                    f"DAILY SHORT SETUP"
+                )
+
+                lines.append(
+                    f"   Previous Low: "
+                    f"{signal['previous_low']}"
+                )
+
+                lines.append(
+                    f"   Current Low: "
+                    f"{signal['current_low']}"
+                )
+
+            lines.append("")
 
         lines.extend([
-            "",
             f"Total: {len(new_signals)}",
             "",
-            "OBV ONLY • DAILY • "
-            "COMPLETED CANDLES"
+            "Check LTF retest manually:",
+            "15M / 1H / 4H",
+            "",
+            "PRICE ACTION ONLY"
         ])
 
         message = "\n".join(
@@ -1144,29 +708,26 @@ def main():
     else:
 
         print(
-            "NO NEW BEAUTIFUL "
-            "OBV SETUPS"
-        )
-
-        report = (
-            "📊 DAILY OBV — "
-            "BEAUTIFUL SETUPS\n\n"
-            "No new beautiful "
-            "HH → HL → HH setup.\n\n"
-            f"Current beautiful setups: "
-            f"{len(results)}\n"
-            f"Previously recorded: "
-            f"{len(history)}"
+            "NO NEW DAILY BREAKOUT SETUPS"
         )
 
         if telegram_ok:
+
+            report = (
+                "📊 DAILY BREAKOUT SETUPS\n\n"
+                "No new Daily breakout setup.\n\n"
+                f"Current detected setups: "
+                f"{len(results)}\n"
+                f"Previously recorded: "
+                f"{len(history)}"
+            )
 
             send_telegram(
                 report
             )
 
     # --------------------------------------------------------
-    # SAVE QUALIFYING SIGNALS
+    # SAVE SIGNALS
     # --------------------------------------------------------
 
     for signal in results:
@@ -1180,28 +741,23 @@ def main():
             "timeframe":
                 signal["timeframe"],
 
-            "score":
-                signal["score"],
+            "direction":
+                signal["direction"],
 
-            "previous_low_timestamp":
-                signal[
-                    "previous_low_timestamp"
-                ],
+            "current_timestamp":
+                signal["current_timestamp"],
 
-            "hh1_timestamp":
-                signal[
-                    "hh1_timestamp"
-                ],
+            "previous_high":
+                signal["previous_high"],
 
-            "hl_timestamp":
-                signal[
-                    "hl_timestamp"
-                ],
+            "previous_low":
+                signal["previous_low"],
 
-            "hh2_timestamp":
-                signal[
-                    "hh2_timestamp"
-                ],
+            "current_high":
+                signal["current_high"],
+
+            "current_low":
+                signal["current_low"],
 
             "created_at":
                 int(time.time())
@@ -1210,10 +766,6 @@ def main():
     save_history(
         history
     )
-
-    # --------------------------------------------------------
-    # RUNTIME
-    # --------------------------------------------------------
 
     elapsed = (
         time.time()
