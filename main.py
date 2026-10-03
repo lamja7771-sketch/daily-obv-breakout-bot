@@ -68,7 +68,7 @@ MAX_WORKERS = 12
 REQUEST_DELAY = 0.03
 
 # Maximum distance from previous Daily wick.
-PROXIMITY_PERCENT = 0.01
+PROXIMITY_PERCENT = 0.02
 
 HISTORY_FILE = "signals.json"
 
