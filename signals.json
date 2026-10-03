@@ -7270,6 +7270,20 @@
     "created_at": "2026-09-08T10:00:03.892671+00:00",
     "timestamp": 1788566400
   },
+  "SKYAI_USDT|DAILY|SHORT_BREAK|1790985600": {
+    "contract": "SKYAI_USDT",
+    "created_at": 1791040144,
+    "current_high": 0.04249,
+    "current_low": 0.04082,
+    "current_price": 0.04098,
+    "current_timestamp": 1790985600,
+    "direction": "SHORT",
+    "distance_percent": 0.024396194193696326,
+    "previous_high": 0.04417,
+    "previous_low": 0.04099,
+    "telegram_sent": true,
+    "timeframe": "DAILY"
+  },
   "SKY_USDT|DAILY|OBV_BEAUTIFUL_V2|1790467200": {
     "contract": "SKY_USDT",
     "created_at": 1791031446,
@@ -7879,6 +7893,20 @@
     "contract": "SUSHI_USDT",
     "created_at": "2026-09-08T10:00:01.556305+00:00",
     "timestamp": 1788566400
+  },
+  "SWARMS_USDT|DAILY|LONG_BREAK|1790985600": {
+    "contract": "SWARMS_USDT",
+    "created_at": 1791040144,
+    "current_high": 0.008289,
+    "current_low": 0.00793,
+    "current_price": 0.008278,
+    "current_timestamp": 1790985600,
+    "direction": "LONG",
+    "distance_percent": 0.10884024670456316,
+    "previous_high": 0.008269,
+    "previous_low": 0.007664,
+    "telegram_sent": true,
+    "timeframe": "DAILY"
   },
   "SYK_USDT|DAILY|LONG_BREAK|1790985600": {
     "contract": "SYK_USDT",
