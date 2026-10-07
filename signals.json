@@ -16720,5 +16720,83 @@
     "direction": "LONG",
     "candle_timestamp": 1791331200,
     "telegram_sent": true
+  },
+  "BOE_USDT_LONG_1791331200": {
+    "contract": "BOE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791331200,
+    "telegram_sent": true
+  },
+  "JD_USDT_LONG_1791331200": {
+    "contract": "JD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791331200,
+    "telegram_sent": true
+  },
+  "AAPL_USDT_LONG_1791331200": {
+    "contract": "AAPL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791331200,
+    "telegram_sent": true
+  },
+  "ARK_USDT_LONG_1791331200": {
+    "contract": "ARK_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791331200,
+    "telegram_sent": true
+  },
+  "VRTX_USDT_LONG_1791331200": {
+    "contract": "VRTX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791331200,
+    "telegram_sent": true
+  },
+  "BX_USDT_LONG_1791331200": {
+    "contract": "BX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791331200,
+    "telegram_sent": true
+  },
+  "AAPU_USDT_LONG_1791331200": {
+    "contract": "AAPU_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791331200,
+    "telegram_sent": true
+  },
+  "AMZN_USDT_LONG_1791331200": {
+    "contract": "AMZN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791331200,
+    "telegram_sent": true
+  },
+  "PARTI_USDT_LONG_1791331200": {
+    "contract": "PARTI_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791331200,
+    "telegram_sent": true
+  },
+  "PROLOGUE_USDT_LONG_1791331200": {
+    "contract": "PROLOGUE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791331200,
+    "telegram_sent": true
+  },
+  "PUMP_USDT_LONG_1791331200": {
+    "contract": "PUMP_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791331200,
+    "telegram_sent": true
+  },
+  "MUSEBOOK_USDT_LONG_1791331200": {
+    "contract": "MUSEBOOK_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791331200,
+    "telegram_sent": true
+  },
+  "CAMBRICON_USDT_LONG_1791331200": {
+    "contract": "CAMBRICON_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791331200,
+    "telegram_sent": true
   }
 }
