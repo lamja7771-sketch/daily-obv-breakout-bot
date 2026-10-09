@@ -17812,5 +17812,41 @@
     "direction": "LONG",
     "candle_timestamp": 1791417600,
     "telegram_sent": true
+  },
+  "Q_USDT_LONG_1791504000": {
+    "contract": "Q_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791504000,
+    "telegram_sent": true
+  },
+  "CMCSA_USDT_LONG_1791504000": {
+    "contract": "CMCSA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791504000,
+    "telegram_sent": true
+  },
+  "IWM_USDT_LONG_1791504000": {
+    "contract": "IWM_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791504000,
+    "telegram_sent": true
+  },
+  "US2000_USDT_LONG_1791504000": {
+    "contract": "US2000_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791504000,
+    "telegram_sent": true
+  },
+  "RTX_USDT_LONG_1791504000": {
+    "contract": "RTX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791504000,
+    "telegram_sent": true
+  },
+  "SHLD_USDT_LONG_1791504000": {
+    "contract": "SHLD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791504000,
+    "telegram_sent": true
   }
 }
