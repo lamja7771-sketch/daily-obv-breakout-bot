@@ -20998,5 +20998,155 @@
     "direction": "LONG",
     "candle_timestamp": 1791590400,
     "telegram_sent": true
+  },
+  "CSCO_USDT_LONG_1791590400": {
+    "contract": "CSCO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "ZIJINMINING_USDT_LONG_1791590400": {
+    "contract": "ZIJINMINING_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "GPS_USDT_LONG_1791590400": {
+    "contract": "GPS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "V_USDT_LONG_1791590400": {
+    "contract": "V_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "NES_USDT_LONG_1791590400": {
+    "contract": "NES_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "XCU_USDT_LONG_1791590400": {
+    "contract": "XCU_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "FLUID_USDT_LONG_1791590400": {
+    "contract": "FLUID_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "GT_USDT_LONG_1791590400": {
+    "contract": "GT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "DDOG_USDT_LONG_1791590400": {
+    "contract": "DDOG_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "EDU_USDT_LONG_1791590400": {
+    "contract": "EDU_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "BWXT_USDT_LONG_1791590400": {
+    "contract": "BWXT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "HPSP_USDT_LONG_1791590400": {
+    "contract": "HPSP_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "ORDER_USDT_LONG_1791590400": {
+    "contract": "ORDER_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "ANET_USDT_LONG_1791590400": {
+    "contract": "ANET_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "KITE_USDT_LONG_1791590400": {
+    "contract": "KITE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "JEPQ_USDT_LONG_1791590400": {
+    "contract": "JEPQ_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "OG_USDT_LONG_1791590400": {
+    "contract": "OG_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "ZKP_USDT_LONG_1791590400": {
+    "contract": "ZKP_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "BR_USDT_LONG_1791590400": {
+    "contract": "BR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "AINVDA_USDT_LONG_1791590400": {
+    "contract": "AINVDA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "G_USDT_LONG_1791590400": {
+    "contract": "G_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "DEXE_USDT_LONG_1791590400": {
+    "contract": "DEXE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "MYX_USDT_LONG_1791590400": {
+    "contract": "MYX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "APT_USDT_LONG_1791590400": {
+    "contract": "APT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
+  },
+  "CARDS_USDT_LONG_1791590400": {
+    "contract": "CARDS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791590400,
+    "telegram_sent": true
   }
 }
