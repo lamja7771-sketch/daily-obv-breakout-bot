@@ -24220,5 +24220,89 @@
     "direction": "LONG",
     "candle_timestamp": 1791763200,
     "telegram_sent": true
+  },
+  "USDC_USDT_LONG_1791763200": {
+    "contract": "USDC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791763200,
+    "telegram_sent": true
+  },
+  "EBAY_USDT_LONG_1791763200": {
+    "contract": "EBAY_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791763200,
+    "telegram_sent": true
+  },
+  "LLY_USDT_LONG_1791763200": {
+    "contract": "LLY_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791763200,
+    "telegram_sent": true
+  },
+  "AUS200_USDT_LONG_1791763200": {
+    "contract": "AUS200_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791763200,
+    "telegram_sent": true
+  },
+  "NG_USDT_LONG_1791763200": {
+    "contract": "NG_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791763200,
+    "telegram_sent": true
+  },
+  "IEFA_USDT_LONG_1791763200": {
+    "contract": "IEFA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791763200,
+    "telegram_sent": true
+  },
+  "ON_USDT_LONG_1791763200": {
+    "contract": "ON_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791763200,
+    "telegram_sent": true
+  },
+  "INIT_USDT_LONG_1791763200": {
+    "contract": "INIT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791763200,
+    "telegram_sent": true
+  },
+  "AGG_USDT_LONG_1791763200": {
+    "contract": "AGG_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791763200,
+    "telegram_sent": true
+  },
+  "STX_USDT_LONG_1791763200": {
+    "contract": "STX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791763200,
+    "telegram_sent": true
+  },
+  "TAG_USDT_LONG_1791763200": {
+    "contract": "TAG_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791763200,
+    "telegram_sent": true
+  },
+  "GWEI_USDT_LONG_1791763200": {
+    "contract": "GWEI_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791763200,
+    "telegram_sent": true
+  },
+  "PYTH_USDT_LONG_1791763200": {
+    "contract": "PYTH_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791763200,
+    "telegram_sent": true
+  },
+  "AAPU_USDT_LONG_1791763200": {
+    "contract": "AAPU_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791763200,
+    "telegram_sent": true
   }
 }
