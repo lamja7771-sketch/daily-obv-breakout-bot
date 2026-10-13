@@ -24868,5 +24868,23 @@
     "direction": "LONG",
     "candle_timestamp": 1791849600,
     "telegram_sent": true
+  },
+  "JCI_USDT_LONG_1791849600": {
+    "contract": "JCI_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791849600,
+    "telegram_sent": true
+  },
+  "CGPT_USDT_LONG_1791849600": {
+    "contract": "CGPT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791849600,
+    "telegram_sent": true
+  },
+  "GUA_USDT_LONG_1791849600": {
+    "contract": "GUA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1791849600,
+    "telegram_sent": true
   }
 }
