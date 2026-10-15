@@ -26512,5 +26512,65 @@
     "direction": "LONG",
     "candle_timestamp": 1792022400,
     "telegram_sent": true
+  },
+  "GE_USDT_LONG_1792022400": {
+    "contract": "GE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792022400,
+    "telegram_sent": true
+  },
+  "STABLE_USDT_LONG_1792022400": {
+    "contract": "STABLE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792022400,
+    "telegram_sent": true
+  },
+  "NXPC_USDT_LONG_1792022400": {
+    "contract": "NXPC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792022400,
+    "telegram_sent": true
+  },
+  "SENT_USDT_LONG_1792022400": {
+    "contract": "SENT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792022400,
+    "telegram_sent": true
+  },
+  "PAIR_USDT_LONG_1792022400": {
+    "contract": "PAIR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792022400,
+    "telegram_sent": true
+  },
+  "MORPHO_USDT_LONG_1792022400": {
+    "contract": "MORPHO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792022400,
+    "telegram_sent": true
+  },
+  "NEAR_USDT_LONG_1792022400": {
+    "contract": "NEAR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792022400,
+    "telegram_sent": true
+  },
+  "VELODROME_USDT_LONG_1792022400": {
+    "contract": "VELODROME_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792022400,
+    "telegram_sent": true
+  },
+  "AERO_USDT_LONG_1792022400": {
+    "contract": "AERO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792022400,
+    "telegram_sent": true
+  },
+  "VKTX_USDT_LONG_1792022400": {
+    "contract": "VKTX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792022400,
+    "telegram_sent": true
   }
 }
