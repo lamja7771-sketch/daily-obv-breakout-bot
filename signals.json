@@ -28330,5 +28330,101 @@
     "direction": "LONG",
     "candle_timestamp": 1792108800,
     "telegram_sent": true
+  },
+  "GVZ_USDT_LONG_1792108800": {
+    "contract": "GVZ_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "SO_USDT_LONG_1792108800": {
+    "contract": "SO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "JPM_USDT_LONG_1792108800": {
+    "contract": "JPM_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "HSBC_USDT_LONG_1792108800": {
+    "contract": "HSBC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "WLD_USDT_LONG_1792108800": {
+    "contract": "WLD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "MOVR_USDT_LONG_1792108800": {
+    "contract": "MOVR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "FLORK_USDT_LONG_1792108800": {
+    "contract": "FLORK_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "DOGS_USDT_LONG_1792108800": {
+    "contract": "DOGS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "ACN_USDT_LONG_1792108800": {
+    "contract": "ACN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "LAB_USDT_LONG_1792108800": {
+    "contract": "LAB_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "NAVER_USDT_LONG_1792108800": {
+    "contract": "NAVER_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "FLYBRAIN_USDT_LONG_1792108800": {
+    "contract": "FLYBRAIN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "LUNA_USDT_LONG_1792108800": {
+    "contract": "LUNA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "BR_USDT_LONG_1792108800": {
+    "contract": "BR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "VOLX_USDT_LONG_1792108800": {
+    "contract": "VOLX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "LIT_USDT_LONG_1792108800": {
+    "contract": "LIT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
   }
 }
