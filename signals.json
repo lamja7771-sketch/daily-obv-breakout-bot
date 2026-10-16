@@ -28264,5 +28264,71 @@
     "direction": "LONG",
     "candle_timestamp": 1792108800,
     "telegram_sent": true
+  },
+  "PHA_USDT_LONG_1792108800": {
+    "contract": "PHA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "XLE_USDT_LONG_1792108800": {
+    "contract": "XLE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "Q_USDT_LONG_1792108800": {
+    "contract": "Q_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "BSX_USDT_LONG_1792108800": {
+    "contract": "BSX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "ZEST_USDT_LONG_1792108800": {
+    "contract": "ZEST_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "TZA_USDT_LONG_1792108800": {
+    "contract": "TZA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "SOXS_USDT_LONG_1792108800": {
+    "contract": "SOXS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "COP_USDT_LONG_1792108800": {
+    "contract": "COP_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "LIN_USDT_LONG_1792108800": {
+    "contract": "LIN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "HYUNDAI_USDT_LONG_1792108800": {
+    "contract": "HYUNDAI_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
+  },
+  "BEIGENE_USDT_LONG_1792108800": {
+    "contract": "BEIGENE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792108800,
+    "telegram_sent": true
   }
 }
