@@ -28792,5 +28792,23 @@
     "direction": "LONG",
     "candle_timestamp": 1792195200,
     "telegram_sent": true
+  },
+  "COAI_USDT_LONG_1792195200": {
+    "contract": "COAI_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792195200,
+    "telegram_sent": true
+  },
+  "RSR_USDT_LONG_1792195200": {
+    "contract": "RSR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792195200,
+    "telegram_sent": true
+  },
+  "LSK_USDT_LONG_1792195200": {
+    "contract": "LSK_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792195200,
+    "telegram_sent": true
   }
 }
