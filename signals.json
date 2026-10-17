@@ -28810,5 +28810,23 @@
     "direction": "LONG",
     "candle_timestamp": 1792195200,
     "telegram_sent": true
+  },
+  "TLT_USDT_LONG_1792195200": {
+    "contract": "TLT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792195200,
+    "telegram_sent": true
+  },
+  "NMR_USDT_LONG_1792195200": {
+    "contract": "NMR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792195200,
+    "telegram_sent": true
+  },
+  "SQQQ_USDT_LONG_1792195200": {
+    "contract": "SQQQ_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792195200,
+    "telegram_sent": true
   }
 }
