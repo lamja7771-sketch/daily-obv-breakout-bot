@@ -28780,5 +28780,17 @@
     "direction": "LONG",
     "candle_timestamp": 1792195200,
     "telegram_sent": true
+  },
+  "OGN_USDT_LONG_1792195200": {
+    "contract": "OGN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792195200,
+    "telegram_sent": true
+  },
+  "PEP_USDT_LONG_1792195200": {
+    "contract": "PEP_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792195200,
+    "telegram_sent": true
   }
 }
