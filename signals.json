@@ -29206,5 +29206,41 @@
     "direction": "LONG",
     "candle_timestamp": 1792281600,
     "telegram_sent": true
+  },
+  "FSLR_USDT_LONG_1792281600": {
+    "contract": "FSLR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792281600,
+    "telegram_sent": true
+  },
+  "UVXY_USDT_LONG_1792281600": {
+    "contract": "UVXY_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792281600,
+    "telegram_sent": true
+  },
+  "APD_USDT_LONG_1792281600": {
+    "contract": "APD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792281600,
+    "telegram_sent": true
+  },
+  "IOTX_USDT_LONG_1792281600": {
+    "contract": "IOTX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792281600,
+    "telegram_sent": true
+  },
+  "TEAM_USDT_LONG_1792281600": {
+    "contract": "TEAM_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792281600,
+    "telegram_sent": true
+  },
+  "BEIGENE_USDT_LONG_1792281600": {
+    "contract": "BEIGENE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792281600,
+    "telegram_sent": true
   }
 }
