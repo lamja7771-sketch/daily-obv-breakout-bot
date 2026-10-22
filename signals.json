@@ -37408,5 +37408,89 @@
     "direction": "LONG",
     "candle_timestamp": 1792627200,
     "telegram_sent": true
+  },
+  "TZA_USDT_LONG_1792627200": {
+    "contract": "TZA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "EURUSD_USDT_LONG_1792627200": {
+    "contract": "EURUSD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "RATS_USDT_LONG_1792627200": {
+    "contract": "RATS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "XOM_USDT_LONG_1792627200": {
+    "contract": "XOM_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "UNH_USDT_LONG_1792627200": {
+    "contract": "UNH_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "WMT_USDT_LONG_1792627200": {
+    "contract": "WMT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "TLT_USDT_LONG_1792627200": {
+    "contract": "TLT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "COST_USDT_LONG_1792627200": {
+    "contract": "COST_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "MRK_USDT_LONG_1792627200": {
+    "contract": "MRK_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "BVOL_USDT_LONG_1792627200": {
+    "contract": "BVOL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "BWET_USDT_LONG_1792627200": {
+    "contract": "BWET_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "TMF_USDT_LONG_1792627200": {
+    "contract": "TMF_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "UVXY_USDT_LONG_1792627200": {
+    "contract": "UVXY_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "SQQQ_USDT_LONG_1792627200": {
+    "contract": "SQQQ_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
   }
 }
