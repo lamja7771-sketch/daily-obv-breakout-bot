@@ -37792,5 +37792,83 @@
     "direction": "LONG",
     "candle_timestamp": 1792627200,
     "telegram_sent": true
+  },
+  "AAL_USDT_LONG_1792627200": {
+    "contract": "AAL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "LQD_USDT_LONG_1792627200": {
+    "contract": "LQD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "AAPL_USDT_LONG_1792627200": {
+    "contract": "AAPL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "ZEST_USDT_LONG_1792627200": {
+    "contract": "ZEST_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "SBUX_USDT_LONG_1792627200": {
+    "contract": "SBUX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "PATH_USDT_LONG_1792627200": {
+    "contract": "PATH_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "TMUS_USDT_LONG_1792627200": {
+    "contract": "TMUS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "INIT_USDT_LONG_1792627200": {
+    "contract": "INIT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "XLU_USDT_LONG_1792627200": {
+    "contract": "XLU_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "DOS_USDT_LONG_1792627200": {
+    "contract": "DOS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "PANW_USDT_LONG_1792627200": {
+    "contract": "PANW_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "LULU_USDT_LONG_1792627200": {
+    "contract": "LULU_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
+  },
+  "BUD_USDT_LONG_1792627200": {
+    "contract": "BUD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792627200,
+    "telegram_sent": true
   }
 }
