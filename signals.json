@@ -38620,5 +38620,35 @@
     "direction": "LONG",
     "candle_timestamp": 1792713600,
     "telegram_sent": true
+  },
+  "ALB_USDT_LONG_1792713600": {
+    "contract": "ALB_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792713600,
+    "telegram_sent": true
+  },
+  "NET_USDT_LONG_1792713600": {
+    "contract": "NET_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792713600,
+    "telegram_sent": true
+  },
+  "XPB_USDT_LONG_1792713600": {
+    "contract": "XPB_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792713600,
+    "telegram_sent": true
+  },
+  "LIGHT_USDT_LONG_1792713600": {
+    "contract": "LIGHT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792713600,
+    "telegram_sent": true
+  },
+  "PREDICT_USDT_LONG_1792713600": {
+    "contract": "PREDICT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792713600,
+    "telegram_sent": true
   }
 }
