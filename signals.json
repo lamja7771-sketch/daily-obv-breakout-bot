@@ -38650,5 +38650,107 @@
     "direction": "LONG",
     "candle_timestamp": 1792713600,
     "telegram_sent": true
+  },
+  "VALE_USDT_LONG_1792800000": {
+    "contract": "VALE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "RED_USDT_LONG_1792800000": {
+    "contract": "RED_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "TONGGUAN_USDT_LONG_1792800000": {
+    "contract": "TONGGUAN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "SKR_USDT_LONG_1792800000": {
+    "contract": "SKR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "ZBT_USDT_LONG_1792800000": {
+    "contract": "ZBT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "PRL_USDT_LONG_1792800000": {
+    "contract": "PRL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "MIRA_USDT_LONG_1792800000": {
+    "contract": "MIRA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "BIGTIME_USDT_LONG_1792800000": {
+    "contract": "BIGTIME_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "PBR_USDT_LONG_1792800000": {
+    "contract": "PBR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "BIWIN_USDT_LONG_1792800000": {
+    "contract": "BIWIN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "YPF_USDT_LONG_1792800000": {
+    "contract": "YPF_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "ANIME_USDT_LONG_1792800000": {
+    "contract": "ANIME_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "NEWT_USDT_LONG_1792800000": {
+    "contract": "NEWT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "SDGR_USDT_LONG_1792800000": {
+    "contract": "SDGR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "KAT_USDT_LONG_1792800000": {
+    "contract": "KAT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "EWZ_USDT_LONG_1792800000": {
+    "contract": "EWZ_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "TRUST_USDT_LONG_1792800000": {
+    "contract": "TRUST_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
   }
 }
