@@ -39046,5 +39046,89 @@
     "direction": "LONG",
     "candle_timestamp": 1792800000,
     "telegram_sent": true
+  },
+  "JPN225_USDT_LONG_1792800000": {
+    "contract": "JPN225_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "SOFTBANK_USDT_LONG_1792800000": {
+    "contract": "SOFTBANK_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "CARV_USDT_LONG_1792800000": {
+    "contract": "CARV_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "SAHARA_USDT_LONG_1792800000": {
+    "contract": "SAHARA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "CCJ_USDT_LONG_1792800000": {
+    "contract": "CCJ_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "CAP_USDT_LONG_1792800000": {
+    "contract": "CAP_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "CLANKER_USDT_LONG_1792800000": {
+    "contract": "CLANKER_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "LAYER_USDT_LONG_1792800000": {
+    "contract": "LAYER_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "GUA_USDT_LONG_1792800000": {
+    "contract": "GUA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "TURTLE_USDT_LONG_1792800000": {
+    "contract": "TURTLE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "REZ_USDT_LONG_1792800000": {
+    "contract": "REZ_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "EPIC_USDT_LONG_1792800000": {
+    "contract": "EPIC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "BAN_USDT_LONG_1792800000": {
+    "contract": "BAN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "SIREN_USDT_LONG_1792800000": {
+    "contract": "SIREN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
   }
 }
