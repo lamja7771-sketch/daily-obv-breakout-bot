@@ -39274,5 +39274,77 @@
     "direction": "LONG",
     "candle_timestamp": 1792800000,
     "telegram_sent": true
+  },
+  "MELI_USDT_LONG_1792800000": {
+    "contract": "MELI_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "SPOT_USDT_LONG_1792800000": {
+    "contract": "SPOT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "PANW_USDT_LONG_1792800000": {
+    "contract": "PANW_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "CJS_USDT_LONG_1792800000": {
+    "contract": "CJS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "UNITREE_USDT_LONG_1792800000": {
+    "contract": "UNITREE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "XLE_USDT_LONG_1792800000": {
+    "contract": "XLE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "EMBER_USDT_LONG_1792800000": {
+    "contract": "EMBER_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "TAG_USDT_LONG_1792800000": {
+    "contract": "TAG_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "WUXIAPPTEC_USDT_LONG_1792800000": {
+    "contract": "WUXIAPPTEC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "INIT_USDT_LONG_1792800000": {
+    "contract": "INIT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "TRUTH_USDT_LONG_1792800000": {
+    "contract": "TRUTH_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
+  },
+  "ALCH_USDT_LONG_1792800000": {
+    "contract": "ALCH_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792800000,
+    "telegram_sent": true
   }
 }
