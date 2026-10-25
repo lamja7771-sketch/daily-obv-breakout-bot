@@ -40654,5 +40654,77 @@
     "direction": "LONG",
     "candle_timestamp": 1792886400,
     "telegram_sent": true
+  },
+  "SONY_USDT_LONG_1792886400": {
+    "contract": "SONY_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792886400,
+    "telegram_sent": true
+  },
+  "SLV_USDT_LONG_1792886400": {
+    "contract": "SLV_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792886400,
+    "telegram_sent": true
+  },
+  "BP_USDT_LONG_1792886400": {
+    "contract": "BP_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792886400,
+    "telegram_sent": true
+  },
+  "NIL_USDT_LONG_1792886400": {
+    "contract": "NIL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792886400,
+    "telegram_sent": true
+  },
+  "CAMBRICON_USDT_LONG_1792886400": {
+    "contract": "CAMBRICON_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792886400,
+    "telegram_sent": true
+  },
+  "VOLX_USDT_LONG_1792886400": {
+    "contract": "VOLX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792886400,
+    "telegram_sent": true
+  },
+  "TSLL_USDT_LONG_1792886400": {
+    "contract": "TSLL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792886400,
+    "telegram_sent": true
+  },
+  "LUNR_USDT_LONG_1792886400": {
+    "contract": "LUNR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792886400,
+    "telegram_sent": true
+  },
+  "CATE_USDT_LONG_1792886400": {
+    "contract": "CATE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792886400,
+    "telegram_sent": true
+  },
+  "AKESO_USDT_LONG_1792886400": {
+    "contract": "AKESO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792886400,
+    "telegram_sent": true
+  },
+  "REZ_USDT_LONG_1792886400": {
+    "contract": "REZ_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792886400,
+    "telegram_sent": true
+  },
+  "MEMECOIN_USDT_LONG_1792886400": {
+    "contract": "MEMECOIN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1792886400,
+    "telegram_sent": true
   }
 }
