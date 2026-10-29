@@ -46804,5 +46804,125 @@
     "direction": "LONG",
     "candle_timestamp": 1793232000,
     "telegram_sent": true
+  },
+  "GBPUSD_USDT_LONG_1793232000": {
+    "contract": "GBPUSD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "COST_USDT_LONG_1793232000": {
+    "contract": "COST_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "GER40_USDT_LONG_1793232000": {
+    "contract": "GER40_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "BOTZ_USDT_LONG_1793232000": {
+    "contract": "BOTZ_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "GS_USDT_LONG_1793232000": {
+    "contract": "GS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "MOUTAI_USDT_LONG_1793232000": {
+    "contract": "MOUTAI_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "AMGN_USDT_LONG_1793232000": {
+    "contract": "AMGN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "TBT_USDT_LONG_1793232000": {
+    "contract": "TBT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "WET_USDT_LONG_1793232000": {
+    "contract": "WET_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "RTX_USDT_LONG_1793232000": {
+    "contract": "RTX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "SHENHUA_USDT_LONG_1793232000": {
+    "contract": "SHENHUA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "CCL_USDT_LONG_1793232000": {
+    "contract": "CCL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "XBI_USDT_LONG_1793232000": {
+    "contract": "XBI_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "CITIC_USDT_LONG_1793232000": {
+    "contract": "CITIC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "IBB_USDT_LONG_1793232000": {
+    "contract": "IBB_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "HUMA_USDT_LONG_1793232000": {
+    "contract": "HUMA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "YANGTZE_USDT_LONG_1793232000": {
+    "contract": "YANGTZE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "MSCI_USDT_LONG_1793232000": {
+    "contract": "MSCI_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "FCX_USDT_LONG_1793232000": {
+    "contract": "FCX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
+  },
+  "币安人生_USDT_LONG_1793232000": {
+    "contract": "币安人生_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793232000,
+    "telegram_sent": true
   }
 }
