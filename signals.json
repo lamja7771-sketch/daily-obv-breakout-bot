@@ -47494,5 +47494,11 @@
     "direction": "LONG",
     "candle_timestamp": 1793232000,
     "telegram_sent": true
+  },
+  "SUN_USDT_LONG_1793318400": {
+    "contract": "SUN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793318400,
+    "telegram_sent": true
   }
 }
