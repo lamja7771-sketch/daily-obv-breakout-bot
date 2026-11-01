@@ -49510,5 +49510,23 @@
     "direction": "LONG",
     "candle_timestamp": 1793404800,
     "telegram_sent": true
+  },
+  "DEEPTECH_USDT_LONG_1793491200": {
+    "contract": "DEEPTECH_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793491200,
+    "telegram_sent": true
+  },
+  "POWR_USDT_LONG_1793491200": {
+    "contract": "POWR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793491200,
+    "telegram_sent": true
+  },
+  "TUNGSTEN_USDT_LONG_1793491200": {
+    "contract": "TUNGSTEN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793491200,
+    "telegram_sent": true
   }
 }
