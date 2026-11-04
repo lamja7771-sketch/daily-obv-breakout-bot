@@ -53878,5 +53878,59 @@
     "direction": "LONG",
     "candle_timestamp": 1793664000,
     "telegram_sent": true
+  },
+  "XNI_USDT_LONG_1793750400": {
+    "contract": "XNI_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793750400,
+    "telegram_sent": true
+  },
+  "TMO_USDT_LONG_1793750400": {
+    "contract": "TMO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793750400,
+    "telegram_sent": true
+  },
+  "EURUSD_USDT_LONG_1793750400": {
+    "contract": "EURUSD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793750400,
+    "telegram_sent": true
+  },
+  "IBKR_USDT_LONG_1793750400": {
+    "contract": "IBKR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793750400,
+    "telegram_sent": true
+  },
+  "TZA_USDT_LONG_1793750400": {
+    "contract": "TZA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793750400,
+    "telegram_sent": true
+  },
+  "STABLE_USDT_LONG_1793750400": {
+    "contract": "STABLE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793750400,
+    "telegram_sent": true
+  },
+  "LQD_USDT_LONG_1793750400": {
+    "contract": "LQD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793750400,
+    "telegram_sent": true
+  },
+  "REGN_USDT_LONG_1793750400": {
+    "contract": "REGN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793750400,
+    "telegram_sent": true
+  },
+  "SQQQ_USDT_LONG_1793750400": {
+    "contract": "SQQQ_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793750400,
+    "telegram_sent": true
   }
 }
