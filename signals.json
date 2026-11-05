@@ -57328,5 +57328,95 @@
     "direction": "LONG",
     "candle_timestamp": 1793836800,
     "telegram_sent": true
+  },
+  "LAOPU_USDT_LONG_1793836800": {
+    "contract": "LAOPU_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793836800,
+    "telegram_sent": true
+  },
+  "INJ_USDT_LONG_1793836800": {
+    "contract": "INJ_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793836800,
+    "telegram_sent": true
+  },
+  "PERIC_USDT_LONG_1793836800": {
+    "contract": "PERIC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793836800,
+    "telegram_sent": true
+  },
+  "SBUX_USDT_LONG_1793836800": {
+    "contract": "SBUX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793836800,
+    "telegram_sent": true
+  },
+  "SINOCERA_USDT_LONG_1793836800": {
+    "contract": "SINOCERA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793836800,
+    "telegram_sent": true
+  },
+  "SO_USDT_LONG_1793836800": {
+    "contract": "SO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793836800,
+    "telegram_sent": true
+  },
+  "ERA_USDT_LONG_1793836800": {
+    "contract": "ERA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793836800,
+    "telegram_sent": true
+  },
+  "MERL_USDT_LONG_1793836800": {
+    "contract": "MERL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793836800,
+    "telegram_sent": true
+  },
+  "SUNGROW_USDT_LONG_1793836800": {
+    "contract": "SUNGROW_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793836800,
+    "telegram_sent": true
+  },
+  "TENCENT_USDT_LONG_1793836800": {
+    "contract": "TENCENT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793836800,
+    "telegram_sent": true
+  },
+  "NET_USDT_LONG_1793836800": {
+    "contract": "NET_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793836800,
+    "telegram_sent": true
+  },
+  "MEITUAN_USDT_LONG_1793836800": {
+    "contract": "MEITUAN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793836800,
+    "telegram_sent": true
+  },
+  "TFME_USDT_LONG_1793836800": {
+    "contract": "TFME_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793836800,
+    "telegram_sent": true
+  },
+  "MO_USDT_LONG_1793836800": {
+    "contract": "MO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793836800,
+    "telegram_sent": true
+  },
+  "PAPER_USDT_LONG_1793836800": {
+    "contract": "PAPER_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793836800,
+    "telegram_sent": true
   }
 }
