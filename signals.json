@@ -57490,5 +57490,89 @@
     "direction": "LONG",
     "candle_timestamp": 1793923200,
     "telegram_sent": true
+  },
+  "SIREN_USDT_LONG_1793923200": {
+    "contract": "SIREN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793923200,
+    "telegram_sent": true
+  },
+  "TRIA_USDT_LONG_1793923200": {
+    "contract": "TRIA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793923200,
+    "telegram_sent": true
+  },
+  "ABNB_USDT_LONG_1793923200": {
+    "contract": "ABNB_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793923200,
+    "telegram_sent": true
+  },
+  "LQD_USDT_LONG_1793923200": {
+    "contract": "LQD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793923200,
+    "telegram_sent": true
+  },
+  "TURTLE_USDT_LONG_1793923200": {
+    "contract": "TURTLE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793923200,
+    "telegram_sent": true
+  },
+  "HHGRACE_USDT_LONG_1793923200": {
+    "contract": "HHGRACE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793923200,
+    "telegram_sent": true
+  },
+  "IOST_USDT_LONG_1793923200": {
+    "contract": "IOST_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793923200,
+    "telegram_sent": true
+  },
+  "KERNEL_USDT_LONG_1793923200": {
+    "contract": "KERNEL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793923200,
+    "telegram_sent": true
+  },
+  "NAVER_USDT_LONG_1793923200": {
+    "contract": "NAVER_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793923200,
+    "telegram_sent": true
+  },
+  "MAGIC_USDT_LONG_1793923200": {
+    "contract": "MAGIC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793923200,
+    "telegram_sent": true
+  },
+  "ACT_USDT_LONG_1793923200": {
+    "contract": "ACT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793923200,
+    "telegram_sent": true
+  },
+  "ERA_USDT_LONG_1793923200": {
+    "contract": "ERA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793923200,
+    "telegram_sent": true
+  },
+  "MEGA_USDT_LONG_1793923200": {
+    "contract": "MEGA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793923200,
+    "telegram_sent": true
+  },
+  "BEIGENE_USDT_LONG_1793923200": {
+    "contract": "BEIGENE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1793923200,
+    "telegram_sent": true
   }
 }
