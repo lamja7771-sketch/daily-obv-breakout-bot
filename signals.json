@@ -58078,5 +58078,89 @@
     "direction": "LONG",
     "candle_timestamp": 1794009600,
     "telegram_sent": true
+  },
+  "USDBRL_USDT_LONG_1794009600": {
+    "contract": "USDBRL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794009600,
+    "telegram_sent": true
+  },
+  "REGN_USDT_LONG_1794009600": {
+    "contract": "REGN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794009600,
+    "telegram_sent": true
+  },
+  "TRX_USDT_LONG_1794009600": {
+    "contract": "TRX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794009600,
+    "telegram_sent": true
+  },
+  "DHR_USDT_LONG_1794009600": {
+    "contract": "DHR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794009600,
+    "telegram_sent": true
+  },
+  "TMO_USDT_LONG_1794009600": {
+    "contract": "TMO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794009600,
+    "telegram_sent": true
+  },
+  "ABBV_USDT_LONG_1794009600": {
+    "contract": "ABBV_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794009600,
+    "telegram_sent": true
+  },
+  "CLO_USDT_LONG_1794009600": {
+    "contract": "CLO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794009600,
+    "telegram_sent": true
+  },
+  "GUA_USDT_LONG_1794009600": {
+    "contract": "GUA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794009600,
+    "telegram_sent": true
+  },
+  "GFS_USDT_LONG_1794009600": {
+    "contract": "GFS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794009600,
+    "telegram_sent": true
+  },
+  "ACU_USDT_LONG_1794009600": {
+    "contract": "ACU_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794009600,
+    "telegram_sent": true
+  },
+  "OURA_USDT_LONG_1794009600": {
+    "contract": "OURA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794009600,
+    "telegram_sent": true
+  },
+  "POD_USDT_LONG_1794009600": {
+    "contract": "POD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794009600,
+    "telegram_sent": true
+  },
+  "CCJ_USDT_LONG_1794009600": {
+    "contract": "CCJ_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794009600,
+    "telegram_sent": true
+  },
+  "牛来_USDT_LONG_1794009600": {
+    "contract": "牛来_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794009600,
+    "telegram_sent": true
   }
 }
