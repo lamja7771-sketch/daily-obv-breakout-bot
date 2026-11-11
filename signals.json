@@ -62542,5 +62542,425 @@
     "direction": "LONG",
     "candle_timestamp": 1794355200,
     "telegram_sent": true
+  },
+  "XLF_USDT_LONG_1794355200": {
+    "contract": "XLF_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "GUA_USDT_LONG_1794355200": {
+    "contract": "GUA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "SPX500_USDT_LONG_1794355200": {
+    "contract": "SPX500_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "USD1_USDT_LONG_1794355200": {
+    "contract": "USD1_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "JIO_USDT_LONG_1794355200": {
+    "contract": "JIO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "SPY_USDT_LONG_1794355200": {
+    "contract": "SPY_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "UMC_USDT_LONG_1794355200": {
+    "contract": "UMC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "HMSTR_USDT_LONG_1794355200": {
+    "contract": "HMSTR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "GE_USDT_LONG_1794355200": {
+    "contract": "GE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "ANTA_USDT_LONG_1794355200": {
+    "contract": "ANTA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "CLSK_USDT_LONG_1794355200": {
+    "contract": "CLSK_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "OKB_USDT_LONG_1794355200": {
+    "contract": "OKB_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "APD_USDT_LONG_1794355200": {
+    "contract": "APD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "CROSS_USDT_LONG_1794355200": {
+    "contract": "CROSS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "XOM_USDT_LONG_1794355200": {
+    "contract": "XOM_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "NAS100_USDT_LONG_1794355200": {
+    "contract": "NAS100_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "JMKE_USDT_LONG_1794355200": {
+    "contract": "JMKE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "TRADOOR_USDT_LONG_1794355200": {
+    "contract": "TRADOOR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "TWLO_USDT_LONG_1794355200": {
+    "contract": "TWLO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "XLE_USDT_LONG_1794355200": {
+    "contract": "XLE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "XLK_USDT_LONG_1794355200": {
+    "contract": "XLK_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "VLO_USDT_LONG_1794355200": {
+    "contract": "VLO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "CHEEMS_USDT_LONG_1794355200": {
+    "contract": "CHEEMS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "MINA_USDT_LONG_1794355200": {
+    "contract": "MINA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "DKNG_USDT_LONG_1794355200": {
+    "contract": "DKNG_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "ALAB_USDT_LONG_1794355200": {
+    "contract": "ALAB_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "LGELECTRONICS_USDT_LONG_1794355200": {
+    "contract": "LGELECTRONICS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "FET_USDT_LONG_1794355200": {
+    "contract": "FET_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "CLS_USDT_LONG_1794355200": {
+    "contract": "CLS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "RDDT_USDT_LONG_1794355200": {
+    "contract": "RDDT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "MP_USDT_LONG_1794355200": {
+    "contract": "MP_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "CXMT_USDT_LONG_1794355200": {
+    "contract": "CXMT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "CBRS_USDT_LONG_1794355200": {
+    "contract": "CBRS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "RVN_USDT_LONG_1794355200": {
+    "contract": "RVN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "APH_USDT_LONG_1794355200": {
+    "contract": "APH_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "BOTZ_USDT_LONG_1794355200": {
+    "contract": "BOTZ_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "XDP_USDT_LONG_1794355200": {
+    "contract": "XDP_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "哈基米_USDT_LONG_1794355200": {
+    "contract": "哈基米_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "LUXSHARE_USDT_LONG_1794355200": {
+    "contract": "LUXSHARE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "TREE_USDT_LONG_1794355200": {
+    "contract": "TREE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "ACU_USDT_LONG_1794355200": {
+    "contract": "ACU_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "CMOC_USDT_LONG_1794355200": {
+    "contract": "CMOC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "GS_USDT_LONG_1794355200": {
+    "contract": "GS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "AAOI_USDT_LONG_1794355200": {
+    "contract": "AAOI_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "ZRO_USDT_LONG_1794355200": {
+    "contract": "ZRO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "TTWO_USDT_LONG_1794355200": {
+    "contract": "TTWO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "LNG_USDT_LONG_1794355200": {
+    "contract": "LNG_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "BZ_USDT_LONG_1794355200": {
+    "contract": "BZ_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "AIA_USDT_LONG_1794355200": {
+    "contract": "AIA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "CAMBRICON_USDT_LONG_1794355200": {
+    "contract": "CAMBRICON_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "MARA_USDT_LONG_1794355200": {
+    "contract": "MARA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "PANW_USDT_LONG_1794355200": {
+    "contract": "PANW_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "ZM_USDT_LONG_1794355200": {
+    "contract": "ZM_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "HUT_USDT_LONG_1794355200": {
+    "contract": "HUT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "EEM_USDT_LONG_1794355200": {
+    "contract": "EEM_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "CL_USDT_LONG_1794355200": {
+    "contract": "CL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "SUNAC_USDT_LONG_1794355200": {
+    "contract": "SUNAC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "GLM_USDT_LONG_1794355200": {
+    "contract": "GLM_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "TW88_USDT_LONG_1794355200": {
+    "contract": "TW88_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "NAORIS_USDT_LONG_1794355200": {
+    "contract": "NAORIS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "JELLYJELLY_USDT_LONG_1794355200": {
+    "contract": "JELLYJELLY_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "BLSH_USDT_LONG_1794355200": {
+    "contract": "BLSH_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "TAIJI_USDT_LONG_1794355200": {
+    "contract": "TAIJI_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "BILL_USDT_LONG_1794355200": {
+    "contract": "BILL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "APLD_USDT_LONG_1794355200": {
+    "contract": "APLD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "SHAZ_USDT_LONG_1794355200": {
+    "contract": "SHAZ_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "BSX_USDT_LONG_1794355200": {
+    "contract": "BSX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "NIGHT_USDT_LONG_1794355200": {
+    "contract": "NIGHT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "XAL_USDT_LONG_1794355200": {
+    "contract": "XAL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "GRAM_USDT_LONG_1794355200": {
+    "contract": "GRAM_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
   }
 }
