@@ -61942,5 +61942,89 @@
     "direction": "LONG",
     "candle_timestamp": 1794268800,
     "telegram_sent": true
+  },
+  "PLTR_USDT_LONG_1794355200": {
+    "contract": "PLTR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "QCOM_USDT_LONG_1794355200": {
+    "contract": "QCOM_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "SHIB_USDT_LONG_1794355200": {
+    "contract": "SHIB_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "ATOM_USDT_LONG_1794355200": {
+    "contract": "ATOM_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "MAVIA_USDT_LONG_1794355200": {
+    "contract": "MAVIA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "ICP_USDT_LONG_1794355200": {
+    "contract": "ICP_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "NAVER_USDT_LONG_1794355200": {
+    "contract": "NAVER_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "KITE_USDT_LONG_1794355200": {
+    "contract": "KITE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "PROVE_USDT_LONG_1794355200": {
+    "contract": "PROVE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "AVGO_USDT_LONG_1794355200": {
+    "contract": "AVGO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "RENDER_USDT_LONG_1794355200": {
+    "contract": "RENDER_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "KLAC_USDT_LONG_1794355200": {
+    "contract": "KLAC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "TAIYOYUDEN_USDT_LONG_1794355200": {
+    "contract": "TAIYOYUDEN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
+  },
+  "HANMI_USDT_LONG_1794355200": {
+    "contract": "HANMI_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794355200,
+    "telegram_sent": true
   }
 }
