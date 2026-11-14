@@ -65170,5 +65170,35 @@
     "direction": "LONG",
     "candle_timestamp": 1794614400,
     "telegram_sent": true
+  },
+  "KII_USDT_LONG_1794614400": {
+    "contract": "KII_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794614400,
+    "telegram_sent": true
+  },
+  "MRK_USDT_LONG_1794614400": {
+    "contract": "MRK_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794614400,
+    "telegram_sent": true
+  },
+  "WUXIAPPTEC_USDT_LONG_1794614400": {
+    "contract": "WUXIAPPTEC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794614400,
+    "telegram_sent": true
+  },
+  "SBP_USDT_LONG_1794614400": {
+    "contract": "SBP_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794614400,
+    "telegram_sent": true
+  },
+  "BGSC_USDT_LONG_1794614400": {
+    "contract": "BGSC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794614400,
+    "telegram_sent": true
   }
 }
