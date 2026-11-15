@@ -65200,5 +65200,89 @@
     "direction": "LONG",
     "candle_timestamp": 1794614400,
     "telegram_sent": true
+  },
+  "IBB_USDT_LONG_1794700800": {
+    "contract": "IBB_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794700800,
+    "telegram_sent": true
+  },
+  "CL_USDT_LONG_1794700800": {
+    "contract": "CL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794700800,
+    "telegram_sent": true
+  },
+  "HANMI_USDT_LONG_1794700800": {
+    "contract": "HANMI_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794700800,
+    "telegram_sent": true
+  },
+  "USDBRL_USDT_LONG_1794700800": {
+    "contract": "USDBRL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794700800,
+    "telegram_sent": true
+  },
+  "MEGA_USDT_LONG_1794700800": {
+    "contract": "MEGA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794700800,
+    "telegram_sent": true
+  },
+  "GPS_USDT_LONG_1794700800": {
+    "contract": "GPS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794700800,
+    "telegram_sent": true
+  },
+  "HTGD_USDT_LONG_1794700800": {
+    "contract": "HTGD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794700800,
+    "telegram_sent": true
+  },
+  "KITE_USDT_LONG_1794700800": {
+    "contract": "KITE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794700800,
+    "telegram_sent": true
+  },
+  "DNA_USDT_LONG_1794700800": {
+    "contract": "DNA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794700800,
+    "telegram_sent": true
+  },
+  "OKTA_USDT_LONG_1794700800": {
+    "contract": "OKTA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794700800,
+    "telegram_sent": true
+  },
+  "CATL_USDT_LONG_1794700800": {
+    "contract": "CATL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794700800,
+    "telegram_sent": true
+  },
+  "RIO_USDT_LONG_1794700800": {
+    "contract": "RIO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794700800,
+    "telegram_sent": true
+  },
+  "TM_USDT_LONG_1794700800": {
+    "contract": "TM_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794700800,
+    "telegram_sent": true
+  },
+  "CMOC_USDT_LONG_1794700800": {
+    "contract": "CMOC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1794700800,
+    "telegram_sent": true
   }
 }
