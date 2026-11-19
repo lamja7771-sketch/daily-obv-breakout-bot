@@ -68536,5 +68536,77 @@
     "direction": "LONG",
     "candle_timestamp": 1794960000,
     "telegram_sent": true
+  },
+  "MSFT_USDT_LONG_1795046400": {
+    "contract": "MSFT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795046400,
+    "telegram_sent": true
+  },
+  "ACCELINK_USDT_LONG_1795046400": {
+    "contract": "ACCELINK_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795046400,
+    "telegram_sent": true
+  },
+  "TTWO_USDT_LONG_1795046400": {
+    "contract": "TTWO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795046400,
+    "telegram_sent": true
+  },
+  "ARK_USDT_LONG_1795046400": {
+    "contract": "ARK_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795046400,
+    "telegram_sent": true
+  },
+  "SENT_USDT_LONG_1795046400": {
+    "contract": "SENT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795046400,
+    "telegram_sent": true
+  },
+  "DDOG_USDT_LONG_1795046400": {
+    "contract": "DDOG_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795046400,
+    "telegram_sent": true
+  },
+  "MEGA_USDT_LONG_1795046400": {
+    "contract": "MEGA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795046400,
+    "telegram_sent": true
+  },
+  "HUAGONGTECH_USDT_LONG_1795046400": {
+    "contract": "HUAGONGTECH_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795046400,
+    "telegram_sent": true
+  },
+  "KLAC_USDT_LONG_1795046400": {
+    "contract": "KLAC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795046400,
+    "telegram_sent": true
+  },
+  "FTNT_USDT_LONG_1795046400": {
+    "contract": "FTNT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795046400,
+    "telegram_sent": true
+  },
+  "ANET_USDT_LONG_1795046400": {
+    "contract": "ANET_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795046400,
+    "telegram_sent": true
+  },
+  "TAIJI_USDT_LONG_1795046400": {
+    "contract": "TAIJI_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795046400,
+    "telegram_sent": true
   }
 }
