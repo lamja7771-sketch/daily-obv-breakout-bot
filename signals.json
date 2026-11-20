@@ -69562,5 +69562,83 @@
     "direction": "LONG",
     "candle_timestamp": 1795132800,
     "telegram_sent": true
+  },
+  "USDC_USDT_LONG_1795132800": {
+    "contract": "USDC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795132800,
+    "telegram_sent": true
+  },
+  "CL_USDT_LONG_1795132800": {
+    "contract": "CL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795132800,
+    "telegram_sent": true
+  },
+  "HMSTR_USDT_LONG_1795132800": {
+    "contract": "HMSTR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795132800,
+    "telegram_sent": true
+  },
+  "XPIN_USDT_LONG_1795132800": {
+    "contract": "XPIN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795132800,
+    "telegram_sent": true
+  },
+  "BARD_USDT_LONG_1795132800": {
+    "contract": "BARD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795132800,
+    "telegram_sent": true
+  },
+  "MSCI_USDT_LONG_1795132800": {
+    "contract": "MSCI_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795132800,
+    "telegram_sent": true
+  },
+  "USDBRL_USDT_LONG_1795132800": {
+    "contract": "USDBRL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795132800,
+    "telegram_sent": true
+  },
+  "UP_USDT_LONG_1795132800": {
+    "contract": "UP_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795132800,
+    "telegram_sent": true
+  },
+  "AIGENSYN_USDT_LONG_1795132800": {
+    "contract": "AIGENSYN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795132800,
+    "telegram_sent": true
+  },
+  "SO_USDT_LONG_1795132800": {
+    "contract": "SO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795132800,
+    "telegram_sent": true
+  },
+  "COP_USDT_LONG_1795132800": {
+    "contract": "COP_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795132800,
+    "telegram_sent": true
+  },
+  "JIO_USDT_LONG_1795132800": {
+    "contract": "JIO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795132800,
+    "telegram_sent": true
+  },
+  "LEN_USDT_LONG_1795132800": {
+    "contract": "LEN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795132800,
+    "telegram_sent": true
   }
 }
