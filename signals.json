@@ -69748,5 +69748,41 @@
     "direction": "LONG",
     "candle_timestamp": 1795219200,
     "telegram_sent": true
+  },
+  "GMX_USDT_LONG_1795219200": {
+    "contract": "GMX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795219200,
+    "telegram_sent": true
+  },
+  "USUAL_USDT_LONG_1795219200": {
+    "contract": "USUAL_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795219200,
+    "telegram_sent": true
+  },
+  "MAGMA_USDT_LONG_1795219200": {
+    "contract": "MAGMA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795219200,
+    "telegram_sent": true
+  },
+  "SIGN_USDT_LONG_1795219200": {
+    "contract": "SIGN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795219200,
+    "telegram_sent": true
+  },
+  "STEEM_USDT_LONG_1795219200": {
+    "contract": "STEEM_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795219200,
+    "telegram_sent": true
+  },
+  "ZBCN_USDT_LONG_1795219200": {
+    "contract": "ZBCN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795219200,
+    "telegram_sent": true
   }
 }
