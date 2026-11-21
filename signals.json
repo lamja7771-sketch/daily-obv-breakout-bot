@@ -69712,5 +69712,41 @@
     "direction": "LONG",
     "candle_timestamp": 1795219200,
     "telegram_sent": true
+  },
+  "AGLD_USDT_LONG_1795219200": {
+    "contract": "AGLD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795219200,
+    "telegram_sent": true
+  },
+  "AIN_USDT_LONG_1795219200": {
+    "contract": "AIN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795219200,
+    "telegram_sent": true
+  },
+  "CT_USDT_LONG_1795219200": {
+    "contract": "CT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795219200,
+    "telegram_sent": true
+  },
+  "ZAMA_USDT_LONG_1795219200": {
+    "contract": "ZAMA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795219200,
+    "telegram_sent": true
+  },
+  "XAN_USDT_LONG_1795219200": {
+    "contract": "XAN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795219200,
+    "telegram_sent": true
+  },
+  "NAORIS_USDT_LONG_1795219200": {
+    "contract": "NAORIS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795219200,
+    "telegram_sent": true
   }
 }
