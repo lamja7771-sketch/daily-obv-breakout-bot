@@ -69640,5 +69640,29 @@
     "direction": "LONG",
     "candle_timestamp": 1795132800,
     "telegram_sent": true
+  },
+  "GPS_USDT_LONG_1795219200": {
+    "contract": "GPS_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795219200,
+    "telegram_sent": true
+  },
+  "BAN_USDT_LONG_1795219200": {
+    "contract": "BAN_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795219200,
+    "telegram_sent": true
+  },
+  "FIGHT_USDT_LONG_1795219200": {
+    "contract": "FIGHT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795219200,
+    "telegram_sent": true
+  },
+  "ENSO_USDT_LONG_1795219200": {
+    "contract": "ENSO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795219200,
+    "telegram_sent": true
   }
 }
