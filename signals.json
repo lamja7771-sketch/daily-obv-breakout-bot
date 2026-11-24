@@ -73942,5 +73942,107 @@
     "direction": "LONG",
     "candle_timestamp": 1795392000,
     "telegram_sent": true
+  },
+  "US2000_USDT_LONG_1795478400": {
+    "contract": "US2000_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
+  },
+  "APD_USDT_LONG_1795478400": {
+    "contract": "APD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
+  },
+  "BOE_USDT_LONG_1795478400": {
+    "contract": "BOE_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
+  },
+  "EWJ_USDT_LONG_1795478400": {
+    "contract": "EWJ_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
+  },
+  "HK50_USDT_LONG_1795478400": {
+    "contract": "HK50_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
+  },
+  "SOLV_USDT_LONG_1795478400": {
+    "contract": "SOLV_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
+  },
+  "ASR_USDT_LONG_1795478400": {
+    "contract": "ASR_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
+  },
+  "WMT_USDT_LONG_1795478400": {
+    "contract": "WMT_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
+  },
+  "MINIMAXHKD_USDT_LONG_1795478400": {
+    "contract": "MINIMAXHKD_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
+  },
+  "YOFC_USDT_LONG_1795478400": {
+    "contract": "YOFC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
+  },
+  "YAGEO_USDT_LONG_1795478400": {
+    "contract": "YAGEO_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
+  },
+  "SUNAC_USDT_LONG_1795478400": {
+    "contract": "SUNAC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
+  },
+  "MUFG_USDT_LONG_1795478400": {
+    "contract": "MUFG_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
+  },
+  "MINIMAX_USDT_LONG_1795478400": {
+    "contract": "MINIMAX_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
+  },
+  "LISTA_USDT_LONG_1795478400": {
+    "contract": "LISTA_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
+  },
+  "WINBOND_USDT_LONG_1795478400": {
+    "contract": "WINBOND_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
+  },
+  "TFC_USDT_LONG_1795478400": {
+    "contract": "TFC_USDT",
+    "direction": "LONG",
+    "candle_timestamp": 1795478400,
+    "telegram_sent": true
   }
 }
